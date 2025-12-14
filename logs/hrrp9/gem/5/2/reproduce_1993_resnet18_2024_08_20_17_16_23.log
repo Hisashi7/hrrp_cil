@@ -1,0 +1,36 @@
+2024-08-20 17:16:23,924 [trainer.py] => config: ./exps/gem.json
+2024-08-20 17:16:23,924 [trainer.py] => prefix: reproduce
+2024-08-20 17:16:23,924 [trainer.py] => dataset: hrrp9
+2024-08-20 17:16:23,924 [trainer.py] => memory_size: 500
+2024-08-20 17:16:23,924 [trainer.py] => memory_per_class: 20
+2024-08-20 17:16:23,924 [trainer.py] => fixed_memory: False
+2024-08-20 17:16:23,924 [trainer.py] => shuffle: True
+2024-08-20 17:16:23,924 [trainer.py] => init_cls: 5
+2024-08-20 17:16:23,924 [trainer.py] => increment: 2
+2024-08-20 17:16:23,924 [trainer.py] => model_name: gem
+2024-08-20 17:16:23,924 [trainer.py] => convnet_type: resnet18
+2024-08-20 17:16:23,924 [trainer.py] => init_train: False
+2024-08-20 17:16:23,924 [trainer.py] => convnet_path: checkpoints/init_train/resnet18_42503.pth
+2024-08-20 17:16:23,925 [trainer.py] => fc_path: checkpoints/init_train/fc_42503.pth
+2024-08-20 17:16:23,925 [trainer.py] => device: [device(type='cuda', index=0)]
+2024-08-20 17:16:23,925 [trainer.py] => seed: 1993
+2024-08-20 17:16:25,400 [data_manager.py] => [4, 2, 5, 0, 3, 6, 7, 8, 1]
+2024-08-20 17:16:28,753 [trainer.py] => All params: 3843904
+2024-08-20 17:16:28,754 [trainer.py] => Trainable params: 3843904
+2024-08-20 17:16:28,757 [gem.py] => Learning on 0-5
+2024-08-20 17:16:28,987 [gem.py] => init_train?---False
+2024-08-20 17:16:32,951 [base.py] => Reducing exemplars...(100 per classes)
+2024-08-20 17:16:32,952 [base.py] => Constructing exemplars...(100 per classes)
+2024-08-20 17:16:47,092 [gem.py] => Exemplar size: 500
+2024-08-20 17:16:47,092 [trainer.py] => CNN: {'total': 92.89, '00-04': 92.89, 'old': 0, 'new': 92.89}
+2024-08-20 17:16:47,092 [trainer.py] => NME: {'total': 92.95, '00-04': 92.95, 'old': 0, 'new': 92.95}
+2024-08-20 17:16:47,092 [trainer.py] => CNN top1 curve: [92.89]
+2024-08-20 17:16:47,092 [trainer.py] => CNN top5 curve: [100.0]
+2024-08-20 17:16:47,092 [trainer.py] => NME top1 curve: [92.95]
+2024-08-20 17:16:47,092 [trainer.py] => NME top5 curve: [100.0]
+
+2024-08-20 17:16:47,092 [trainer.py] => Average Accuracy (CNN): 92.89
+2024-08-20 17:16:47,092 [trainer.py] => Average Accuracy (NME): 92.95
+2024-08-20 17:16:47,093 [trainer.py] => All params: 3846469
+2024-08-20 17:16:47,093 [trainer.py] => Trainable params: 3846469
+2024-08-20 17:16:47,094 [gem.py] => Learning on 5-7

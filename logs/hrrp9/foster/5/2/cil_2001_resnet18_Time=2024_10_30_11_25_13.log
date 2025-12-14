@@ -1,0 +1,222 @@
+2024-10-30 11:25:13,862 [trainer.py] => config: ./exps/foster.json
+2024-10-30 11:25:13,862 [trainer.py] => prefix: cil
+2024-10-30 11:25:13,862 [trainer.py] => dataset: hrrp9
+2024-10-30 11:25:13,862 [trainer.py] => memory_size: 500
+2024-10-30 11:25:13,862 [trainer.py] => memory_per_class: 20
+2024-10-30 11:25:13,862 [trainer.py] => fixed_memory: False
+2024-10-30 11:25:13,862 [trainer.py] => shuffle: True
+2024-10-30 11:25:13,863 [trainer.py] => init_cls: 5
+2024-10-30 11:25:13,863 [trainer.py] => increment: 2
+2024-10-30 11:25:13,863 [trainer.py] => model_name: foster
+2024-10-30 11:25:13,863 [trainer.py] => convnet_type: resnet18
+2024-10-30 11:25:13,863 [trainer.py] => init_train: False
+2024-10-30 11:25:13,863 [trainer.py] => convnet_path: checkpoints/init_train/resnet18_35172.pth
+2024-10-30 11:25:13,863 [trainer.py] => fc_path: checkpoints/init_train/fc_35172.pth
+2024-10-30 11:25:13,863 [trainer.py] => convnet_path1: checkpoints/init_train/resnet18_42503.pth
+2024-10-30 11:25:13,863 [trainer.py] => fc_path1: checkpoints/init_train/fc_42503.pth
+2024-10-30 11:25:13,863 [trainer.py] => device: [device(type='cuda', index=2)]
+2024-10-30 11:25:13,863 [trainer.py] => seed: 2001
+2024-10-30 11:25:13,863 [trainer.py] => beta1: 0.96
+2024-10-30 11:25:13,863 [trainer.py] => beta2: 0.97
+2024-10-30 11:25:13,863 [trainer.py] => oofc: ft
+2024-10-30 11:25:13,863 [trainer.py] => is_teacher_wa: True
+2024-10-30 11:25:13,863 [trainer.py] => is_student_wa: False
+2024-10-30 11:25:13,863 [trainer.py] => lambda_okd: 1
+2024-10-30 11:25:13,864 [trainer.py] => wa_value: 1
+2024-10-30 11:25:13,864 [trainer.py] => init_epochs: 0
+2024-10-30 11:25:13,864 [trainer.py] => init_lr: 0.1
+2024-10-30 11:25:13,864 [trainer.py] => init_weight_decay: 0.0005
+2024-10-30 11:25:13,864 [trainer.py] => boosting_epochs: 150
+2024-10-30 11:25:13,864 [trainer.py] => compression_epochs: 120
+2024-10-30 11:25:13,864 [trainer.py] => lr: 0.1
+2024-10-30 11:25:13,864 [trainer.py] => batch_size: 128
+2024-10-30 11:25:13,864 [trainer.py] => weight_decay: 0.0005
+2024-10-30 11:25:13,864 [trainer.py] => num_workers: 8
+2024-10-30 11:25:13,864 [trainer.py] => T: 2
+2024-10-30 11:25:14,647 [data_manager.py] => [3, 5, 1, 7, 2, 8, 6, 4, 0]
+2024-10-30 11:25:14,707 [trainer.py] => All params: 0
+2024-10-30 11:25:14,708 [trainer.py] => Trainable params: 0
+2024-10-30 11:25:15,385 [foster.py] => Learning on 0-5
+2024-10-30 11:25:15,385 [foster.py] => All params: 3849034
+2024-10-30 11:25:15,386 [foster.py] => Trainable params: 3849034
+2024-10-30 11:25:15,759 [foster.py] => init_train?---False
+2024-10-30 11:25:16,761 [base.py] => Reducing exemplars...(100 per classes)
+2024-10-30 11:25:16,762 [base.py] => Constructing exemplars...(100 per classes)
+2024-10-30 11:25:23,897 [trainer.py] => All params: 3849034
+2024-10-30 11:25:25,217 [foster.py] => Exemplar size: 500
+2024-10-30 11:25:25,218 [trainer.py] => CNN: {'total': 90.13, '00-04': 90.13, 'old': 0, 'new': 90.13}
+2024-10-30 11:25:25,218 [trainer.py] => NME: {'total': 89.53, '00-04': 89.53, 'old': 0, 'new': 89.53}
+2024-10-30 11:25:25,218 [trainer.py] => CNN top1 curve: [90.13]
+2024-10-30 11:25:25,218 [trainer.py] => CNN top5 curve: [100.0]
+2024-10-30 11:25:25,218 [trainer.py] => NME top1 curve: [89.53]
+2024-10-30 11:25:25,218 [trainer.py] => NME top5 curve: [100.0]
+
+2024-10-30 11:25:25,218 [trainer.py] => Average Accuracy (CNN): 90.13
+2024-10-30 11:25:25,218 [trainer.py] => Average Accuracy (NME): 89.53
+2024-10-30 11:25:25,219 [trainer.py] => All params: 3849034
+2024-10-30 11:25:25,219 [trainer.py] => Trainable params: 3849034
+2024-10-30 11:25:25,274 [foster.py] => Learning on 5-7
+2024-10-30 11:25:25,276 [foster.py] => All params: 7701139
+2024-10-30 11:25:25,276 [foster.py] => Trainable params: 3854670
+2024-10-30 11:25:25,341 [foster.py] => per cls weights : [1.00484344 1.00484344 1.00484344 1.00484344 1.00484344 0.98789141
+ 0.98789141]
+2024-10-30 11:25:28,121 [foster.py] => Task 1, Epoch 1/150 => Loss 2.428, Loss_clf 0.621, Loss_fe 0.783, Loss_kd 0.732, Train_accy 79.58, Test_accy 14.64
+2024-10-30 11:25:36,261 [foster.py] => Task 1, Epoch 6/150 => Loss 1.267, Loss_clf 0.043, Loss_fe 0.226, Loss_kd 0.712, Train_accy 98.62, Test_accy 76.62
+2024-10-30 11:25:44,165 [foster.py] => Task 1, Epoch 11/150 => Loss 1.078, Loss_clf 0.011, Loss_fe 0.071, Loss_kd 0.712, Train_accy 99.87, Test_accy 75.07
+2024-10-30 11:25:53,577 [foster.py] => Task 1, Epoch 16/150 => Loss 1.215, Loss_clf 0.053, Loss_fe 0.166, Loss_kd 0.711, Train_accy 98.18, Test_accy 77.55
+2024-10-30 11:26:04,153 [foster.py] => Task 1, Epoch 21/150 => Loss 1.117, Loss_clf 0.029, Loss_fe 0.096, Loss_kd 0.709, Train_accy 99.18, Test_accy 80.62
+2024-10-30 11:26:14,329 [foster.py] => Task 1, Epoch 26/150 => Loss 1.030, Loss_clf 0.008, Loss_fe 0.026, Loss_kd 0.711, Train_accy 99.80, Test_accy 82.17
+2024-10-30 11:26:25,076 [foster.py] => Task 1, Epoch 31/150 => Loss 0.996, Loss_clf 0.001, Loss_fe 0.002, Loss_kd 0.710, Train_accy 100.00, Test_accy 83.33
+2024-10-30 11:26:36,460 [foster.py] => Task 1, Epoch 36/150 => Loss 0.997, Loss_clf 0.001, Loss_fe 0.003, Loss_kd 0.709, Train_accy 100.00, Test_accy 84.05
+2024-10-30 11:26:47,398 [foster.py] => Task 1, Epoch 41/150 => Loss 0.993, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.708, Train_accy 100.00, Test_accy 83.45
+2024-10-30 11:26:57,958 [foster.py] => Task 1, Epoch 46/150 => Loss 0.998, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.711, Train_accy 100.00, Test_accy 84.36
+2024-10-30 11:27:06,448 [foster.py] => Task 1, Epoch 51/150 => Loss 0.996, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.710, Train_accy 100.00, Test_accy 84.36
+2024-10-30 11:27:14,603 [foster.py] => Task 1, Epoch 56/150 => Loss 0.999, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.712, Train_accy 100.00, Test_accy 84.57
+2024-10-30 11:27:22,487 [foster.py] => Task 1, Epoch 61/150 => Loss 1.005, Loss_clf 0.003, Loss_fe 0.007, Loss_kd 0.711, Train_accy 100.00, Test_accy 82.71
+2024-10-30 11:27:30,138 [foster.py] => Task 1, Epoch 66/150 => Loss 0.996, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.710, Train_accy 100.00, Test_accy 83.45
+2024-10-30 11:27:38,828 [foster.py] => Task 1, Epoch 71/150 => Loss 0.995, Loss_clf 0.001, Loss_fe 0.002, Loss_kd 0.709, Train_accy 100.00, Test_accy 83.76
+2024-10-30 11:27:48,846 [foster.py] => Task 1, Epoch 76/150 => Loss 0.995, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.710, Train_accy 100.00, Test_accy 84.31
+2024-10-30 11:27:58,858 [foster.py] => Task 1, Epoch 81/150 => Loss 1.000, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.713, Train_accy 100.00, Test_accy 83.12
+2024-10-30 11:28:09,591 [foster.py] => Task 1, Epoch 86/150 => Loss 0.999, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.713, Train_accy 100.00, Test_accy 83.55
+2024-10-30 11:28:20,115 [foster.py] => Task 1, Epoch 91/150 => Loss 0.994, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.708, Train_accy 100.00, Test_accy 84.17
+2024-10-30 11:28:30,879 [foster.py] => Task 1, Epoch 96/150 => Loss 1.030, Loss_clf 0.006, Loss_fe 0.026, Loss_kd 0.713, Train_accy 99.98, Test_accy 80.14
+2024-10-30 11:28:41,417 [foster.py] => Task 1, Epoch 101/150 => Loss 0.997, Loss_clf 0.001, Loss_fe 0.002, Loss_kd 0.710, Train_accy 100.00, Test_accy 83.57
+2024-10-30 11:28:50,179 [foster.py] => Task 1, Epoch 106/150 => Loss 0.994, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.708, Train_accy 100.00, Test_accy 83.48
+2024-10-30 11:28:57,751 [foster.py] => Task 1, Epoch 111/150 => Loss 0.995, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.709, Train_accy 100.00, Test_accy 83.21
+2024-10-30 11:29:05,598 [foster.py] => Task 1, Epoch 116/150 => Loss 0.998, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.711, Train_accy 100.00, Test_accy 84.31
+2024-10-30 11:29:13,586 [foster.py] => Task 1, Epoch 121/150 => Loss 0.996, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.710, Train_accy 100.00, Test_accy 83.48
+2024-10-30 11:29:21,407 [foster.py] => Task 1, Epoch 126/150 => Loss 0.995, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.709, Train_accy 100.00, Test_accy 82.86
+2024-10-30 11:29:32,599 [foster.py] => Task 1, Epoch 131/150 => Loss 0.999, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.712, Train_accy 100.00, Test_accy 82.81
+2024-10-30 11:29:43,626 [foster.py] => Task 1, Epoch 136/150 => Loss 0.996, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.710, Train_accy 100.00, Test_accy 83.98
+2024-10-30 11:29:54,037 [foster.py] => Task 1, Epoch 141/150 => Loss 0.998, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.711, Train_accy 100.00, Test_accy 84.10
+2024-10-30 11:30:04,334 [foster.py] => Task 1, Epoch 146/150 => Loss 0.996, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.710, Train_accy 100.00, Test_accy 83.81
+2024-10-30 11:30:11,724 [foster.py] => Task 1, Epoch 150/150 => Loss 0.998, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.712, Train_accy 100.00
+2024-10-30 11:30:11,772 [inc_net.py] => align weights, gamma = 0.9950641393661499 
+2024-10-30 11:30:11,773 [foster.py] => per cls weights : [1.01377356 1.01377356 1.01377356 1.01377356 1.01377356 0.96556609
+ 0.96556609]
+2024-10-30 11:30:14,688 [foster.py] => SNet: Task 1, Epoch 1/120 => Loss 0.933,  Train_accy 67.82, Test_accy 30.02
+2024-10-30 11:30:25,741 [foster.py] => SNet: Task 1, Epoch 6/120 => Loss 0.222,  Train_accy 100.00, Test_accy 78.05
+2024-10-30 11:30:36,021 [foster.py] => SNet: Task 1, Epoch 11/120 => Loss 0.215,  Train_accy 100.00, Test_accy 78.62
+2024-10-30 11:30:44,304 [foster.py] => SNet: Task 1, Epoch 16/120 => Loss 0.214,  Train_accy 100.00, Test_accy 80.95
+2024-10-30 11:30:52,951 [foster.py] => SNet: Task 1, Epoch 21/120 => Loss 0.211,  Train_accy 100.00, Test_accy 80.33
+2024-10-30 11:31:01,503 [foster.py] => SNet: Task 1, Epoch 26/120 => Loss 0.210,  Train_accy 100.00, Test_accy 80.71
+2024-10-30 11:31:10,168 [foster.py] => SNet: Task 1, Epoch 31/120 => Loss 0.213,  Train_accy 100.00, Test_accy 80.10
+2024-10-30 11:31:21,349 [foster.py] => SNet: Task 1, Epoch 36/120 => Loss 0.211,  Train_accy 100.00, Test_accy 82.21
+2024-10-30 11:31:33,310 [foster.py] => SNet: Task 1, Epoch 41/120 => Loss 0.210,  Train_accy 100.00, Test_accy 81.10
+2024-10-30 11:31:44,345 [foster.py] => SNet: Task 1, Epoch 46/120 => Loss 0.210,  Train_accy 100.00, Test_accy 80.95
+2024-10-30 11:31:55,328 [foster.py] => SNet: Task 1, Epoch 51/120 => Loss 0.209,  Train_accy 100.00, Test_accy 81.48
+2024-10-30 11:32:06,218 [foster.py] => SNet: Task 1, Epoch 56/120 => Loss 0.211,  Train_accy 100.00, Test_accy 81.19
+2024-10-30 11:32:16,913 [foster.py] => SNet: Task 1, Epoch 61/120 => Loss 0.208,  Train_accy 100.00, Test_accy 81.29
+2024-10-30 11:32:25,672 [foster.py] => SNet: Task 1, Epoch 66/120 => Loss 0.210,  Train_accy 100.00, Test_accy 80.55
+2024-10-30 11:32:34,135 [foster.py] => SNet: Task 1, Epoch 71/120 => Loss 0.208,  Train_accy 100.00, Test_accy 81.98
+2024-10-30 11:32:42,931 [foster.py] => SNet: Task 1, Epoch 76/120 => Loss 0.208,  Train_accy 100.00, Test_accy 81.81
+2024-10-30 11:32:51,613 [foster.py] => SNet: Task 1, Epoch 81/120 => Loss 0.210,  Train_accy 100.00, Test_accy 81.71
+2024-10-30 11:33:02,339 [foster.py] => SNet: Task 1, Epoch 86/120 => Loss 0.209,  Train_accy 100.00, Test_accy 81.48
+2024-10-30 11:33:12,900 [foster.py] => SNet: Task 1, Epoch 91/120 => Loss 0.209,  Train_accy 100.00, Test_accy 81.24
+2024-10-30 11:33:24,238 [foster.py] => SNet: Task 1, Epoch 96/120 => Loss 0.209,  Train_accy 100.00, Test_accy 81.31
+2024-10-30 11:33:34,692 [foster.py] => SNet: Task 1, Epoch 101/120 => Loss 0.210,  Train_accy 100.00, Test_accy 80.98
+2024-10-30 11:33:45,838 [foster.py] => SNet: Task 1, Epoch 106/120 => Loss 0.208,  Train_accy 100.00, Test_accy 81.88
+2024-10-30 11:33:56,981 [foster.py] => SNet: Task 1, Epoch 111/120 => Loss 0.209,  Train_accy 100.00, Test_accy 81.81
+2024-10-30 11:34:05,873 [foster.py] => SNet: Task 1, Epoch 116/120 => Loss 0.209,  Train_accy 100.00, Test_accy 81.69
+2024-10-30 11:34:12,197 [foster.py] => SNet: Task 1, Epoch 120/120 => Loss 0.210,  Train_accy 100.00
+2024-10-30 11:34:12,197 [foster.py] => do not weight align student!
+2024-10-30 11:34:12,777 [foster.py] => darknet eval: 
+2024-10-30 11:34:12,777 [foster.py] => CNN top1 curve: 81.31
+2024-10-30 11:34:12,777 [foster.py] => CNN top5 curve: 99.52
+2024-10-30 11:34:12,778 [base.py] => Reducing exemplars...(71 per classes)
+2024-10-30 11:34:14,047 [base.py] => Constructing exemplars...(71 per classes)
+2024-10-30 11:34:17,944 [trainer.py] => All params: 7701139
+2024-10-30 11:34:19,859 [foster.py] => Exemplar size: 497
+2024-10-30 11:34:19,860 [trainer.py] => CNN: {'total': 84.57, '00-04': 80.27, '05-06': 95.33, 'old': 80.27, 'new': 95.33}
+2024-10-30 11:34:19,860 [trainer.py] => NME: {'total': 83.55, '00-04': 79.73, '05-06': 93.08, 'old': 79.73, 'new': 93.08}
+2024-10-30 11:34:19,860 [trainer.py] => CNN top1 curve: [90.13, 84.57]
+2024-10-30 11:34:19,860 [trainer.py] => CNN top5 curve: [100.0, 99.62]
+2024-10-30 11:34:19,860 [trainer.py] => NME top1 curve: [89.53, 83.55]
+2024-10-30 11:34:19,860 [trainer.py] => NME top5 curve: [100.0, 99.45]
+
+2024-10-30 11:34:19,860 [trainer.py] => Average Accuracy (CNN): 87.35
+2024-10-30 11:34:19,860 [trainer.py] => Average Accuracy (NME): 86.53999999999999
+2024-10-30 11:34:19,861 [trainer.py] => All params: 7701139
+2024-10-30 11:34:19,862 [trainer.py] => Trainable params: 3854670
+2024-10-30 11:34:19,921 [foster.py] => Learning on 7-9
+2024-10-30 11:34:19,922 [foster.py] => All params: 7705241
+2024-10-30 11:34:19,923 [foster.py] => Trainable params: 3857746
+2024-10-30 11:34:20,003 [foster.py] => per cls weights : [1.01239929 1.01239929 1.01239929 1.01239929 1.01239929 1.01239929
+ 1.01239929 0.95660248 0.95660248]
+2024-10-30 11:34:22,648 [foster.py] => Task 2, Epoch 1/150 => Loss 2.624, Loss_clf 0.690, Loss_fe 0.821, Loss_kd 0.865, Train_accy 80.92, Test_accy 54.33
+2024-10-30 11:34:31,692 [foster.py] => Task 2, Epoch 6/150 => Loss 1.481, Loss_clf 0.084, Loss_fe 0.369, Loss_kd 0.799, Train_accy 97.26, Test_accy 55.00
+2024-10-30 11:34:41,409 [foster.py] => Task 2, Epoch 11/150 => Loss 1.238, Loss_clf 0.029, Loss_fe 0.185, Loss_kd 0.796, Train_accy 99.38, Test_accy 51.81
+2024-10-30 11:34:52,389 [foster.py] => Task 2, Epoch 16/150 => Loss 1.145, Loss_clf 0.018, Loss_fe 0.098, Loss_kd 0.801, Train_accy 99.62, Test_accy 69.11
+2024-10-30 11:35:03,647 [foster.py] => Task 2, Epoch 21/150 => Loss 1.165, Loss_clf 0.032, Loss_fe 0.106, Loss_kd 0.799, Train_accy 98.91, Test_accy 68.11
+2024-10-30 11:35:15,562 [foster.py] => Task 2, Epoch 26/150 => Loss 1.116, Loss_clf 0.018, Loss_fe 0.067, Loss_kd 0.802, Train_accy 99.64, Test_accy 63.13
+2024-10-30 11:35:26,461 [foster.py] => Task 2, Epoch 31/150 => Loss 1.038, Loss_clf 0.002, Loss_fe 0.002, Loss_kd 0.804, Train_accy 100.00, Test_accy 67.00
+2024-10-30 11:35:36,606 [foster.py] => Task 2, Epoch 36/150 => Loss 1.028, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.798, Train_accy 100.00, Test_accy 66.94
+2024-10-30 11:35:44,276 [foster.py] => Task 2, Epoch 41/150 => Loss 1.083, Loss_clf 0.014, Loss_fe 0.041, Loss_kd 0.800, Train_accy 99.73, Test_accy 61.13
+2024-10-30 11:35:52,429 [foster.py] => Task 2, Epoch 46/150 => Loss 1.029, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.798, Train_accy 100.00, Test_accy 66.83
+2024-10-30 11:36:00,738 [foster.py] => Task 2, Epoch 51/150 => Loss 1.025, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.795, Train_accy 100.00, Test_accy 67.94
+2024-10-30 11:36:09,550 [foster.py] => Task 2, Epoch 56/150 => Loss 1.029, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.798, Train_accy 100.00, Test_accy 67.13
+2024-10-30 11:36:19,887 [foster.py] => Task 2, Epoch 61/150 => Loss 1.031, Loss_clf 0.001, Loss_fe 0.002, Loss_kd 0.799, Train_accy 100.00, Test_accy 65.93
+2024-10-30 11:36:30,594 [foster.py] => Task 2, Epoch 66/150 => Loss 1.050, Loss_clf 0.004, Loss_fe 0.015, Loss_kd 0.801, Train_accy 99.98, Test_accy 66.39
+2024-10-30 11:36:40,516 [foster.py] => Task 2, Epoch 71/150 => Loss 1.029, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.799, Train_accy 100.00, Test_accy 66.57
+2024-10-30 11:36:50,148 [foster.py] => Task 2, Epoch 76/150 => Loss 1.024, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.795, Train_accy 100.00, Test_accy 65.93
+2024-10-30 11:37:00,202 [foster.py] => Task 2, Epoch 81/150 => Loss 1.033, Loss_clf 0.001, Loss_fe 0.002, Loss_kd 0.802, Train_accy 100.00, Test_accy 64.65
+2024-10-30 11:37:08,862 [foster.py] => Task 2, Epoch 86/150 => Loss 1.027, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.797, Train_accy 100.00, Test_accy 67.11
+2024-10-30 11:37:16,848 [foster.py] => Task 2, Epoch 91/150 => Loss 1.029, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.799, Train_accy 100.00, Test_accy 66.52
+2024-10-30 11:37:25,218 [foster.py] => Task 2, Epoch 96/150 => Loss 1.026, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.796, Train_accy 100.00, Test_accy 67.09
+2024-10-30 11:37:33,395 [foster.py] => Task 2, Epoch 101/150 => Loss 1.030, Loss_clf 0.001, Loss_fe 0.002, Loss_kd 0.799, Train_accy 100.00, Test_accy 66.57
+2024-10-30 11:37:42,564 [foster.py] => Task 2, Epoch 106/150 => Loss 1.040, Loss_clf 0.004, Loss_fe 0.004, Loss_kd 0.803, Train_accy 99.98, Test_accy 66.31
+2024-10-30 11:37:52,511 [foster.py] => Task 2, Epoch 111/150 => Loss 1.034, Loss_clf 0.002, Loss_fe 0.004, Loss_kd 0.800, Train_accy 100.00, Test_accy 66.48
+2024-10-30 11:38:02,834 [foster.py] => Task 2, Epoch 116/150 => Loss 1.029, Loss_clf 0.002, Loss_fe 0.002, Loss_kd 0.797, Train_accy 100.00, Test_accy 67.22
+2024-10-30 11:38:13,734 [foster.py] => Task 2, Epoch 121/150 => Loss 1.032, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.800, Train_accy 100.00, Test_accy 67.50
+2024-10-30 11:38:25,081 [foster.py] => Task 2, Epoch 126/150 => Loss 1.029, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.799, Train_accy 100.00, Test_accy 67.70
+2024-10-30 11:38:34,864 [foster.py] => Task 2, Epoch 131/150 => Loss 1.030, Loss_clf 0.001, Loss_fe 0.002, Loss_kd 0.798, Train_accy 100.00, Test_accy 68.11
+2024-10-30 11:38:43,387 [foster.py] => Task 2, Epoch 136/150 => Loss 1.031, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.800, Train_accy 100.00, Test_accy 69.28
+2024-10-30 11:38:51,595 [foster.py] => Task 2, Epoch 141/150 => Loss 1.029, Loss_clf 0.001, Loss_fe 0.001, Loss_kd 0.799, Train_accy 100.00, Test_accy 68.33
+2024-10-30 11:38:59,561 [foster.py] => Task 2, Epoch 146/150 => Loss 1.026, Loss_clf 0.001, Loss_fe 0.002, Loss_kd 0.796, Train_accy 100.00, Test_accy 65.69
+2024-10-30 11:39:05,040 [foster.py] => Task 2, Epoch 150/150 => Loss 1.031, Loss_clf 0.001, Loss_fe 0.002, Loss_kd 0.799, Train_accy 100.00
+2024-10-30 11:39:05,041 [inc_net.py] => align weights, gamma = 0.9900396466255188 
+2024-10-30 11:39:05,044 [foster.py] => per cls weights : [1.02623168 1.02623168 1.02623168 1.02623168 1.02623168 1.02623168
+ 1.02623168 0.90818914 0.90818914]
+2024-10-30 11:39:07,541 [foster.py] => SNet: Task 2, Epoch 1/120 => Loss 1.024,  Train_accy 73.16, Test_accy 25.70
+2024-10-30 11:39:18,147 [foster.py] => SNet: Task 2, Epoch 6/120 => Loss 0.268,  Train_accy 99.87, Test_accy 61.80
+2024-10-30 11:39:29,240 [foster.py] => SNet: Task 2, Epoch 11/120 => Loss 0.248,  Train_accy 100.00, Test_accy 66.94
+2024-10-30 11:39:40,327 [foster.py] => SNet: Task 2, Epoch 16/120 => Loss 0.247,  Train_accy 100.00, Test_accy 64.72
+2024-10-30 11:39:51,279 [foster.py] => SNet: Task 2, Epoch 21/120 => Loss 0.246,  Train_accy 100.00, Test_accy 63.04
+2024-10-30 11:40:02,086 [foster.py] => SNet: Task 2, Epoch 26/120 => Loss 0.243,  Train_accy 100.00, Test_accy 64.20
+2024-10-30 11:40:11,891 [foster.py] => SNet: Task 2, Epoch 31/120 => Loss 0.244,  Train_accy 100.00, Test_accy 65.02
+2024-10-30 11:40:20,529 [foster.py] => SNet: Task 2, Epoch 36/120 => Loss 0.244,  Train_accy 100.00, Test_accy 65.61
+2024-10-30 11:40:29,567 [foster.py] => SNet: Task 2, Epoch 41/120 => Loss 0.245,  Train_accy 100.00, Test_accy 65.98
+2024-10-30 11:40:38,873 [foster.py] => SNet: Task 2, Epoch 46/120 => Loss 0.242,  Train_accy 100.00, Test_accy 66.37
+2024-10-30 11:40:49,159 [foster.py] => SNet: Task 2, Epoch 51/120 => Loss 0.244,  Train_accy 100.00, Test_accy 63.02
+2024-10-30 11:41:00,368 [foster.py] => SNet: Task 2, Epoch 56/120 => Loss 0.241,  Train_accy 100.00, Test_accy 66.35
+2024-10-30 11:41:11,617 [foster.py] => SNet: Task 2, Epoch 61/120 => Loss 0.247,  Train_accy 99.89, Test_accy 63.11
+2024-10-30 11:41:23,392 [foster.py] => SNet: Task 2, Epoch 66/120 => Loss 0.243,  Train_accy 100.00, Test_accy 62.59
+2024-10-30 11:41:33,721 [foster.py] => SNet: Task 2, Epoch 71/120 => Loss 0.242,  Train_accy 100.00, Test_accy 64.98
+2024-10-30 11:41:43,402 [foster.py] => SNet: Task 2, Epoch 76/120 => Loss 0.244,  Train_accy 100.00, Test_accy 63.65
+2024-10-30 11:41:51,922 [foster.py] => SNet: Task 2, Epoch 81/120 => Loss 0.242,  Train_accy 100.00, Test_accy 64.41
+2024-10-30 11:42:00,761 [foster.py] => SNet: Task 2, Epoch 86/120 => Loss 0.242,  Train_accy 100.00, Test_accy 63.06
+2024-10-30 11:42:09,871 [foster.py] => SNet: Task 2, Epoch 91/120 => Loss 0.240,  Train_accy 100.00, Test_accy 64.39
+2024-10-30 11:42:20,917 [foster.py] => SNet: Task 2, Epoch 96/120 => Loss 0.243,  Train_accy 100.00, Test_accy 63.13
+2024-10-30 11:42:32,032 [foster.py] => SNet: Task 2, Epoch 101/120 => Loss 0.241,  Train_accy 100.00, Test_accy 64.54
+2024-10-30 11:42:42,946 [foster.py] => SNet: Task 2, Epoch 106/120 => Loss 0.242,  Train_accy 100.00, Test_accy 64.50
+2024-10-30 11:42:53,135 [foster.py] => SNet: Task 2, Epoch 111/120 => Loss 0.240,  Train_accy 100.00, Test_accy 65.17
+2024-10-30 11:43:03,648 [foster.py] => SNet: Task 2, Epoch 116/120 => Loss 0.243,  Train_accy 100.00, Test_accy 64.33
+2024-10-30 11:43:10,219 [foster.py] => SNet: Task 2, Epoch 120/120 => Loss 0.241,  Train_accy 100.00
+2024-10-30 11:43:10,219 [foster.py] => do not weight align student!
+2024-10-30 11:43:11,019 [foster.py] => darknet eval: 
+2024-10-30 11:43:11,020 [foster.py] => CNN top1 curve: 64.72
+2024-10-30 11:43:11,020 [foster.py] => CNN top5 curve: 96.76
+2024-10-30 11:43:11,021 [base.py] => Reducing exemplars...(55 per classes)
+2024-10-30 11:43:12,398 [base.py] => Constructing exemplars...(55 per classes)
+2024-10-30 11:43:15,238 [trainer.py] => All params: 7705241
+2024-10-30 11:43:17,226 [foster.py] => Exemplar size: 495
+2024-10-30 11:43:17,226 [trainer.py] => CNN: {'total': 67.37, '00-04': 57.5, '05-06': 72.42, '07-08': 87.0, 'old': 61.76, 'new': 87.0}
+2024-10-30 11:43:17,226 [trainer.py] => NME: {'total': 71.78, '00-04': 69.57, '05-06': 65.08, '07-08': 84.0, 'old': 68.29, 'new': 84.0}
+2024-10-30 11:43:17,226 [trainer.py] => CNN top1 curve: [90.13, 84.57, 67.37]
+2024-10-30 11:43:17,226 [trainer.py] => CNN top5 curve: [100.0, 99.62, 96.96]
+2024-10-30 11:43:17,226 [trainer.py] => NME top1 curve: [89.53, 83.55, 71.78]
+2024-10-30 11:43:17,226 [trainer.py] => NME top5 curve: [100.0, 99.45, 97.76]
+
+2024-10-30 11:43:17,226 [trainer.py] => Average Accuracy (CNN): 80.69
+2024-10-30 11:43:17,226 [trainer.py] => Average Accuracy (NME): 81.61999999999999
+2024-10-30 11:43:17,227 [trainer.py] => Forgetting (CNN): 27.769999999999996

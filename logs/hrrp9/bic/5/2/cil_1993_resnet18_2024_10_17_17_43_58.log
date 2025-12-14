@@ -1,0 +1,580 @@
+2024-10-17 17:43:58,589 [trainer.py] => config: ./exps/bic.json
+2024-10-17 17:43:58,589 [trainer.py] => prefix: cil
+2024-10-17 17:43:58,589 [trainer.py] => dataset: hrrp9
+2024-10-17 17:43:58,589 [trainer.py] => memory_size: 500
+2024-10-17 17:43:58,589 [trainer.py] => memory_per_class: 20
+2024-10-17 17:43:58,589 [trainer.py] => fixed_memory: False
+2024-10-17 17:43:58,589 [trainer.py] => shuffle: True
+2024-10-17 17:43:58,589 [trainer.py] => init_cls: 5
+2024-10-17 17:43:58,589 [trainer.py] => increment: 2
+2024-10-17 17:43:58,589 [trainer.py] => model_name: bic
+2024-10-17 17:43:58,589 [trainer.py] => convnet_type: resnet18
+2024-10-17 17:43:58,589 [trainer.py] => device: [device(type='cuda', index=1)]
+2024-10-17 17:43:58,589 [trainer.py] => init_train: False
+2024-10-17 17:43:58,589 [trainer.py] => convnet_path: checkpoints/init_train/resnet18_42503.pth
+2024-10-17 17:43:58,589 [trainer.py] => fc_path: checkpoints/init_train/fc_42503.pth
+2024-10-17 17:43:58,589 [trainer.py] => seed: 1993
+2024-10-17 17:43:58,589 [trainer.py] => init_epochs: 0
+2024-10-17 17:43:58,589 [trainer.py] => epochs: 120
+2024-10-17 17:43:58,589 [trainer.py] => lrate: 0.1
+2024-10-17 17:43:58,589 [trainer.py] => milestones: [60, 100]
+2024-10-17 17:43:58,590 [trainer.py] => lrate_decay: 0.1
+2024-10-17 17:43:58,590 [trainer.py] => momentum: 0.9
+2024-10-17 17:43:58,590 [trainer.py] => batch_size: 128
+2024-10-17 17:43:58,590 [trainer.py] => split_ratio: 0.1
+2024-10-17 17:43:58,590 [trainer.py] => weight_decay: 0.0002
+2024-10-17 17:43:58,590 [trainer.py] => num_workers: 0
+2024-10-17 17:43:58,590 [trainer.py] => T: 2
+2024-10-17 17:43:58,590 [trainer.py] => bc_lrate: 0.01
+2024-10-17 17:43:59,241 [data_manager.py] => [4, 2, 5, 0, 3, 6, 7, 8, 1]
+2024-10-17 17:43:59,695 [trainer.py] => All params: 3843904
+2024-10-17 17:43:59,695 [trainer.py] => Trainable params: 3843904
+2024-10-17 17:43:59,720 [bic.py] => Learning on 0-5
+2024-10-17 17:43:59,761 [bic.py] => Parameters of bias layer:
+2024-10-17 17:43:59,762 [bic.py] => 0 => 1.000, 0.000
+2024-10-17 17:43:59,994 [base.py] => Reducing exemplars...(100 per classes)
+2024-10-17 17:43:59,994 [base.py] => Constructing exemplars...(100 per classes)
+2024-10-17 17:44:05,679 [bic.py] => Parameters of bias layer:
+2024-10-17 17:44:05,680 [bic.py] => 0 => 1.000, 0.000
+2024-10-17 17:44:05,681 [trainer.py] => All params: 3846471
+2024-10-17 17:44:06,048 [bic.py] => Exemplar size: 500
+2024-10-17 17:44:06,049 [trainer.py] => CNN: {'total': 89.93, '00-04': 89.93, 'old': 0, 'new': 89.93}
+2024-10-17 17:44:06,049 [trainer.py] => NME: {'total': 90.0, '00-04': 90.0, 'old': 0, 'new': 90.0}
+2024-10-17 17:44:06,049 [trainer.py] => CNN top1 curve: [89.93]
+2024-10-17 17:44:06,049 [trainer.py] => CNN top5 curve: [100.0]
+2024-10-17 17:44:06,049 [trainer.py] => NME top1 curve: [90.0]
+2024-10-17 17:44:06,049 [trainer.py] => NME top5 curve: [100.0]
+
+2024-10-17 17:44:06,049 [trainer.py] => Average Accuracy (CNN): 89.93
+2024-10-17 17:44:06,049 [trainer.py] => Average Accuracy (NME): 90.0
+2024-10-17 17:44:06,050 [trainer.py] => All params: 3846471
+2024-10-17 17:44:06,050 [trainer.py] => Trainable params: 3846471
+2024-10-17 17:44:06,051 [bic.py] => Learning on 5-7
+2024-10-17 17:44:06,061 [bic.py] => Stage1 dset: 4430, Stage2 dset: 70
+2024-10-17 17:44:06,061 [bic.py] => Lambda: 0.714
+2024-10-17 17:44:06,068 [bic.py] => Parameters of bias layer:
+2024-10-17 17:44:06,068 [bic.py] => 0 => 1.000, 0.000
+2024-10-17 17:44:06,068 [bic.py] => 1 => 1.000, 0.000
+2024-10-17 17:44:07,322 [bic.py] => training => Task 1, Epoch 1/120 => Loss 1.028, Train_accy 87.340, Test_accy 37.290
+2024-10-17 17:44:08,393 [bic.py] => training => Task 1, Epoch 2/120 => Loss 0.765, Train_accy 94.470, Test_accy 53.360
+2024-10-17 17:44:09,504 [bic.py] => training => Task 1, Epoch 3/120 => Loss 0.711, Train_accy 98.470, Test_accy 58.380
+2024-10-17 17:44:10,508 [bic.py] => training => Task 1, Epoch 4/120 => Loss 0.690, Train_accy 99.260, Test_accy 60.760
+2024-10-17 17:44:11,468 [bic.py] => training => Task 1, Epoch 5/120 => Loss 0.680, Train_accy 99.800, Test_accy 60.290
+2024-10-17 17:44:12,473 [bic.py] => training => Task 1, Epoch 6/120 => Loss 0.674, Train_accy 99.930, Test_accy 64.170
+2024-10-17 17:44:13,446 [bic.py] => training => Task 1, Epoch 7/120 => Loss 0.670, Train_accy 100.000, Test_accy 60.500
+2024-10-17 17:44:14,508 [bic.py] => training => Task 1, Epoch 8/120 => Loss 0.668, Train_accy 100.000, Test_accy 63.050
+2024-10-17 17:44:15,514 [bic.py] => training => Task 1, Epoch 9/120 => Loss 0.664, Train_accy 100.000, Test_accy 61.860
+2024-10-17 17:44:16,507 [bic.py] => training => Task 1, Epoch 10/120 => Loss 0.664, Train_accy 100.000, Test_accy 62.690
+2024-10-17 17:44:17,498 [bic.py] => training => Task 1, Epoch 11/120 => Loss 0.663, Train_accy 100.000, Test_accy 62.170
+2024-10-17 17:44:18,527 [bic.py] => training => Task 1, Epoch 12/120 => Loss 0.662, Train_accy 99.980, Test_accy 62.670
+2024-10-17 17:44:19,541 [bic.py] => training => Task 1, Epoch 13/120 => Loss 0.664, Train_accy 100.000, Test_accy 64.740
+2024-10-17 17:44:20,542 [bic.py] => training => Task 1, Epoch 14/120 => Loss 0.662, Train_accy 100.000, Test_accy 61.210
+2024-10-17 17:44:21,579 [bic.py] => training => Task 1, Epoch 15/120 => Loss 0.661, Train_accy 100.000, Test_accy 65.310
+2024-10-17 17:44:22,492 [bic.py] => training => Task 1, Epoch 16/120 => Loss 0.658, Train_accy 100.000, Test_accy 66.020
+2024-10-17 17:44:23,425 [bic.py] => training => Task 1, Epoch 17/120 => Loss 0.659, Train_accy 100.000, Test_accy 63.600
+2024-10-17 17:44:24,466 [bic.py] => training => Task 1, Epoch 18/120 => Loss 0.661, Train_accy 100.000, Test_accy 63.050
+2024-10-17 17:44:25,447 [bic.py] => training => Task 1, Epoch 19/120 => Loss 0.661, Train_accy 100.000, Test_accy 66.570
+2024-10-17 17:44:26,338 [bic.py] => training => Task 1, Epoch 20/120 => Loss 0.660, Train_accy 100.000, Test_accy 67.570
+2024-10-17 17:44:27,228 [bic.py] => training => Task 1, Epoch 21/120 => Loss 0.659, Train_accy 100.000, Test_accy 65.050
+2024-10-17 17:44:28,208 [bic.py] => training => Task 1, Epoch 22/120 => Loss 0.659, Train_accy 100.000, Test_accy 63.550
+2024-10-17 17:44:29,186 [bic.py] => training => Task 1, Epoch 23/120 => Loss 0.659, Train_accy 100.000, Test_accy 63.290
+2024-10-17 17:44:30,238 [bic.py] => training => Task 1, Epoch 24/120 => Loss 0.659, Train_accy 100.000, Test_accy 68.740
+2024-10-17 17:44:31,236 [bic.py] => training => Task 1, Epoch 25/120 => Loss 0.659, Train_accy 100.000, Test_accy 65.950
+2024-10-17 17:44:32,243 [bic.py] => training => Task 1, Epoch 26/120 => Loss 0.659, Train_accy 100.000, Test_accy 65.670
+2024-10-17 17:44:33,216 [bic.py] => training => Task 1, Epoch 27/120 => Loss 0.658, Train_accy 100.000, Test_accy 64.170
+2024-10-17 17:44:34,238 [bic.py] => training => Task 1, Epoch 28/120 => Loss 0.659, Train_accy 100.000, Test_accy 64.620
+2024-10-17 17:44:35,285 [bic.py] => training => Task 1, Epoch 29/120 => Loss 0.658, Train_accy 100.000, Test_accy 68.520
+2024-10-17 17:44:36,274 [bic.py] => training => Task 1, Epoch 30/120 => Loss 0.657, Train_accy 100.000, Test_accy 65.190
+2024-10-17 17:44:37,184 [bic.py] => training => Task 1, Epoch 31/120 => Loss 0.658, Train_accy 100.000, Test_accy 67.860
+2024-10-17 17:44:38,222 [bic.py] => training => Task 1, Epoch 32/120 => Loss 0.658, Train_accy 100.000, Test_accy 67.330
+2024-10-17 17:44:39,274 [bic.py] => training => Task 1, Epoch 33/120 => Loss 0.657, Train_accy 100.000, Test_accy 66.430
+2024-10-17 17:44:40,262 [bic.py] => training => Task 1, Epoch 34/120 => Loss 0.657, Train_accy 100.000, Test_accy 67.930
+2024-10-17 17:44:41,286 [bic.py] => training => Task 1, Epoch 35/120 => Loss 0.656, Train_accy 100.000, Test_accy 67.430
+2024-10-17 17:44:42,311 [bic.py] => training => Task 1, Epoch 36/120 => Loss 0.657, Train_accy 100.000, Test_accy 67.190
+2024-10-17 17:44:43,316 [bic.py] => training => Task 1, Epoch 37/120 => Loss 0.658, Train_accy 100.000, Test_accy 63.570
+2024-10-17 17:44:44,331 [bic.py] => training => Task 1, Epoch 38/120 => Loss 0.658, Train_accy 100.000, Test_accy 67.600
+2024-10-17 17:44:45,335 [bic.py] => training => Task 1, Epoch 39/120 => Loss 0.659, Train_accy 100.000, Test_accy 69.900
+2024-10-17 17:44:46,350 [bic.py] => training => Task 1, Epoch 40/120 => Loss 0.658, Train_accy 100.000, Test_accy 69.740
+2024-10-17 17:44:47,282 [bic.py] => training => Task 1, Epoch 41/120 => Loss 0.656, Train_accy 100.000, Test_accy 66.380
+2024-10-17 17:44:48,294 [bic.py] => training => Task 1, Epoch 42/120 => Loss 0.657, Train_accy 100.000, Test_accy 67.830
+2024-10-17 17:44:49,296 [bic.py] => training => Task 1, Epoch 43/120 => Loss 0.656, Train_accy 100.000, Test_accy 66.260
+2024-10-17 17:44:50,303 [bic.py] => training => Task 1, Epoch 44/120 => Loss 0.657, Train_accy 100.000, Test_accy 66.120
+2024-10-17 17:44:51,306 [bic.py] => training => Task 1, Epoch 45/120 => Loss 0.656, Train_accy 100.000, Test_accy 65.310
+2024-10-17 17:44:52,309 [bic.py] => training => Task 1, Epoch 46/120 => Loss 0.658, Train_accy 100.000, Test_accy 64.640
+2024-10-17 17:44:53,336 [bic.py] => training => Task 1, Epoch 47/120 => Loss 0.658, Train_accy 100.000, Test_accy 65.740
+2024-10-17 17:44:54,393 [bic.py] => training => Task 1, Epoch 48/120 => Loss 0.656, Train_accy 100.000, Test_accy 66.290
+2024-10-17 17:44:55,411 [bic.py] => training => Task 1, Epoch 49/120 => Loss 0.657, Train_accy 100.000, Test_accy 64.710
+2024-10-17 17:44:56,397 [bic.py] => training => Task 1, Epoch 50/120 => Loss 0.655, Train_accy 100.000, Test_accy 65.950
+2024-10-17 17:44:57,372 [bic.py] => training => Task 1, Epoch 51/120 => Loss 0.656, Train_accy 100.000, Test_accy 67.120
+2024-10-17 17:44:58,389 [bic.py] => training => Task 1, Epoch 52/120 => Loss 0.657, Train_accy 100.000, Test_accy 66.210
+2024-10-17 17:44:59,397 [bic.py] => training => Task 1, Epoch 53/120 => Loss 0.656, Train_accy 100.000, Test_accy 61.430
+2024-10-17 17:45:00,415 [bic.py] => training => Task 1, Epoch 54/120 => Loss 0.656, Train_accy 100.000, Test_accy 64.830
+2024-10-17 17:45:01,461 [bic.py] => training => Task 1, Epoch 55/120 => Loss 0.655, Train_accy 100.000, Test_accy 66.140
+2024-10-17 17:45:02,490 [bic.py] => training => Task 1, Epoch 56/120 => Loss 0.655, Train_accy 100.000, Test_accy 69.020
+2024-10-17 17:45:03,544 [bic.py] => training => Task 1, Epoch 57/120 => Loss 0.657, Train_accy 100.000, Test_accy 63.480
+2024-10-17 17:45:04,539 [bic.py] => training => Task 1, Epoch 58/120 => Loss 0.658, Train_accy 100.000, Test_accy 64.740
+2024-10-17 17:45:05,655 [bic.py] => training => Task 1, Epoch 59/120 => Loss 0.656, Train_accy 100.000, Test_accy 68.400
+2024-10-17 17:45:06,579 [bic.py] => training => Task 1, Epoch 60/120 => Loss 0.656, Train_accy 100.000, Test_accy 66.760
+2024-10-17 17:45:07,557 [bic.py] => training => Task 1, Epoch 61/120 => Loss 0.655, Train_accy 100.000, Test_accy 66.900
+2024-10-17 17:45:08,554 [bic.py] => training => Task 1, Epoch 62/120 => Loss 0.653, Train_accy 100.000, Test_accy 66.360
+2024-10-17 17:45:09,551 [bic.py] => training => Task 1, Epoch 63/120 => Loss 0.653, Train_accy 100.000, Test_accy 67.690
+2024-10-17 17:45:10,562 [bic.py] => training => Task 1, Epoch 64/120 => Loss 0.653, Train_accy 100.000, Test_accy 67.000
+2024-10-17 17:45:11,568 [bic.py] => training => Task 1, Epoch 65/120 => Loss 0.653, Train_accy 100.000, Test_accy 67.210
+2024-10-17 17:45:12,573 [bic.py] => training => Task 1, Epoch 66/120 => Loss 0.652, Train_accy 100.000, Test_accy 66.900
+2024-10-17 17:45:13,598 [bic.py] => training => Task 1, Epoch 67/120 => Loss 0.652, Train_accy 100.000, Test_accy 67.450
+2024-10-17 17:45:14,604 [bic.py] => training => Task 1, Epoch 68/120 => Loss 0.653, Train_accy 100.000, Test_accy 67.210
+2024-10-17 17:45:15,636 [bic.py] => training => Task 1, Epoch 69/120 => Loss 0.651, Train_accy 100.000, Test_accy 67.290
+2024-10-17 17:45:16,651 [bic.py] => training => Task 1, Epoch 70/120 => Loss 0.652, Train_accy 100.000, Test_accy 66.860
+2024-10-17 17:45:17,664 [bic.py] => training => Task 1, Epoch 71/120 => Loss 0.652, Train_accy 100.000, Test_accy 67.830
+2024-10-17 17:45:18,688 [bic.py] => training => Task 1, Epoch 72/120 => Loss 0.652, Train_accy 100.000, Test_accy 67.330
+2024-10-17 17:45:19,678 [bic.py] => training => Task 1, Epoch 73/120 => Loss 0.651, Train_accy 100.000, Test_accy 67.500
+2024-10-17 17:45:20,710 [bic.py] => training => Task 1, Epoch 74/120 => Loss 0.652, Train_accy 100.000, Test_accy 67.620
+2024-10-17 17:45:21,832 [bic.py] => training => Task 1, Epoch 75/120 => Loss 0.653, Train_accy 100.000, Test_accy 67.210
+2024-10-17 17:45:22,839 [bic.py] => training => Task 1, Epoch 76/120 => Loss 0.653, Train_accy 100.000, Test_accy 67.740
+2024-10-17 17:45:23,778 [bic.py] => training => Task 1, Epoch 77/120 => Loss 0.652, Train_accy 100.000, Test_accy 68.000
+2024-10-17 17:45:24,806 [bic.py] => training => Task 1, Epoch 78/120 => Loss 0.652, Train_accy 100.000, Test_accy 67.810
+2024-10-17 17:45:25,762 [bic.py] => training => Task 1, Epoch 79/120 => Loss 0.651, Train_accy 100.000, Test_accy 68.500
+2024-10-17 17:45:26,758 [bic.py] => training => Task 1, Epoch 80/120 => Loss 0.652, Train_accy 100.000, Test_accy 67.830
+2024-10-17 17:45:27,779 [bic.py] => training => Task 1, Epoch 81/120 => Loss 0.653, Train_accy 100.000, Test_accy 67.480
+2024-10-17 17:45:28,773 [bic.py] => training => Task 1, Epoch 82/120 => Loss 0.652, Train_accy 100.000, Test_accy 67.810
+2024-10-17 17:45:29,774 [bic.py] => training => Task 1, Epoch 83/120 => Loss 0.652, Train_accy 100.000, Test_accy 66.860
+2024-10-17 17:45:30,767 [bic.py] => training => Task 1, Epoch 84/120 => Loss 0.653, Train_accy 100.000, Test_accy 67.860
+2024-10-17 17:45:31,767 [bic.py] => training => Task 1, Epoch 85/120 => Loss 0.651, Train_accy 100.000, Test_accy 68.430
+2024-10-17 17:45:32,784 [bic.py] => training => Task 1, Epoch 86/120 => Loss 0.652, Train_accy 100.000, Test_accy 67.570
+2024-10-17 17:45:33,749 [bic.py] => training => Task 1, Epoch 87/120 => Loss 0.652, Train_accy 100.000, Test_accy 67.020
+2024-10-17 17:45:34,750 [bic.py] => training => Task 1, Epoch 88/120 => Loss 0.653, Train_accy 100.000, Test_accy 68.240
+2024-10-17 17:45:35,784 [bic.py] => training => Task 1, Epoch 89/120 => Loss 0.652, Train_accy 100.000, Test_accy 67.120
+2024-10-17 17:45:36,783 [bic.py] => training => Task 1, Epoch 90/120 => Loss 0.652, Train_accy 100.000, Test_accy 68.290
+2024-10-17 17:45:37,791 [bic.py] => training => Task 1, Epoch 91/120 => Loss 0.652, Train_accy 100.000, Test_accy 68.050
+2024-10-17 17:45:38,789 [bic.py] => training => Task 1, Epoch 92/120 => Loss 0.653, Train_accy 100.000, Test_accy 67.600
+2024-10-17 17:45:39,750 [bic.py] => training => Task 1, Epoch 93/120 => Loss 0.651, Train_accy 100.000, Test_accy 67.860
+2024-10-17 17:45:40,758 [bic.py] => training => Task 1, Epoch 94/120 => Loss 0.652, Train_accy 100.000, Test_accy 67.380
+2024-10-17 17:45:41,786 [bic.py] => training => Task 1, Epoch 95/120 => Loss 0.652, Train_accy 100.000, Test_accy 67.790
+2024-10-17 17:45:42,804 [bic.py] => training => Task 1, Epoch 96/120 => Loss 0.650, Train_accy 100.000, Test_accy 67.830
+2024-10-17 17:45:43,804 [bic.py] => training => Task 1, Epoch 97/120 => Loss 0.652, Train_accy 100.000, Test_accy 67.050
+2024-10-17 17:45:44,844 [bic.py] => training => Task 1, Epoch 98/120 => Loss 0.652, Train_accy 100.000, Test_accy 68.260
+2024-10-17 17:45:45,869 [bic.py] => training => Task 1, Epoch 99/120 => Loss 0.652, Train_accy 100.000, Test_accy 68.520
+2024-10-17 17:45:46,873 [bic.py] => training => Task 1, Epoch 100/120 => Loss 0.652, Train_accy 100.000, Test_accy 67.360
+2024-10-17 17:45:47,882 [bic.py] => training => Task 1, Epoch 101/120 => Loss 0.652, Train_accy 100.000, Test_accy 67.900
+2024-10-17 17:45:48,908 [bic.py] => training => Task 1, Epoch 102/120 => Loss 0.651, Train_accy 100.000, Test_accy 67.620
+2024-10-17 17:45:49,908 [bic.py] => training => Task 1, Epoch 103/120 => Loss 0.652, Train_accy 100.000, Test_accy 67.830
+2024-10-17 17:45:50,922 [bic.py] => training => Task 1, Epoch 104/120 => Loss 0.652, Train_accy 100.000, Test_accy 67.360
+2024-10-17 17:45:51,970 [bic.py] => training => Task 1, Epoch 105/120 => Loss 0.651, Train_accy 100.000, Test_accy 68.000
+2024-10-17 17:45:52,976 [bic.py] => training => Task 1, Epoch 106/120 => Loss 0.652, Train_accy 100.000, Test_accy 67.980
+2024-10-17 17:45:54,001 [bic.py] => training => Task 1, Epoch 107/120 => Loss 0.651, Train_accy 100.000, Test_accy 67.670
+2024-10-17 17:45:55,011 [bic.py] => training => Task 1, Epoch 108/120 => Loss 0.652, Train_accy 100.000, Test_accy 67.620
+2024-10-17 17:45:56,003 [bic.py] => training => Task 1, Epoch 109/120 => Loss 0.651, Train_accy 100.000, Test_accy 67.810
+2024-10-17 17:45:57,036 [bic.py] => training => Task 1, Epoch 110/120 => Loss 0.651, Train_accy 100.000, Test_accy 68.500
+2024-10-17 17:45:58,063 [bic.py] => training => Task 1, Epoch 111/120 => Loss 0.652, Train_accy 100.000, Test_accy 68.520
+2024-10-17 17:45:59,070 [bic.py] => training => Task 1, Epoch 112/120 => Loss 0.651, Train_accy 100.000, Test_accy 68.140
+2024-10-17 17:46:00,055 [bic.py] => training => Task 1, Epoch 113/120 => Loss 0.652, Train_accy 100.000, Test_accy 67.790
+2024-10-17 17:46:01,036 [bic.py] => training => Task 1, Epoch 114/120 => Loss 0.652, Train_accy 100.000, Test_accy 68.140
+2024-10-17 17:46:02,016 [bic.py] => training => Task 1, Epoch 115/120 => Loss 0.653, Train_accy 100.000, Test_accy 67.830
+2024-10-17 17:46:03,025 [bic.py] => training => Task 1, Epoch 116/120 => Loss 0.652, Train_accy 100.000, Test_accy 68.120
+2024-10-17 17:46:04,016 [bic.py] => training => Task 1, Epoch 117/120 => Loss 0.651, Train_accy 100.000, Test_accy 67.570
+2024-10-17 17:46:05,086 [bic.py] => training => Task 1, Epoch 118/120 => Loss 0.651, Train_accy 100.000, Test_accy 68.000
+2024-10-17 17:46:06,064 [bic.py] => training => Task 1, Epoch 119/120 => Loss 0.652, Train_accy 100.000, Test_accy 67.790
+2024-10-17 17:46:07,053 [bic.py] => training => Task 1, Epoch 120/120 => Loss 0.651, Train_accy 100.000, Test_accy 67.310
+2024-10-17 17:46:07,240 [bic.py] => bias_correction => Task 1, Epoch 1/120 => Loss 1.476, Train_accy 84.290, Test_accy 67.480
+2024-10-17 17:46:07,399 [bic.py] => bias_correction => Task 1, Epoch 2/120 => Loss 1.458, Train_accy 84.290, Test_accy 68.980
+2024-10-17 17:46:07,557 [bic.py] => bias_correction => Task 1, Epoch 3/120 => Loss 1.422, Train_accy 91.430, Test_accy 72.210
+2024-10-17 17:46:07,714 [bic.py] => bias_correction => Task 1, Epoch 4/120 => Loss 1.369, Train_accy 94.290, Test_accy 77.050
+2024-10-17 17:46:07,871 [bic.py] => bias_correction => Task 1, Epoch 5/120 => Loss 1.312, Train_accy 97.140, Test_accy 79.810
+2024-10-17 17:46:08,024 [bic.py] => bias_correction => Task 1, Epoch 6/120 => Loss 1.282, Train_accy 91.430, Test_accy 77.190
+2024-10-17 17:46:08,179 [bic.py] => bias_correction => Task 1, Epoch 7/120 => Loss 1.312, Train_accy 82.860, Test_accy 73.380
+2024-10-17 17:46:08,338 [bic.py] => bias_correction => Task 1, Epoch 8/120 => Loss 1.356, Train_accy 78.570, Test_accy 71.740
+2024-10-17 17:46:08,490 [bic.py] => bias_correction => Task 1, Epoch 9/120 => Loss 1.373, Train_accy 81.430, Test_accy 72.760
+2024-10-17 17:46:08,650 [bic.py] => bias_correction => Task 1, Epoch 10/120 => Loss 1.362, Train_accy 87.140, Test_accy 75.600
+2024-10-17 17:46:08,804 [bic.py] => bias_correction => Task 1, Epoch 11/120 => Loss 1.326, Train_accy 94.290, Test_accy 78.430
+2024-10-17 17:46:08,960 [bic.py] => bias_correction => Task 1, Epoch 12/120 => Loss 1.287, Train_accy 97.140, Test_accy 78.710
+2024-10-17 17:46:09,112 [bic.py] => bias_correction => Task 1, Epoch 13/120 => Loss 1.281, Train_accy 91.430, Test_accy 75.380
+2024-10-17 17:46:09,271 [bic.py] => bias_correction => Task 1, Epoch 14/120 => Loss 1.300, Train_accy 90.000, Test_accy 73.020
+2024-10-17 17:46:09,425 [bic.py] => bias_correction => Task 1, Epoch 15/120 => Loss 1.318, Train_accy 90.000, Test_accy 71.760
+2024-10-17 17:46:09,579 [bic.py] => bias_correction => Task 1, Epoch 16/120 => Loss 1.324, Train_accy 90.000, Test_accy 72.830
+2024-10-17 17:46:09,731 [bic.py] => bias_correction => Task 1, Epoch 17/120 => Loss 1.317, Train_accy 91.430, Test_accy 74.310
+2024-10-17 17:46:09,884 [bic.py] => bias_correction => Task 1, Epoch 18/120 => Loss 1.300, Train_accy 94.290, Test_accy 77.260
+2024-10-17 17:46:10,041 [bic.py] => bias_correction => Task 1, Epoch 19/120 => Loss 1.282, Train_accy 95.710, Test_accy 79.170
+2024-10-17 17:46:10,198 [bic.py] => bias_correction => Task 1, Epoch 20/120 => Loss 1.275, Train_accy 94.290, Test_accy 78.170
+2024-10-17 17:46:10,373 [bic.py] => bias_correction => Task 1, Epoch 21/120 => Loss 1.284, Train_accy 92.860, Test_accy 77.900
+2024-10-17 17:46:10,527 [bic.py] => bias_correction => Task 1, Epoch 22/120 => Loss 1.296, Train_accy 92.860, Test_accy 77.640
+2024-10-17 17:46:10,684 [bic.py] => bias_correction => Task 1, Epoch 23/120 => Loss 1.297, Train_accy 92.860, Test_accy 78.140
+2024-10-17 17:46:10,847 [bic.py] => bias_correction => Task 1, Epoch 24/120 => Loss 1.287, Train_accy 97.140, Test_accy 78.860
+2024-10-17 17:46:11,001 [bic.py] => bias_correction => Task 1, Epoch 25/120 => Loss 1.276, Train_accy 94.290, Test_accy 78.900
+2024-10-17 17:46:11,159 [bic.py] => bias_correction => Task 1, Epoch 26/120 => Loss 1.273, Train_accy 94.290, Test_accy 77.400
+2024-10-17 17:46:11,315 [bic.py] => bias_correction => Task 1, Epoch 27/120 => Loss 1.277, Train_accy 91.430, Test_accy 76.400
+2024-10-17 17:46:11,471 [bic.py] => bias_correction => Task 1, Epoch 28/120 => Loss 1.282, Train_accy 91.430, Test_accy 76.070
+2024-10-17 17:46:11,631 [bic.py] => bias_correction => Task 1, Epoch 29/120 => Loss 1.283, Train_accy 92.860, Test_accy 76.600
+2024-10-17 17:46:11,788 [bic.py] => bias_correction => Task 1, Epoch 30/120 => Loss 1.280, Train_accy 95.710, Test_accy 77.790
+2024-10-17 17:46:11,946 [bic.py] => bias_correction => Task 1, Epoch 31/120 => Loss 1.274, Train_accy 94.290, Test_accy 78.930
+2024-10-17 17:46:12,096 [bic.py] => bias_correction => Task 1, Epoch 32/120 => Loss 1.270, Train_accy 95.710, Test_accy 79.430
+2024-10-17 17:46:12,257 [bic.py] => bias_correction => Task 1, Epoch 33/120 => Loss 1.270, Train_accy 95.710, Test_accy 79.120
+2024-10-17 17:46:12,418 [bic.py] => bias_correction => Task 1, Epoch 34/120 => Loss 1.273, Train_accy 95.710, Test_accy 78.710
+2024-10-17 17:46:12,577 [bic.py] => bias_correction => Task 1, Epoch 35/120 => Loss 1.275, Train_accy 95.710, Test_accy 79.020
+2024-10-17 17:46:12,731 [bic.py] => bias_correction => Task 1, Epoch 36/120 => Loss 1.273, Train_accy 97.140, Test_accy 79.450
+2024-10-17 17:46:12,889 [bic.py] => bias_correction => Task 1, Epoch 37/120 => Loss 1.270, Train_accy 95.710, Test_accy 79.600
+2024-10-17 17:46:13,051 [bic.py] => bias_correction => Task 1, Epoch 38/120 => Loss 1.267, Train_accy 94.290, Test_accy 79.100
+2024-10-17 17:46:13,206 [bic.py] => bias_correction => Task 1, Epoch 39/120 => Loss 1.267, Train_accy 95.710, Test_accy 78.690
+2024-10-17 17:46:13,357 [bic.py] => bias_correction => Task 1, Epoch 40/120 => Loss 1.269, Train_accy 95.710, Test_accy 78.310
+2024-10-17 17:46:13,516 [bic.py] => bias_correction => Task 1, Epoch 41/120 => Loss 1.269, Train_accy 95.710, Test_accy 78.480
+2024-10-17 17:46:13,676 [bic.py] => bias_correction => Task 1, Epoch 42/120 => Loss 1.269, Train_accy 95.710, Test_accy 78.810
+2024-10-17 17:46:13,833 [bic.py] => bias_correction => Task 1, Epoch 43/120 => Loss 1.267, Train_accy 94.290, Test_accy 79.400
+2024-10-17 17:46:13,988 [bic.py] => bias_correction => Task 1, Epoch 44/120 => Loss 1.265, Train_accy 95.710, Test_accy 79.830
+2024-10-17 17:46:14,139 [bic.py] => bias_correction => Task 1, Epoch 45/120 => Loss 1.265, Train_accy 95.710, Test_accy 79.860
+2024-10-17 17:46:14,297 [bic.py] => bias_correction => Task 1, Epoch 46/120 => Loss 1.265, Train_accy 97.140, Test_accy 80.070
+2024-10-17 17:46:14,455 [bic.py] => bias_correction => Task 1, Epoch 47/120 => Loss 1.266, Train_accy 97.140, Test_accy 80.120
+2024-10-17 17:46:14,616 [bic.py] => bias_correction => Task 1, Epoch 48/120 => Loss 1.265, Train_accy 95.710, Test_accy 80.070
+2024-10-17 17:46:14,776 [bic.py] => bias_correction => Task 1, Epoch 49/120 => Loss 1.264, Train_accy 95.710, Test_accy 80.020
+2024-10-17 17:46:14,927 [bic.py] => bias_correction => Task 1, Epoch 50/120 => Loss 1.263, Train_accy 94.290, Test_accy 80.120
+2024-10-17 17:46:15,078 [bic.py] => bias_correction => Task 1, Epoch 51/120 => Loss 1.263, Train_accy 94.290, Test_accy 79.520
+2024-10-17 17:46:15,229 [bic.py] => bias_correction => Task 1, Epoch 52/120 => Loss 1.263, Train_accy 95.710, Test_accy 79.480
+2024-10-17 17:46:15,390 [bic.py] => bias_correction => Task 1, Epoch 53/120 => Loss 1.263, Train_accy 95.710, Test_accy 79.550
+2024-10-17 17:46:15,538 [bic.py] => bias_correction => Task 1, Epoch 54/120 => Loss 1.263, Train_accy 94.290, Test_accy 79.620
+2024-10-17 17:46:15,694 [bic.py] => bias_correction => Task 1, Epoch 55/120 => Loss 1.262, Train_accy 94.290, Test_accy 79.950
+2024-10-17 17:46:15,851 [bic.py] => bias_correction => Task 1, Epoch 56/120 => Loss 1.262, Train_accy 94.290, Test_accy 80.360
+2024-10-17 17:46:16,010 [bic.py] => bias_correction => Task 1, Epoch 57/120 => Loss 1.261, Train_accy 95.710, Test_accy 80.290
+2024-10-17 17:46:16,161 [bic.py] => bias_correction => Task 1, Epoch 58/120 => Loss 1.261, Train_accy 95.710, Test_accy 80.430
+2024-10-17 17:46:16,316 [bic.py] => bias_correction => Task 1, Epoch 59/120 => Loss 1.261, Train_accy 95.710, Test_accy 80.400
+2024-10-17 17:46:16,472 [bic.py] => bias_correction => Task 1, Epoch 60/120 => Loss 1.261, Train_accy 95.710, Test_accy 80.480
+2024-10-17 17:46:16,630 [bic.py] => bias_correction => Task 1, Epoch 61/120 => Loss 1.260, Train_accy 95.710, Test_accy 80.450
+2024-10-17 17:46:16,781 [bic.py] => bias_correction => Task 1, Epoch 62/120 => Loss 1.260, Train_accy 95.710, Test_accy 80.380
+2024-10-17 17:46:16,936 [bic.py] => bias_correction => Task 1, Epoch 63/120 => Loss 1.260, Train_accy 95.710, Test_accy 80.450
+2024-10-17 17:46:17,088 [bic.py] => bias_correction => Task 1, Epoch 64/120 => Loss 1.260, Train_accy 95.710, Test_accy 80.400
+2024-10-17 17:46:17,252 [bic.py] => bias_correction => Task 1, Epoch 65/120 => Loss 1.260, Train_accy 95.710, Test_accy 80.330
+2024-10-17 17:46:17,402 [bic.py] => bias_correction => Task 1, Epoch 66/120 => Loss 1.260, Train_accy 95.710, Test_accy 80.360
+2024-10-17 17:46:17,555 [bic.py] => bias_correction => Task 1, Epoch 67/120 => Loss 1.260, Train_accy 95.710, Test_accy 80.430
+2024-10-17 17:46:17,709 [bic.py] => bias_correction => Task 1, Epoch 68/120 => Loss 1.260, Train_accy 95.710, Test_accy 80.430
+2024-10-17 17:46:17,862 [bic.py] => bias_correction => Task 1, Epoch 69/120 => Loss 1.260, Train_accy 95.710, Test_accy 80.500
+2024-10-17 17:46:18,017 [bic.py] => bias_correction => Task 1, Epoch 70/120 => Loss 1.260, Train_accy 95.710, Test_accy 80.480
+2024-10-17 17:46:18,174 [bic.py] => bias_correction => Task 1, Epoch 71/120 => Loss 1.260, Train_accy 95.710, Test_accy 80.500
+2024-10-17 17:46:18,327 [bic.py] => bias_correction => Task 1, Epoch 72/120 => Loss 1.260, Train_accy 95.710, Test_accy 80.450
+2024-10-17 17:46:18,482 [bic.py] => bias_correction => Task 1, Epoch 73/120 => Loss 1.260, Train_accy 95.710, Test_accy 80.430
+2024-10-17 17:46:18,637 [bic.py] => bias_correction => Task 1, Epoch 74/120 => Loss 1.260, Train_accy 94.290, Test_accy 80.380
+2024-10-17 17:46:18,793 [bic.py] => bias_correction => Task 1, Epoch 75/120 => Loss 1.260, Train_accy 94.290, Test_accy 80.330
+2024-10-17 17:46:18,951 [bic.py] => bias_correction => Task 1, Epoch 76/120 => Loss 1.260, Train_accy 94.290, Test_accy 80.290
+2024-10-17 17:46:19,109 [bic.py] => bias_correction => Task 1, Epoch 77/120 => Loss 1.260, Train_accy 94.290, Test_accy 80.290
+2024-10-17 17:46:19,258 [bic.py] => bias_correction => Task 1, Epoch 78/120 => Loss 1.260, Train_accy 94.290, Test_accy 80.290
+2024-10-17 17:46:19,412 [bic.py] => bias_correction => Task 1, Epoch 79/120 => Loss 1.260, Train_accy 94.290, Test_accy 80.290
+2024-10-17 17:46:19,576 [bic.py] => bias_correction => Task 1, Epoch 80/120 => Loss 1.260, Train_accy 94.290, Test_accy 80.290
+2024-10-17 17:46:19,724 [bic.py] => bias_correction => Task 1, Epoch 81/120 => Loss 1.260, Train_accy 94.290, Test_accy 80.290
+2024-10-17 17:46:19,878 [bic.py] => bias_correction => Task 1, Epoch 82/120 => Loss 1.260, Train_accy 94.290, Test_accy 80.290
+2024-10-17 17:46:20,038 [bic.py] => bias_correction => Task 1, Epoch 83/120 => Loss 1.260, Train_accy 94.290, Test_accy 80.290
+2024-10-17 17:46:20,193 [bic.py] => bias_correction => Task 1, Epoch 84/120 => Loss 1.260, Train_accy 94.290, Test_accy 80.310
+2024-10-17 17:46:20,356 [bic.py] => bias_correction => Task 1, Epoch 85/120 => Loss 1.260, Train_accy 94.290, Test_accy 80.310
+2024-10-17 17:46:20,507 [bic.py] => bias_correction => Task 1, Epoch 86/120 => Loss 1.260, Train_accy 94.290, Test_accy 80.330
+2024-10-17 17:46:20,670 [bic.py] => bias_correction => Task 1, Epoch 87/120 => Loss 1.259, Train_accy 94.290, Test_accy 80.430
+2024-10-17 17:46:20,825 [bic.py] => bias_correction => Task 1, Epoch 88/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.500
+2024-10-17 17:46:20,975 [bic.py] => bias_correction => Task 1, Epoch 89/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.450
+2024-10-17 17:46:21,132 [bic.py] => bias_correction => Task 1, Epoch 90/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.480
+2024-10-17 17:46:21,286 [bic.py] => bias_correction => Task 1, Epoch 91/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.500
+2024-10-17 17:46:21,440 [bic.py] => bias_correction => Task 1, Epoch 92/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.480
+2024-10-17 17:46:21,592 [bic.py] => bias_correction => Task 1, Epoch 93/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.500
+2024-10-17 17:46:21,752 [bic.py] => bias_correction => Task 1, Epoch 94/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.520
+2024-10-17 17:46:21,913 [bic.py] => bias_correction => Task 1, Epoch 95/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.570
+2024-10-17 17:46:22,094 [bic.py] => bias_correction => Task 1, Epoch 96/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.550
+2024-10-17 17:46:22,286 [bic.py] => bias_correction => Task 1, Epoch 97/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.550
+2024-10-17 17:46:22,480 [bic.py] => bias_correction => Task 1, Epoch 98/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.550
+2024-10-17 17:46:22,672 [bic.py] => bias_correction => Task 1, Epoch 99/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.550
+2024-10-17 17:46:22,861 [bic.py] => bias_correction => Task 1, Epoch 100/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.550
+2024-10-17 17:46:23,050 [bic.py] => bias_correction => Task 1, Epoch 101/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.550
+2024-10-17 17:46:23,239 [bic.py] => bias_correction => Task 1, Epoch 102/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.550
+2024-10-17 17:46:23,427 [bic.py] => bias_correction => Task 1, Epoch 103/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.550
+2024-10-17 17:46:23,599 [bic.py] => bias_correction => Task 1, Epoch 104/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.550
+2024-10-17 17:46:23,756 [bic.py] => bias_correction => Task 1, Epoch 105/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.550
+2024-10-17 17:46:23,914 [bic.py] => bias_correction => Task 1, Epoch 106/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.550
+2024-10-17 17:46:24,070 [bic.py] => bias_correction => Task 1, Epoch 107/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.550
+2024-10-17 17:46:24,224 [bic.py] => bias_correction => Task 1, Epoch 108/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.550
+2024-10-17 17:46:24,383 [bic.py] => bias_correction => Task 1, Epoch 109/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.550
+2024-10-17 17:46:24,536 [bic.py] => bias_correction => Task 1, Epoch 110/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.550
+2024-10-17 17:46:24,687 [bic.py] => bias_correction => Task 1, Epoch 111/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.550
+2024-10-17 17:46:24,839 [bic.py] => bias_correction => Task 1, Epoch 112/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.550
+2024-10-17 17:46:24,997 [bic.py] => bias_correction => Task 1, Epoch 113/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.550
+2024-10-17 17:46:25,169 [bic.py] => bias_correction => Task 1, Epoch 114/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.550
+2024-10-17 17:46:25,324 [bic.py] => bias_correction => Task 1, Epoch 115/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.550
+2024-10-17 17:46:25,482 [bic.py] => bias_correction => Task 1, Epoch 116/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.550
+2024-10-17 17:46:25,636 [bic.py] => bias_correction => Task 1, Epoch 117/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.550
+2024-10-17 17:46:25,795 [bic.py] => bias_correction => Task 1, Epoch 118/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.550
+2024-10-17 17:46:25,963 [bic.py] => bias_correction => Task 1, Epoch 119/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.550
+2024-10-17 17:46:26,118 [bic.py] => bias_correction => Task 1, Epoch 120/120 => Loss 1.259, Train_accy 95.710, Test_accy 80.550
+2024-10-17 17:46:26,118 [base.py] => Reducing exemplars...(71 per classes)
+2024-10-17 17:46:27,199 [base.py] => Constructing exemplars...(71 per classes)
+2024-10-17 17:46:29,227 [bic.py] => Parameters of bias layer:
+2024-10-17 17:46:29,228 [bic.py] => 0 => 1.000, 0.000
+2024-10-17 17:46:29,228 [bic.py] => 1 => 0.579, -1.282
+2024-10-17 17:46:29,229 [trainer.py] => All params: 3847499
+2024-10-17 17:46:29,591 [bic.py] => Exemplar size: 497
+2024-10-17 17:46:29,591 [trainer.py] => CNN: {'total': 80.55, '00-04': 78.3, '05-06': 86.17, 'old': 78.3, 'new': 86.17}
+2024-10-17 17:46:29,591 [trainer.py] => NME: {'total': 77.07, '00-04': 69.97, '05-06': 94.83, 'old': 69.97, 'new': 94.83}
+2024-10-17 17:46:29,591 [trainer.py] => CNN top1 curve: [89.93, 80.55]
+2024-10-17 17:46:29,591 [trainer.py] => CNN top5 curve: [100.0, 99.02]
+2024-10-17 17:46:29,591 [trainer.py] => NME top1 curve: [90.0, 77.07]
+2024-10-17 17:46:29,591 [trainer.py] => NME top5 curve: [100.0, 99.14]
+
+2024-10-17 17:46:29,591 [trainer.py] => Average Accuracy (CNN): 85.24000000000001
+2024-10-17 17:46:29,591 [trainer.py] => Average Accuracy (NME): 83.535
+2024-10-17 17:46:29,592 [trainer.py] => All params: 3847499
+2024-10-17 17:46:29,592 [trainer.py] => Trainable params: 3847499
+2024-10-17 17:46:29,593 [bic.py] => Learning on 7-9
+2024-10-17 17:46:29,604 [bic.py] => Stage1 dset: 4434, Stage2 dset: 63
+2024-10-17 17:46:29,604 [bic.py] => Lambda: 0.778
+2024-10-17 17:46:29,613 [bic.py] => Parameters of bias layer:
+2024-10-17 17:46:29,613 [bic.py] => 0 => 1.000, 0.000
+2024-10-17 17:46:29,613 [bic.py] => 1 => 0.579, -1.282
+2024-10-17 17:46:29,613 [bic.py] => 2 => 1.000, 0.000
+2024-10-17 17:46:30,764 [bic.py] => training => Task 2, Epoch 1/120 => Loss 1.300, Train_accy 91.570, Test_accy 30.240
+2024-10-17 17:46:31,842 [bic.py] => training => Task 2, Epoch 2/120 => Loss 1.114, Train_accy 96.550, Test_accy 45.980
+2024-10-17 17:46:32,913 [bic.py] => training => Task 2, Epoch 3/120 => Loss 1.079, Train_accy 98.240, Test_accy 43.670
+2024-10-17 17:46:34,071 [bic.py] => training => Task 2, Epoch 4/120 => Loss 1.058, Train_accy 99.480, Test_accy 51.780
+2024-10-17 17:46:35,160 [bic.py] => training => Task 2, Epoch 5/120 => Loss 1.048, Train_accy 99.840, Test_accy 54.220
+2024-10-17 17:46:36,240 [bic.py] => training => Task 2, Epoch 6/120 => Loss 1.044, Train_accy 99.980, Test_accy 57.740
+2024-10-17 17:46:37,315 [bic.py] => training => Task 2, Epoch 7/120 => Loss 1.040, Train_accy 100.000, Test_accy 58.810
+2024-10-17 17:46:38,418 [bic.py] => training => Task 2, Epoch 8/120 => Loss 1.038, Train_accy 100.000, Test_accy 58.220
+2024-10-17 17:46:39,519 [bic.py] => training => Task 2, Epoch 9/120 => Loss 1.036, Train_accy 100.000, Test_accy 62.980
+2024-10-17 17:46:40,589 [bic.py] => training => Task 2, Epoch 10/120 => Loss 1.036, Train_accy 99.950, Test_accy 60.090
+2024-10-17 17:46:41,656 [bic.py] => training => Task 2, Epoch 11/120 => Loss 1.035, Train_accy 100.000, Test_accy 59.330
+2024-10-17 17:46:42,735 [bic.py] => training => Task 2, Epoch 12/120 => Loss 1.033, Train_accy 99.980, Test_accy 61.190
+2024-10-17 17:46:43,795 [bic.py] => training => Task 2, Epoch 13/120 => Loss 1.033, Train_accy 99.980, Test_accy 60.830
+2024-10-17 17:46:44,829 [bic.py] => training => Task 2, Epoch 14/120 => Loss 1.033, Train_accy 100.000, Test_accy 61.760
+2024-10-17 17:46:45,941 [bic.py] => training => Task 2, Epoch 15/120 => Loss 1.034, Train_accy 100.000, Test_accy 64.130
+2024-10-17 17:46:47,049 [bic.py] => training => Task 2, Epoch 16/120 => Loss 1.032, Train_accy 99.980, Test_accy 64.390
+2024-10-17 17:46:48,140 [bic.py] => training => Task 2, Epoch 17/120 => Loss 1.032, Train_accy 100.000, Test_accy 62.960
+2024-10-17 17:46:49,222 [bic.py] => training => Task 2, Epoch 18/120 => Loss 1.031, Train_accy 100.000, Test_accy 59.810
+2024-10-17 17:46:50,345 [bic.py] => training => Task 2, Epoch 19/120 => Loss 1.030, Train_accy 99.980, Test_accy 63.850
+2024-10-17 17:46:51,454 [bic.py] => training => Task 2, Epoch 20/120 => Loss 1.032, Train_accy 99.950, Test_accy 60.960
+2024-10-17 17:46:52,532 [bic.py] => training => Task 2, Epoch 21/120 => Loss 1.031, Train_accy 99.980, Test_accy 64.200
+2024-10-17 17:46:53,576 [bic.py] => training => Task 2, Epoch 22/120 => Loss 1.031, Train_accy 99.980, Test_accy 66.190
+2024-10-17 17:46:54,660 [bic.py] => training => Task 2, Epoch 23/120 => Loss 1.031, Train_accy 99.980, Test_accy 57.570
+2024-10-17 17:46:55,722 [bic.py] => training => Task 2, Epoch 24/120 => Loss 1.030, Train_accy 99.980, Test_accy 58.810
+2024-10-17 17:46:56,824 [bic.py] => training => Task 2, Epoch 25/120 => Loss 1.030, Train_accy 99.980, Test_accy 64.390
+2024-10-17 17:46:57,903 [bic.py] => training => Task 2, Epoch 26/120 => Loss 1.029, Train_accy 100.000, Test_accy 63.610
+2024-10-17 17:46:58,998 [bic.py] => training => Task 2, Epoch 27/120 => Loss 1.029, Train_accy 100.000, Test_accy 64.350
+2024-10-17 17:47:00,060 [bic.py] => training => Task 2, Epoch 28/120 => Loss 1.030, Train_accy 100.000, Test_accy 60.410
+2024-10-17 17:47:01,133 [bic.py] => training => Task 2, Epoch 29/120 => Loss 1.030, Train_accy 99.980, Test_accy 61.810
+2024-10-17 17:47:02,217 [bic.py] => training => Task 2, Epoch 30/120 => Loss 1.028, Train_accy 100.000, Test_accy 66.720
+2024-10-17 17:47:03,270 [bic.py] => training => Task 2, Epoch 31/120 => Loss 1.029, Train_accy 99.980, Test_accy 60.300
+2024-10-17 17:47:04,374 [bic.py] => training => Task 2, Epoch 32/120 => Loss 1.029, Train_accy 100.000, Test_accy 64.020
+2024-10-17 17:47:05,498 [bic.py] => training => Task 2, Epoch 33/120 => Loss 1.029, Train_accy 99.980, Test_accy 66.780
+2024-10-17 17:47:06,601 [bic.py] => training => Task 2, Epoch 34/120 => Loss 1.029, Train_accy 99.980, Test_accy 58.460
+2024-10-17 17:47:07,647 [bic.py] => training => Task 2, Epoch 35/120 => Loss 1.029, Train_accy 100.000, Test_accy 58.020
+2024-10-17 17:47:08,676 [bic.py] => training => Task 2, Epoch 36/120 => Loss 1.029, Train_accy 100.000, Test_accy 57.090
+2024-10-17 17:47:09,711 [bic.py] => training => Task 2, Epoch 37/120 => Loss 1.028, Train_accy 100.000, Test_accy 54.000
+2024-10-17 17:47:10,675 [bic.py] => training => Task 2, Epoch 38/120 => Loss 1.029, Train_accy 100.000, Test_accy 61.780
+2024-10-17 17:47:11,746 [bic.py] => training => Task 2, Epoch 39/120 => Loss 1.029, Train_accy 100.000, Test_accy 61.440
+2024-10-17 17:47:12,838 [bic.py] => training => Task 2, Epoch 40/120 => Loss 1.029, Train_accy 100.000, Test_accy 61.800
+2024-10-17 17:47:13,956 [bic.py] => training => Task 2, Epoch 41/120 => Loss 1.028, Train_accy 100.000, Test_accy 62.540
+2024-10-17 17:47:15,060 [bic.py] => training => Task 2, Epoch 42/120 => Loss 1.030, Train_accy 99.980, Test_accy 65.390
+2024-10-17 17:47:16,163 [bic.py] => training => Task 2, Epoch 43/120 => Loss 1.028, Train_accy 100.000, Test_accy 65.500
+2024-10-17 17:47:17,245 [bic.py] => training => Task 2, Epoch 44/120 => Loss 1.028, Train_accy 100.000, Test_accy 58.780
+2024-10-17 17:47:18,350 [bic.py] => training => Task 2, Epoch 45/120 => Loss 1.027, Train_accy 100.000, Test_accy 61.330
+2024-10-17 17:47:19,416 [bic.py] => training => Task 2, Epoch 46/120 => Loss 1.029, Train_accy 100.000, Test_accy 64.330
+2024-10-17 17:47:20,499 [bic.py] => training => Task 2, Epoch 47/120 => Loss 1.028, Train_accy 100.000, Test_accy 61.590
+2024-10-17 17:47:21,539 [bic.py] => training => Task 2, Epoch 48/120 => Loss 1.029, Train_accy 100.000, Test_accy 57.110
+2024-10-17 17:47:22,645 [bic.py] => training => Task 2, Epoch 49/120 => Loss 1.031, Train_accy 100.000, Test_accy 56.590
+2024-10-17 17:47:23,700 [bic.py] => training => Task 2, Epoch 50/120 => Loss 1.029, Train_accy 100.000, Test_accy 65.200
+2024-10-17 17:47:24,810 [bic.py] => training => Task 2, Epoch 51/120 => Loss 1.029, Train_accy 100.000, Test_accy 62.830
+2024-10-17 17:47:25,843 [bic.py] => training => Task 2, Epoch 52/120 => Loss 1.029, Train_accy 100.000, Test_accy 53.930
+2024-10-17 17:47:26,928 [bic.py] => training => Task 2, Epoch 53/120 => Loss 1.028, Train_accy 100.000, Test_accy 56.630
+2024-10-17 17:47:28,006 [bic.py] => training => Task 2, Epoch 54/120 => Loss 1.028, Train_accy 99.980, Test_accy 56.390
+2024-10-17 17:47:29,108 [bic.py] => training => Task 2, Epoch 55/120 => Loss 1.028, Train_accy 100.000, Test_accy 63.720
+2024-10-17 17:47:30,216 [bic.py] => training => Task 2, Epoch 56/120 => Loss 1.028, Train_accy 99.950, Test_accy 59.460
+2024-10-17 17:47:31,263 [bic.py] => training => Task 2, Epoch 57/120 => Loss 1.028, Train_accy 100.000, Test_accy 60.070
+2024-10-17 17:47:32,356 [bic.py] => training => Task 2, Epoch 58/120 => Loss 1.028, Train_accy 100.000, Test_accy 55.460
+2024-10-17 17:47:33,443 [bic.py] => training => Task 2, Epoch 59/120 => Loss 1.028, Train_accy 100.000, Test_accy 60.720
+2024-10-17 17:47:34,485 [bic.py] => training => Task 2, Epoch 60/120 => Loss 1.029, Train_accy 100.000, Test_accy 63.440
+2024-10-17 17:47:35,548 [bic.py] => training => Task 2, Epoch 61/120 => Loss 1.027, Train_accy 100.000, Test_accy 60.060
+2024-10-17 17:47:36,574 [bic.py] => training => Task 2, Epoch 62/120 => Loss 1.026, Train_accy 100.000, Test_accy 61.170
+2024-10-17 17:47:37,631 [bic.py] => training => Task 2, Epoch 63/120 => Loss 1.026, Train_accy 100.000, Test_accy 61.020
+2024-10-17 17:47:38,696 [bic.py] => training => Task 2, Epoch 64/120 => Loss 1.026, Train_accy 100.000, Test_accy 60.540
+2024-10-17 17:47:39,767 [bic.py] => training => Task 2, Epoch 65/120 => Loss 1.026, Train_accy 100.000, Test_accy 59.940
+2024-10-17 17:47:40,852 [bic.py] => training => Task 2, Epoch 66/120 => Loss 1.026, Train_accy 100.000, Test_accy 59.980
+2024-10-17 17:47:41,965 [bic.py] => training => Task 2, Epoch 67/120 => Loss 1.026, Train_accy 100.000, Test_accy 60.830
+2024-10-17 17:47:43,071 [bic.py] => training => Task 2, Epoch 68/120 => Loss 1.025, Train_accy 100.000, Test_accy 60.430
+2024-10-17 17:47:44,148 [bic.py] => training => Task 2, Epoch 69/120 => Loss 1.025, Train_accy 100.000, Test_accy 61.280
+2024-10-17 17:47:45,182 [bic.py] => training => Task 2, Epoch 70/120 => Loss 1.025, Train_accy 100.000, Test_accy 59.670
+2024-10-17 17:47:46,230 [bic.py] => training => Task 2, Epoch 71/120 => Loss 1.024, Train_accy 100.000, Test_accy 60.720
+2024-10-17 17:47:47,297 [bic.py] => training => Task 2, Epoch 72/120 => Loss 1.025, Train_accy 100.000, Test_accy 60.780
+2024-10-17 17:47:48,391 [bic.py] => training => Task 2, Epoch 73/120 => Loss 1.025, Train_accy 100.000, Test_accy 60.610
+2024-10-17 17:47:49,457 [bic.py] => training => Task 2, Epoch 74/120 => Loss 1.025, Train_accy 100.000, Test_accy 61.720
+2024-10-17 17:47:50,636 [bic.py] => training => Task 2, Epoch 75/120 => Loss 1.026, Train_accy 100.000, Test_accy 59.810
+2024-10-17 17:47:51,738 [bic.py] => training => Task 2, Epoch 76/120 => Loss 1.025, Train_accy 100.000, Test_accy 60.780
+2024-10-17 17:47:52,788 [bic.py] => training => Task 2, Epoch 77/120 => Loss 1.026, Train_accy 100.000, Test_accy 61.110
+2024-10-17 17:47:53,863 [bic.py] => training => Task 2, Epoch 78/120 => Loss 1.025, Train_accy 100.000, Test_accy 60.020
+2024-10-17 17:47:54,944 [bic.py] => training => Task 2, Epoch 79/120 => Loss 1.025, Train_accy 100.000, Test_accy 60.130
+2024-10-17 17:47:56,008 [bic.py] => training => Task 2, Epoch 80/120 => Loss 1.025, Train_accy 100.000, Test_accy 60.390
+2024-10-17 17:47:57,085 [bic.py] => training => Task 2, Epoch 81/120 => Loss 1.025, Train_accy 100.000, Test_accy 59.780
+2024-10-17 17:47:58,150 [bic.py] => training => Task 2, Epoch 82/120 => Loss 1.025, Train_accy 100.000, Test_accy 60.130
+2024-10-17 17:47:59,244 [bic.py] => training => Task 2, Epoch 83/120 => Loss 1.024, Train_accy 100.000, Test_accy 58.460
+2024-10-17 17:48:00,327 [bic.py] => training => Task 2, Epoch 84/120 => Loss 1.026, Train_accy 100.000, Test_accy 60.500
+2024-10-17 17:48:01,424 [bic.py] => training => Task 2, Epoch 85/120 => Loss 1.025, Train_accy 100.000, Test_accy 60.980
+2024-10-17 17:48:02,500 [bic.py] => training => Task 2, Epoch 86/120 => Loss 1.025, Train_accy 100.000, Test_accy 60.740
+2024-10-17 17:48:03,556 [bic.py] => training => Task 2, Epoch 87/120 => Loss 1.026, Train_accy 100.000, Test_accy 60.630
+2024-10-17 17:48:04,659 [bic.py] => training => Task 2, Epoch 88/120 => Loss 1.025, Train_accy 100.000, Test_accy 60.300
+2024-10-17 17:48:05,744 [bic.py] => training => Task 2, Epoch 89/120 => Loss 1.025, Train_accy 100.000, Test_accy 60.700
+2024-10-17 17:48:06,840 [bic.py] => training => Task 2, Epoch 90/120 => Loss 1.026, Train_accy 100.000, Test_accy 62.040
+2024-10-17 17:48:07,908 [bic.py] => training => Task 2, Epoch 91/120 => Loss 1.025, Train_accy 100.000, Test_accy 59.630
+2024-10-17 17:48:09,012 [bic.py] => training => Task 2, Epoch 92/120 => Loss 1.025, Train_accy 100.000, Test_accy 60.590
+2024-10-17 17:48:10,054 [bic.py] => training => Task 2, Epoch 93/120 => Loss 1.025, Train_accy 100.000, Test_accy 60.200
+2024-10-17 17:48:11,086 [bic.py] => training => Task 2, Epoch 94/120 => Loss 1.025, Train_accy 100.000, Test_accy 59.460
+2024-10-17 17:48:12,118 [bic.py] => training => Task 2, Epoch 95/120 => Loss 1.025, Train_accy 100.000, Test_accy 61.460
+2024-10-17 17:48:13,155 [bic.py] => training => Task 2, Epoch 96/120 => Loss 1.025, Train_accy 100.000, Test_accy 59.830
+2024-10-17 17:48:14,232 [bic.py] => training => Task 2, Epoch 97/120 => Loss 1.025, Train_accy 100.000, Test_accy 59.910
+2024-10-17 17:48:15,254 [bic.py] => training => Task 2, Epoch 98/120 => Loss 1.025, Train_accy 100.000, Test_accy 58.850
+2024-10-17 17:48:16,219 [bic.py] => training => Task 2, Epoch 99/120 => Loss 1.025, Train_accy 100.000, Test_accy 59.540
+2024-10-17 17:48:17,189 [bic.py] => training => Task 2, Epoch 100/120 => Loss 1.025, Train_accy 100.000, Test_accy 59.020
+2024-10-17 17:48:18,180 [bic.py] => training => Task 2, Epoch 101/120 => Loss 1.025, Train_accy 100.000, Test_accy 59.800
+2024-10-17 17:48:19,164 [bic.py] => training => Task 2, Epoch 102/120 => Loss 1.025, Train_accy 100.000, Test_accy 60.240
+2024-10-17 17:48:20,146 [bic.py] => training => Task 2, Epoch 103/120 => Loss 1.024, Train_accy 100.000, Test_accy 60.000
+2024-10-17 17:48:21,133 [bic.py] => training => Task 2, Epoch 104/120 => Loss 1.025, Train_accy 100.000, Test_accy 59.800
+2024-10-17 17:48:22,113 [bic.py] => training => Task 2, Epoch 105/120 => Loss 1.026, Train_accy 100.000, Test_accy 61.500
+2024-10-17 17:48:23,175 [bic.py] => training => Task 2, Epoch 106/120 => Loss 1.024, Train_accy 100.000, Test_accy 60.740
+2024-10-17 17:48:24,146 [bic.py] => training => Task 2, Epoch 107/120 => Loss 1.025, Train_accy 100.000, Test_accy 60.350
+2024-10-17 17:48:25,117 [bic.py] => training => Task 2, Epoch 108/120 => Loss 1.025, Train_accy 100.000, Test_accy 59.650
+2024-10-17 17:48:26,070 [bic.py] => training => Task 2, Epoch 109/120 => Loss 1.025, Train_accy 100.000, Test_accy 59.850
+2024-10-17 17:48:27,021 [bic.py] => training => Task 2, Epoch 110/120 => Loss 1.025, Train_accy 100.000, Test_accy 60.020
+2024-10-17 17:48:28,037 [bic.py] => training => Task 2, Epoch 111/120 => Loss 1.025, Train_accy 100.000, Test_accy 60.190
+2024-10-17 17:48:29,032 [bic.py] => training => Task 2, Epoch 112/120 => Loss 1.025, Train_accy 100.000, Test_accy 60.570
+2024-10-17 17:48:30,028 [bic.py] => training => Task 2, Epoch 113/120 => Loss 1.024, Train_accy 100.000, Test_accy 59.810
+2024-10-17 17:48:31,018 [bic.py] => training => Task 2, Epoch 114/120 => Loss 1.025, Train_accy 100.000, Test_accy 60.670
+2024-10-17 17:48:32,111 [bic.py] => training => Task 2, Epoch 115/120 => Loss 1.025, Train_accy 100.000, Test_accy 60.240
+2024-10-17 17:48:33,170 [bic.py] => training => Task 2, Epoch 116/120 => Loss 1.025, Train_accy 100.000, Test_accy 60.200
+2024-10-17 17:48:34,162 [bic.py] => training => Task 2, Epoch 117/120 => Loss 1.025, Train_accy 100.000, Test_accy 59.980
+2024-10-17 17:48:35,244 [bic.py] => training => Task 2, Epoch 118/120 => Loss 1.025, Train_accy 100.000, Test_accy 60.480
+2024-10-17 17:48:36,312 [bic.py] => training => Task 2, Epoch 119/120 => Loss 1.024, Train_accy 100.000, Test_accy 59.740
+2024-10-17 17:48:37,368 [bic.py] => training => Task 2, Epoch 120/120 => Loss 1.026, Train_accy 100.000, Test_accy 60.810
+2024-10-17 17:48:37,594 [bic.py] => bias_correction => Task 2, Epoch 1/120 => Loss 1.914, Train_accy 74.600, Test_accy 59.260
+2024-10-17 17:48:37,799 [bic.py] => bias_correction => Task 2, Epoch 2/120 => Loss 1.898, Train_accy 74.600, Test_accy 58.760
+2024-10-17 17:48:38,003 [bic.py] => bias_correction => Task 2, Epoch 3/120 => Loss 1.867, Train_accy 74.600, Test_accy 59.930
+2024-10-17 17:48:38,199 [bic.py] => bias_correction => Task 2, Epoch 4/120 => Loss 1.816, Train_accy 82.540, Test_accy 63.540
+2024-10-17 17:48:38,400 [bic.py] => bias_correction => Task 2, Epoch 5/120 => Loss 1.738, Train_accy 98.410, Test_accy 70.670
+2024-10-17 17:48:38,605 [bic.py] => bias_correction => Task 2, Epoch 6/120 => Loss 1.635, Train_accy 93.650, Test_accy 71.560
+2024-10-17 17:48:38,817 [bic.py] => bias_correction => Task 2, Epoch 7/120 => Loss 1.598, Train_accy 77.780, Test_accy 62.810
+2024-10-17 17:48:39,023 [bic.py] => bias_correction => Task 2, Epoch 8/120 => Loss 1.641, Train_accy 77.780, Test_accy 60.720
+2024-10-17 17:48:39,218 [bic.py] => bias_correction => Task 2, Epoch 9/120 => Loss 1.653, Train_accy 77.780, Test_accy 60.740
+2024-10-17 17:48:39,415 [bic.py] => bias_correction => Task 2, Epoch 10/120 => Loss 1.653, Train_accy 77.780, Test_accy 60.590
+2024-10-17 17:48:39,616 [bic.py] => bias_correction => Task 2, Epoch 11/120 => Loss 1.651, Train_accy 77.780, Test_accy 60.570
+2024-10-17 17:48:39,811 [bic.py] => bias_correction => Task 2, Epoch 12/120 => Loss 1.649, Train_accy 77.780, Test_accy 60.480
+2024-10-17 17:48:40,006 [bic.py] => bias_correction => Task 2, Epoch 13/120 => Loss 1.647, Train_accy 77.780, Test_accy 60.460
+2024-10-17 17:48:40,205 [bic.py] => bias_correction => Task 2, Epoch 14/120 => Loss 1.646, Train_accy 77.780, Test_accy 60.410
+2024-10-17 17:48:40,401 [bic.py] => bias_correction => Task 2, Epoch 15/120 => Loss 1.646, Train_accy 77.780, Test_accy 60.280
+2024-10-17 17:48:40,594 [bic.py] => bias_correction => Task 2, Epoch 16/120 => Loss 1.645, Train_accy 77.780, Test_accy 60.200
+2024-10-17 17:48:40,793 [bic.py] => bias_correction => Task 2, Epoch 17/120 => Loss 1.645, Train_accy 77.780, Test_accy 60.200
+2024-10-17 17:48:40,994 [bic.py] => bias_correction => Task 2, Epoch 18/120 => Loss 1.644, Train_accy 77.780, Test_accy 60.130
+2024-10-17 17:48:41,197 [bic.py] => bias_correction => Task 2, Epoch 19/120 => Loss 1.644, Train_accy 77.780, Test_accy 60.020
+2024-10-17 17:48:41,397 [bic.py] => bias_correction => Task 2, Epoch 20/120 => Loss 1.644, Train_accy 77.780, Test_accy 59.940
+2024-10-17 17:48:41,592 [bic.py] => bias_correction => Task 2, Epoch 21/120 => Loss 1.643, Train_accy 77.780, Test_accy 59.870
+2024-10-17 17:48:41,796 [bic.py] => bias_correction => Task 2, Epoch 22/120 => Loss 1.643, Train_accy 77.780, Test_accy 59.800
+2024-10-17 17:48:41,998 [bic.py] => bias_correction => Task 2, Epoch 23/120 => Loss 1.643, Train_accy 77.780, Test_accy 59.740
+2024-10-17 17:48:42,198 [bic.py] => bias_correction => Task 2, Epoch 24/120 => Loss 1.643, Train_accy 77.780, Test_accy 59.720
+2024-10-17 17:48:42,395 [bic.py] => bias_correction => Task 2, Epoch 25/120 => Loss 1.643, Train_accy 77.780, Test_accy 59.690
+2024-10-17 17:48:42,589 [bic.py] => bias_correction => Task 2, Epoch 26/120 => Loss 1.643, Train_accy 77.780, Test_accy 59.630
+2024-10-17 17:48:42,789 [bic.py] => bias_correction => Task 2, Epoch 27/120 => Loss 1.643, Train_accy 77.780, Test_accy 59.650
+2024-10-17 17:48:42,983 [bic.py] => bias_correction => Task 2, Epoch 28/120 => Loss 1.643, Train_accy 77.780, Test_accy 59.630
+2024-10-17 17:48:43,183 [bic.py] => bias_correction => Task 2, Epoch 29/120 => Loss 1.643, Train_accy 77.780, Test_accy 59.610
+2024-10-17 17:48:43,379 [bic.py] => bias_correction => Task 2, Epoch 30/120 => Loss 1.643, Train_accy 77.780, Test_accy 59.570
+2024-10-17 17:48:43,581 [bic.py] => bias_correction => Task 2, Epoch 31/120 => Loss 1.643, Train_accy 77.780, Test_accy 59.560
+2024-10-17 17:48:43,781 [bic.py] => bias_correction => Task 2, Epoch 32/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.560
+2024-10-17 17:48:43,981 [bic.py] => bias_correction => Task 2, Epoch 33/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.560
+2024-10-17 17:48:44,183 [bic.py] => bias_correction => Task 2, Epoch 34/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.540
+2024-10-17 17:48:44,381 [bic.py] => bias_correction => Task 2, Epoch 35/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.520
+2024-10-17 17:48:44,577 [bic.py] => bias_correction => Task 2, Epoch 36/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.500
+2024-10-17 17:48:44,778 [bic.py] => bias_correction => Task 2, Epoch 37/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.500
+2024-10-17 17:48:44,971 [bic.py] => bias_correction => Task 2, Epoch 38/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.500
+2024-10-17 17:48:45,170 [bic.py] => bias_correction => Task 2, Epoch 39/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.480
+2024-10-17 17:48:45,373 [bic.py] => bias_correction => Task 2, Epoch 40/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.460
+2024-10-17 17:48:45,570 [bic.py] => bias_correction => Task 2, Epoch 41/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.430
+2024-10-17 17:48:45,767 [bic.py] => bias_correction => Task 2, Epoch 42/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.430
+2024-10-17 17:48:45,963 [bic.py] => bias_correction => Task 2, Epoch 43/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.440
+2024-10-17 17:48:46,158 [bic.py] => bias_correction => Task 2, Epoch 44/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.440
+2024-10-17 17:48:46,356 [bic.py] => bias_correction => Task 2, Epoch 45/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.430
+2024-10-17 17:48:46,556 [bic.py] => bias_correction => Task 2, Epoch 46/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.430
+2024-10-17 17:48:46,760 [bic.py] => bias_correction => Task 2, Epoch 47/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.430
+2024-10-17 17:48:46,956 [bic.py] => bias_correction => Task 2, Epoch 48/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.410
+2024-10-17 17:48:47,161 [bic.py] => bias_correction => Task 2, Epoch 49/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.390
+2024-10-17 17:48:47,353 [bic.py] => bias_correction => Task 2, Epoch 50/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.390
+2024-10-17 17:48:47,552 [bic.py] => bias_correction => Task 2, Epoch 51/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:47,744 [bic.py] => bias_correction => Task 2, Epoch 52/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:47,947 [bic.py] => bias_correction => Task 2, Epoch 53/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:48,141 [bic.py] => bias_correction => Task 2, Epoch 54/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:48,348 [bic.py] => bias_correction => Task 2, Epoch 55/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:48,548 [bic.py] => bias_correction => Task 2, Epoch 56/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:48,748 [bic.py] => bias_correction => Task 2, Epoch 57/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:48,943 [bic.py] => bias_correction => Task 2, Epoch 58/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:49,142 [bic.py] => bias_correction => Task 2, Epoch 59/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:49,348 [bic.py] => bias_correction => Task 2, Epoch 60/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:49,545 [bic.py] => bias_correction => Task 2, Epoch 61/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:49,745 [bic.py] => bias_correction => Task 2, Epoch 62/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:49,950 [bic.py] => bias_correction => Task 2, Epoch 63/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:50,147 [bic.py] => bias_correction => Task 2, Epoch 64/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:50,351 [bic.py] => bias_correction => Task 2, Epoch 65/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:50,554 [bic.py] => bias_correction => Task 2, Epoch 66/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:50,758 [bic.py] => bias_correction => Task 2, Epoch 67/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:50,957 [bic.py] => bias_correction => Task 2, Epoch 68/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:51,163 [bic.py] => bias_correction => Task 2, Epoch 69/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:51,361 [bic.py] => bias_correction => Task 2, Epoch 70/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:51,562 [bic.py] => bias_correction => Task 2, Epoch 71/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:51,769 [bic.py] => bias_correction => Task 2, Epoch 72/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:51,973 [bic.py] => bias_correction => Task 2, Epoch 73/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:52,172 [bic.py] => bias_correction => Task 2, Epoch 74/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:52,376 [bic.py] => bias_correction => Task 2, Epoch 75/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:52,575 [bic.py] => bias_correction => Task 2, Epoch 76/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:52,770 [bic.py] => bias_correction => Task 2, Epoch 77/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:52,976 [bic.py] => bias_correction => Task 2, Epoch 78/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:53,176 [bic.py] => bias_correction => Task 2, Epoch 79/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:53,371 [bic.py] => bias_correction => Task 2, Epoch 80/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:53,567 [bic.py] => bias_correction => Task 2, Epoch 81/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:53,768 [bic.py] => bias_correction => Task 2, Epoch 82/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:53,963 [bic.py] => bias_correction => Task 2, Epoch 83/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:54,162 [bic.py] => bias_correction => Task 2, Epoch 84/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:54,362 [bic.py] => bias_correction => Task 2, Epoch 85/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:54,564 [bic.py] => bias_correction => Task 2, Epoch 86/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:54,768 [bic.py] => bias_correction => Task 2, Epoch 87/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.330
+2024-10-17 17:48:54,969 [bic.py] => bias_correction => Task 2, Epoch 88/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.330
+2024-10-17 17:48:55,171 [bic.py] => bias_correction => Task 2, Epoch 89/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.330
+2024-10-17 17:48:55,368 [bic.py] => bias_correction => Task 2, Epoch 90/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.330
+2024-10-17 17:48:55,564 [bic.py] => bias_correction => Task 2, Epoch 91/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.330
+2024-10-17 17:48:55,763 [bic.py] => bias_correction => Task 2, Epoch 92/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:55,962 [bic.py] => bias_correction => Task 2, Epoch 93/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:56,169 [bic.py] => bias_correction => Task 2, Epoch 94/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:56,368 [bic.py] => bias_correction => Task 2, Epoch 95/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:56,573 [bic.py] => bias_correction => Task 2, Epoch 96/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:56,775 [bic.py] => bias_correction => Task 2, Epoch 97/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:56,976 [bic.py] => bias_correction => Task 2, Epoch 98/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:57,172 [bic.py] => bias_correction => Task 2, Epoch 99/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:57,369 [bic.py] => bias_correction => Task 2, Epoch 100/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:57,569 [bic.py] => bias_correction => Task 2, Epoch 101/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:57,775 [bic.py] => bias_correction => Task 2, Epoch 102/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:57,973 [bic.py] => bias_correction => Task 2, Epoch 103/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:58,167 [bic.py] => bias_correction => Task 2, Epoch 104/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:58,364 [bic.py] => bias_correction => Task 2, Epoch 105/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:58,562 [bic.py] => bias_correction => Task 2, Epoch 106/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:58,763 [bic.py] => bias_correction => Task 2, Epoch 107/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:58,959 [bic.py] => bias_correction => Task 2, Epoch 108/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:59,157 [bic.py] => bias_correction => Task 2, Epoch 109/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:59,357 [bic.py] => bias_correction => Task 2, Epoch 110/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:59,557 [bic.py] => bias_correction => Task 2, Epoch 111/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:48:59,759 [bic.py] => bias_correction => Task 2, Epoch 112/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.350
+2024-10-17 17:48:59,959 [bic.py] => bias_correction => Task 2, Epoch 113/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:49:00,165 [bic.py] => bias_correction => Task 2, Epoch 114/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:49:00,368 [bic.py] => bias_correction => Task 2, Epoch 115/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:49:00,568 [bic.py] => bias_correction => Task 2, Epoch 116/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:49:00,770 [bic.py] => bias_correction => Task 2, Epoch 117/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:49:00,977 [bic.py] => bias_correction => Task 2, Epoch 118/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:49:01,180 [bic.py] => bias_correction => Task 2, Epoch 119/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:49:01,393 [bic.py] => bias_correction => Task 2, Epoch 120/120 => Loss 1.642, Train_accy 77.780, Test_accy 59.370
+2024-10-17 17:49:01,394 [base.py] => Reducing exemplars...(55 per classes)
+2024-10-17 17:49:02,820 [base.py] => Constructing exemplars...(55 per classes)
+2024-10-17 17:49:04,796 [bic.py] => Parameters of bias layer:
+2024-10-17 17:49:04,797 [bic.py] => 0 => 1.000, 0.000
+2024-10-17 17:49:04,797 [bic.py] => 1 => 0.579, -1.282
+2024-10-17 17:49:04,797 [bic.py] => 2 => -1.401, -0.820
+2024-10-17 17:49:04,798 [trainer.py] => All params: 3848527
+2024-10-17 17:49:05,307 [bic.py] => Exemplar size: 495
+2024-10-17 17:49:05,308 [trainer.py] => CNN: {'total': 59.37, '00-04': 74.6, '05-06': 80.67, '07-08': 0.0, 'old': 76.33, 'new': 0.0}
+2024-10-17 17:49:05,308 [trainer.py] => NME: {'total': 70.54, '00-04': 60.27, '05-06': 70.25, '07-08': 96.5, 'old': 63.12, 'new': 96.5}
+2024-10-17 17:49:05,308 [trainer.py] => CNN top1 curve: [89.93, 80.55, 59.37]
+2024-10-17 17:49:05,308 [trainer.py] => CNN top5 curve: [100.0, 99.02, 76.41]
+2024-10-17 17:49:05,308 [trainer.py] => NME top1 curve: [90.0, 77.07, 70.54]
+2024-10-17 17:49:05,308 [trainer.py] => NME top5 curve: [100.0, 99.14, 97.54]
+
+2024-10-17 17:49:05,308 [trainer.py] => Average Accuracy (CNN): 76.61666666666667
+2024-10-17 17:49:05,308 [trainer.py] => Average Accuracy (NME): 79.20333333333333
+2024-10-17 17:49:05,309 [trainer.py] => Forgetting (CNN): 10.415000000000006

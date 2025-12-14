@@ -1,0 +1,49 @@
+2024-08-20 16:36:11,221 [trainer.py] => config: ./exps/ewc.json
+2024-08-20 16:36:11,221 [trainer.py] => prefix: reproduce
+2024-08-20 16:36:11,221 [trainer.py] => dataset: hrrp9
+2024-08-20 16:36:11,221 [trainer.py] => pretrain: True
+2024-08-20 16:36:11,221 [trainer.py] => memory_size: 500
+2024-08-20 16:36:11,221 [trainer.py] => memory_per_class: 20
+2024-08-20 16:36:11,221 [trainer.py] => fixed_memory: False
+2024-08-20 16:36:11,221 [trainer.py] => shuffle: True
+2024-08-20 16:36:11,221 [trainer.py] => init_cls: 5
+2024-08-20 16:36:11,221 [trainer.py] => increment: 2
+2024-08-20 16:36:11,221 [trainer.py] => model_name: ewc
+2024-08-20 16:36:11,221 [trainer.py] => convnet_type: resnet18
+2024-08-20 16:36:11,221 [trainer.py] => device: [device(type='cuda', index=0)]
+2024-08-20 16:36:11,221 [trainer.py] => init_train: False
+2024-08-20 16:36:11,222 [trainer.py] => convnet_path: checkpoints/init_train/resnet18_42503.pth
+2024-08-20 16:36:11,222 [trainer.py] => fc_path: checkpoints/init_train/fc_42503.pth
+2024-08-20 16:36:11,222 [trainer.py] => seed: 1993
+2024-08-20 16:36:12,235 [data_manager.py] => [4, 2, 5, 0, 3, 6, 7, 8, 1]
+2024-08-20 16:36:14,820 [trainer.py] => All params: 3843904
+2024-08-20 16:36:14,821 [trainer.py] => Trainable params: 3843904
+2024-08-20 16:36:14,823 [ewc.py] => Learning on 0-5
+2024-08-20 16:36:15,000 [ewc.py] => init_train?---False
+2024-08-20 16:36:22,871 [trainer.py] => No NME accuracy.
+2024-08-20 16:36:22,871 [trainer.py] => CNN: {'total': 92.84, '00-04': 92.84, 'old': 0, 'new': 92.84}
+2024-08-20 16:36:22,872 [trainer.py] => CNN top1 curve: [92.84]
+2024-08-20 16:36:22,872 [trainer.py] => CNN top5 curve: [100.0]
+
+2024-08-20 16:36:22,872 [trainer.py] => Average Accuracy (CNN): 92.84
+2024-08-20 16:36:22,872 [trainer.py] => All params: 3846469
+2024-08-20 16:36:22,873 [trainer.py] => Trainable params: 3846469
+2024-08-20 16:36:22,874 [ewc.py] => Learning on 5-7
+2024-08-20 16:41:57,339 [ewc.py] => Task 1, Epoch 150/150 => Loss 0.000, Train_accy 100.00
+2024-08-20 16:41:59,918 [trainer.py] => No NME accuracy.
+2024-08-20 16:41:59,919 [trainer.py] => CNN: {'total': 33.95, '00-04': 17.64, '05-06': 98.0, 'old': 17.64, 'new': 98.0}
+2024-08-20 16:41:59,919 [trainer.py] => CNN top1 curve: [92.84, 33.95]
+2024-08-20 16:41:59,919 [trainer.py] => CNN top5 curve: [100.0, 98.88]
+
+2024-08-20 16:41:59,919 [trainer.py] => Average Accuracy (CNN): 63.395
+2024-08-20 16:41:59,919 [trainer.py] => All params: 3847495
+2024-08-20 16:41:59,919 [trainer.py] => Trainable params: 3847495
+2024-08-20 16:41:59,920 [ewc.py] => Learning on 7-9
+2024-08-20 16:47:40,257 [ewc.py] => Task 2, Epoch 150/150 => Loss 0.002, Train_accy 100.00
+2024-08-20 16:47:43,372 [trainer.py] => No NME accuracy.
+2024-08-20 16:47:43,372 [trainer.py] => CNN: {'total': 17.17, '00-04': 0.02, '05-06': 3.45, '07-08': 97.91, 'old': 0.72, 'new': 97.91}
+2024-08-20 16:47:43,372 [trainer.py] => CNN top1 curve: [92.84, 33.95, 17.17]
+2024-08-20 16:47:43,372 [trainer.py] => CNN top5 curve: [100.0, 98.88, 76.72]
+
+2024-08-20 16:47:43,372 [trainer.py] => Average Accuracy (CNN): 47.98666666666667
+2024-08-20 16:47:43,375 [trainer.py] => Forgetting (CNN): 93.685

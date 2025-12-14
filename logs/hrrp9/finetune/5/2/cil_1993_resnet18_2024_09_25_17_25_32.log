@@ -1,0 +1,76 @@
+2024-09-25 17:25:32,612 [trainer.py] => config: ./exps/finetune.json
+2024-09-25 17:25:32,612 [trainer.py] => prefix: cil
+2024-09-25 17:25:32,612 [trainer.py] => dataset: hrrp9
+2024-09-25 17:25:32,612 [trainer.py] => memory_size: 500
+2024-09-25 17:25:32,612 [trainer.py] => memory_per_class: 20
+2024-09-25 17:25:32,612 [trainer.py] => fixed_memory: False
+2024-09-25 17:25:32,613 [trainer.py] => shuffle: True
+2024-09-25 17:25:32,613 [trainer.py] => init_cls: 5
+2024-09-25 17:25:32,613 [trainer.py] => increment: 2
+2024-09-25 17:25:32,613 [trainer.py] => model_name: finetune
+2024-09-25 17:25:32,613 [trainer.py] => convnet_type: resnet18
+2024-09-25 17:25:32,613 [trainer.py] => init_train: False
+2024-09-25 17:25:32,613 [trainer.py] => convnet_path: checkpoints/init_train/resnet18_42503.pth
+2024-09-25 17:25:32,613 [trainer.py] => fc_path: checkpoints/init_train/fc_42503.pth
+2024-09-25 17:25:32,613 [trainer.py] => device: [device(type='cuda', index=4)]
+2024-09-25 17:25:32,613 [trainer.py] => seed: 1993
+2024-09-25 17:25:32,613 [trainer.py] => epochs: 50
+2024-09-25 17:25:32,613 [trainer.py] => lrate: 0.1
+2024-09-25 17:25:32,613 [trainer.py] => milestones: [20, 35]
+2024-09-25 17:25:32,613 [trainer.py] => lrate_decay: 0.1
+2024-09-25 17:25:32,613 [trainer.py] => momentum: 0
+2024-09-25 17:25:32,614 [trainer.py] => batch_size: 128
+2024-09-25 17:25:32,614 [trainer.py] => weight_decay: 0.0002
+2024-09-25 17:25:32,614 [trainer.py] => num_workers: 8
+2024-09-25 17:25:33,306 [data_manager.py] => [4, 2, 5, 0, 3, 6, 7, 8, 1]
+2024-09-25 17:25:33,811 [trainer.py] => All params: 3843904
+2024-09-25 17:25:33,812 [trainer.py] => Trainable params: 3843904
+2024-09-25 17:25:33,815 [finetune.py] => Learning on 0-5
+2024-09-25 17:25:34,046 [finetune.py] => init_train?---False
+2024-09-25 17:25:35,362 [trainer.py] => No NME accuracy.
+2024-09-25 17:25:35,363 [trainer.py] => CNN: {'total': 89.93, '00-04': 89.93, 'old': 0, 'new': 89.93}
+2024-09-25 17:25:35,363 [trainer.py] => CNN top1 curve: [89.93]
+2024-09-25 17:25:35,363 [trainer.py] => CNN top5 curve: [100.0]
+
+2024-09-25 17:25:35,363 [trainer.py] => Average Accuracy (CNN): 89.93
+2024-09-25 17:25:35,363 [trainer.py] => All params: 3846469
+2024-09-25 17:25:35,364 [trainer.py] => Trainable params: 3846469
+2024-09-25 17:25:35,365 [finetune.py] => Learning on 5-7
+2024-09-25 17:25:37,180 [finetune.py] => Task 1, Epoch 1/50 => Loss 0.317, Train_accy 0.20, Test_accy 61.55
+2024-09-25 17:25:42,263 [finetune.py] => Task 1, Epoch 6/50 => Loss 0.011, Train_accy 20.48, Test_accy 64.69
+2024-09-25 17:25:47,399 [finetune.py] => Task 1, Epoch 11/50 => Loss 0.004, Train_accy 33.52, Test_accy 67.40
+2024-09-25 17:25:52,390 [finetune.py] => Task 1, Epoch 16/50 => Loss 0.002, Train_accy 41.78, Test_accy 68.02
+2024-09-25 17:25:57,408 [finetune.py] => Task 1, Epoch 21/50 => Loss 0.001, Train_accy 46.60, Test_accy 69.10
+2024-09-25 17:26:02,604 [finetune.py] => Task 1, Epoch 26/50 => Loss 0.002, Train_accy 46.40, Test_accy 69.43
+2024-09-25 17:26:07,633 [finetune.py] => Task 1, Epoch 31/50 => Loss 0.002, Train_accy 47.10, Test_accy 69.21
+2024-09-25 17:26:12,657 [finetune.py] => Task 1, Epoch 36/50 => Loss 0.002, Train_accy 48.12, Test_accy 69.50
+2024-09-25 17:26:17,820 [finetune.py] => Task 1, Epoch 41/50 => Loss 0.002, Train_accy 48.20, Test_accy 68.86
+2024-09-25 17:26:22,901 [finetune.py] => Task 1, Epoch 46/50 => Loss 0.001, Train_accy 47.65, Test_accy 69.17
+2024-09-25 17:26:26,556 [finetune.py] => Task 1, Epoch 50/50 => Loss 0.002, Train_accy 47.65
+2024-09-25 17:26:27,089 [trainer.py] => No NME accuracy.
+2024-09-25 17:26:27,089 [trainer.py] => CNN: {'total': 68.88, '00-04': 82.3, '05-06': 35.33, 'old': 82.3, 'new': 35.33}
+2024-09-25 17:26:27,090 [trainer.py] => CNN top1 curve: [89.93, 68.88]
+2024-09-25 17:26:27,090 [trainer.py] => CNN top5 curve: [100.0, 97.14]
+
+2024-09-25 17:26:27,090 [trainer.py] => Average Accuracy (CNN): 79.405
+2024-09-25 17:26:27,091 [trainer.py] => All params: 3847495
+2024-09-25 17:26:27,092 [trainer.py] => Trainable params: 3847495
+2024-09-25 17:26:27,094 [finetune.py] => Learning on 7-9
+2024-09-25 17:26:28,654 [finetune.py] => Task 2, Epoch 1/50 => Loss 0.193, Train_accy 1.02, Test_accy 44.07
+2024-09-25 17:26:33,774 [finetune.py] => Task 2, Epoch 6/50 => Loss 0.007, Train_accy 29.85, Test_accy 41.56
+2024-09-25 17:26:39,037 [finetune.py] => Task 2, Epoch 11/50 => Loss 0.003, Train_accy 50.28, Test_accy 48.61
+2024-09-25 17:26:44,114 [finetune.py] => Task 2, Epoch 16/50 => Loss 0.001, Train_accy 64.97, Test_accy 44.96
+2024-09-25 17:26:49,346 [finetune.py] => Task 2, Epoch 21/50 => Loss 0.001, Train_accy 76.25, Test_accy 44.93
+2024-09-25 17:26:54,594 [finetune.py] => Task 2, Epoch 26/50 => Loss 0.001, Train_accy 76.68, Test_accy 45.11
+2024-09-25 17:26:59,853 [finetune.py] => Task 2, Epoch 31/50 => Loss 0.001, Train_accy 77.60, Test_accy 45.48
+2024-09-25 17:27:05,132 [finetune.py] => Task 2, Epoch 36/50 => Loss 0.001, Train_accy 78.05, Test_accy 45.56
+2024-09-25 17:27:10,347 [finetune.py] => Task 2, Epoch 41/50 => Loss 0.001, Train_accy 78.08, Test_accy 44.94
+2024-09-25 17:27:15,426 [finetune.py] => Task 2, Epoch 46/50 => Loss 0.001, Train_accy 78.20, Test_accy 45.30
+2024-09-25 17:27:19,171 [finetune.py] => Task 2, Epoch 50/50 => Loss 0.001, Train_accy 78.58
+2024-09-25 17:27:19,792 [trainer.py] => No NME accuracy.
+2024-09-25 17:27:19,792 [trainer.py] => CNN: {'total': 45.02, '00-04': 49.73, '05-06': 7.67, '07-08': 70.58, 'old': 37.71, 'new': 70.58}
+2024-09-25 17:27:19,792 [trainer.py] => CNN top1 curve: [89.93, 68.88, 45.02]
+2024-09-25 17:27:19,792 [trainer.py] => CNN top5 curve: [100.0, 97.14, 91.15]
+
+2024-09-25 17:27:19,792 [trainer.py] => Average Accuracy (CNN): 67.94333333333334
+2024-09-25 17:27:19,793 [trainer.py] => Forgetting (CNN): 33.93000000000001

@@ -1,0 +1,66 @@
+2024-08-20 16:50:25,078 [trainer.py] => config: ./exps/icarl.json
+2024-08-20 16:50:25,078 [trainer.py] => prefix: reproduce
+2024-08-20 16:50:25,078 [trainer.py] => dataset: hrrp9
+2024-08-20 16:50:25,079 [trainer.py] => memory_size: 500
+2024-08-20 16:50:25,079 [trainer.py] => memory_per_class: 20
+2024-08-20 16:50:25,079 [trainer.py] => fixed_memory: False
+2024-08-20 16:50:25,079 [trainer.py] => shuffle: True
+2024-08-20 16:50:25,079 [trainer.py] => init_cls: 5
+2024-08-20 16:50:25,079 [trainer.py] => increment: 2
+2024-08-20 16:50:25,079 [trainer.py] => model_name: icarl
+2024-08-20 16:50:25,079 [trainer.py] => convnet_type: resnet18
+2024-08-20 16:50:25,079 [trainer.py] => device: [device(type='cuda', index=0)]
+2024-08-20 16:50:25,079 [trainer.py] => init_train: False
+2024-08-20 16:50:25,079 [trainer.py] => convnet_path: checkpoints/init_train/resnet18_42503.pth
+2024-08-20 16:50:25,079 [trainer.py] => fc_path: checkpoints/init_train/fc_42503.pth
+2024-08-20 16:50:25,079 [trainer.py] => seed: 1993
+2024-08-20 16:50:26,222 [data_manager.py] => [4, 2, 5, 0, 3, 6, 7, 8, 1]
+2024-08-20 16:50:29,759 [trainer.py] => All params: 3843904
+2024-08-20 16:50:29,759 [trainer.py] => Trainable params: 3843904
+2024-08-20 16:50:29,769 [icarl.py] => Learning on 0-5
+2024-08-20 16:50:30,011 [icarl.py] => init_train?---False
+2024-08-20 16:50:35,398 [base.py] => Reducing exemplars...(100 per classes)
+2024-08-20 16:50:35,399 [base.py] => Constructing exemplars...(100 per classes)
+2024-08-20 16:50:52,233 [icarl.py] => Exemplar size: 500
+2024-08-20 16:50:52,233 [trainer.py] => CNN: {'total': 92.89, '00-04': 92.89, 'old': 0, 'new': 92.89}
+2024-08-20 16:50:52,233 [trainer.py] => NME: {'total': 92.95, '00-04': 92.95, 'old': 0, 'new': 92.95}
+2024-08-20 16:50:52,233 [trainer.py] => CNN top1 curve: [92.89]
+2024-08-20 16:50:52,233 [trainer.py] => CNN top5 curve: [100.0]
+2024-08-20 16:50:52,234 [trainer.py] => NME top1 curve: [92.95]
+2024-08-20 16:50:52,234 [trainer.py] => NME top5 curve: [100.0]
+
+2024-08-20 16:50:52,234 [trainer.py] => Average Accuracy (CNN): 92.89
+2024-08-20 16:50:52,234 [trainer.py] => Average Accuracy (NME): 92.95
+2024-08-20 16:50:52,234 [trainer.py] => All params: 3846469
+2024-08-20 16:50:52,234 [trainer.py] => Trainable params: 3846469
+2024-08-20 16:50:52,237 [icarl.py] => Learning on 5-7
+2024-08-20 16:59:23,119 [icarl.py] => Task 1, Epoch 150/150 => Loss 0.908, Train_accy 100.00
+2024-08-20 16:59:23,121 [base.py] => Reducing exemplars...(71 per classes)
+2024-08-20 16:59:27,711 [base.py] => Constructing exemplars...(71 per classes)
+2024-08-20 16:59:40,585 [icarl.py] => Exemplar size: 497
+2024-08-20 16:59:40,585 [trainer.py] => CNN: {'total': 75.29, '00-04': 69.46, '05-06': 98.18, 'old': 69.46, 'new': 98.18}
+2024-08-20 16:59:40,586 [trainer.py] => NME: {'total': 84.92, '00-04': 82.59, '05-06': 94.05, 'old': 82.59, 'new': 94.05}
+2024-08-20 16:59:40,586 [trainer.py] => CNN top1 curve: [92.89, 75.29]
+2024-08-20 16:59:40,587 [trainer.py] => CNN top5 curve: [100.0, 99.14]
+2024-08-20 16:59:40,587 [trainer.py] => NME top1 curve: [92.95, 84.92]
+2024-08-20 16:59:40,587 [trainer.py] => NME top5 curve: [100.0, 99.28]
+
+2024-08-20 16:59:40,588 [trainer.py] => Average Accuracy (CNN): 84.09
+2024-08-20 16:59:40,588 [trainer.py] => Average Accuracy (NME): 88.935
+2024-08-20 16:59:40,589 [trainer.py] => All params: 3847495
+2024-08-20 16:59:40,589 [trainer.py] => Trainable params: 3847495
+2024-08-20 16:59:40,590 [icarl.py] => Learning on 7-9
+2024-08-20 17:08:02,369 [icarl.py] => Task 2, Epoch 150/150 => Loss 0.981, Train_accy 100.00
+2024-08-20 17:08:02,371 [base.py] => Reducing exemplars...(55 per classes)
+2024-08-20 17:08:08,901 [base.py] => Constructing exemplars...(55 per classes)
+2024-08-20 17:08:19,092 [icarl.py] => Exemplar size: 495
+2024-08-20 17:08:19,093 [trainer.py] => CNN: {'total': 64.26, '00-04': 51.12, '05-06': 80.94, '07-08': 99.05, 'old': 57.17, 'new': 99.05}
+2024-08-20 17:08:19,093 [trainer.py] => NME: {'total': 74.09, '00-04': 65.51, '05-06': 85.23, '07-08': 96.59, 'old': 69.51, 'new': 96.59}
+2024-08-20 17:08:19,093 [trainer.py] => CNN top1 curve: [92.89, 75.29, 64.26]
+2024-08-20 17:08:19,093 [trainer.py] => CNN top5 curve: [100.0, 99.14, 96.62]
+2024-08-20 17:08:19,093 [trainer.py] => NME top1 curve: [92.95, 84.92, 74.09]
+2024-08-20 17:08:19,093 [trainer.py] => NME top5 curve: [100.0, 99.28, 97.61]
+
+2024-08-20 17:08:19,093 [trainer.py] => Average Accuracy (CNN): 77.48
+2024-08-20 17:08:19,094 [trainer.py] => Average Accuracy (NME): 83.98666666666666
+2024-08-20 17:08:19,094 [trainer.py] => Forgetting (CNN): 29.505000000000006

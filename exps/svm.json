@@ -1,0 +1,23 @@
+{
+    "prefix": "cil",
+    "dataset": "hrrp9",
+    "memory_size": 500,
+    "memory_per_class": 20,
+    "fixed_memory": false,
+    "shuffle": true,
+    "init_cls": 5,
+    "increment": 2,
+    "model_name": "svm",
+    "batch_size": 128,
+    "num_workers": 8,
+    "device": ["6"],
+
+    "init_train": false,
+    "seed": [1993],
+    "convnet_path1": "checkpoints/init_train/resnet18_42503.pth",
+    "fc_path1": "checkpoints/init_train/fc_42503.pth",
+    "seed2": [110],
+    "convnet_path2": "checkpoints/init_train/resnet18_35172.pth",
+    "fc_path2": "checkpoints/init_train/fc_35172.pth",
+    "seed1": [2001]
+}

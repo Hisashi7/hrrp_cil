@@ -1,0 +1,564 @@
+2024-08-22 15:50:32,900 [trainer.py] => config: ./exps/podnet.json
+2024-08-22 15:50:32,900 [trainer.py] => prefix: reproduce
+2024-08-22 15:50:32,900 [trainer.py] => dataset: hrrp9
+2024-08-22 15:50:32,900 [trainer.py] => memory_size: 500
+2024-08-22 15:50:32,900 [trainer.py] => memory_per_class: 20
+2024-08-22 15:50:32,900 [trainer.py] => fixed_memory: False
+2024-08-22 15:50:32,900 [trainer.py] => shuffle: True
+2024-08-22 15:50:32,900 [trainer.py] => init_cls: 5
+2024-08-22 15:50:32,900 [trainer.py] => increment: 2
+2024-08-22 15:50:32,900 [trainer.py] => model_name: podnet
+2024-08-22 15:50:32,900 [trainer.py] => convnet_type: resnet18
+2024-08-22 15:50:32,900 [trainer.py] => init_train: True
+2024-08-22 15:50:32,900 [trainer.py] => convnet_path: checkpoints/init_train/resnet18_42503.pth
+2024-08-22 15:50:32,900 [trainer.py] => fc_path: checkpoints/init_train/fc_42503.pth
+2024-08-22 15:50:32,900 [trainer.py] => device: [device(type='cuda', index=0)]
+2024-08-22 15:50:32,900 [trainer.py] => seed: 1993
+2024-08-22 15:50:33,656 [data_manager.py] => [4, 2, 5, 0, 3, 6, 7, 8, 1]
+2024-08-22 15:50:33,760 [trainer.py] => All params: 3843904
+2024-08-22 15:50:33,761 [trainer.py] => Trainable params: 3843904
+2024-08-22 15:50:33,761 [podnet.py] => Learning on 0-5
+2024-08-22 15:50:33,823 [podnet.py] => Adaptive factor: 0
+2024-08-22 15:50:37,736 [podnet.py] => Task 0, Epoch 1/150 (LR 0.09999) => LSC_loss 1.56, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 41.02, Test_acc 22.09
+2024-08-22 15:50:40,079 [podnet.py] => Task 0, Epoch 2/150 (LR 0.09996) => LSC_loss 1.11, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 60.33, Test_acc 18.07
+2024-08-22 15:50:42,862 [podnet.py] => Task 0, Epoch 3/150 (LR 0.09990) => LSC_loss 0.73, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 76.79, Test_acc 50.58
+2024-08-22 15:50:45,002 [podnet.py] => Task 0, Epoch 4/150 (LR 0.09982) => LSC_loss 0.50, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 84.56, Test_acc 65.48
+2024-08-22 15:50:47,280 [podnet.py] => Task 0, Epoch 5/150 (LR 0.09973) => LSC_loss 0.33, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 90.45, Test_acc 62.52
+2024-08-22 15:50:49,503 [podnet.py] => Task 0, Epoch 6/150 (LR 0.09961) => LSC_loss 0.26, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 92.10, Test_acc 80.62
+2024-08-22 15:50:51,903 [podnet.py] => Task 0, Epoch 7/150 (LR 0.09946) => LSC_loss 0.23, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 93.42, Test_acc 81.81
+2024-08-22 15:50:54,004 [podnet.py] => Task 0, Epoch 8/150 (LR 0.09930) => LSC_loss 0.16, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 95.45, Test_acc 68.50
+2024-08-22 15:50:56,248 [podnet.py] => Task 0, Epoch 9/150 (LR 0.09911) => LSC_loss 0.17, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 94.96, Test_acc 84.72
+2024-08-22 15:50:58,841 [podnet.py] => Task 0, Epoch 10/150 (LR 0.09891) => LSC_loss 0.10, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 96.95, Test_acc 81.11
+2024-08-22 15:51:01,112 [podnet.py] => Task 0, Epoch 11/150 (LR 0.09868) => LSC_loss 0.07, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.01, Test_acc 76.28
+2024-08-22 15:51:04,079 [podnet.py] => Task 0, Epoch 12/150 (LR 0.09843) => LSC_loss 0.06, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.22, Test_acc 90.48
+2024-08-22 15:51:06,526 [podnet.py] => Task 0, Epoch 13/150 (LR 0.09816) => LSC_loss 0.06, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.32, Test_acc 87.63
+2024-08-22 15:51:08,862 [podnet.py] => Task 0, Epoch 14/150 (LR 0.09787) => LSC_loss 0.07, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.25, Test_acc 80.29
+2024-08-22 15:51:10,880 [podnet.py] => Task 0, Epoch 15/150 (LR 0.09755) => LSC_loss 0.10, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 97.28, Test_acc 47.36
+2024-08-22 15:51:13,956 [podnet.py] => Task 0, Epoch 16/150 (LR 0.09722) => LSC_loss 0.11, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 96.84, Test_acc 70.30
+2024-08-22 15:51:16,365 [podnet.py] => Task 0, Epoch 17/150 (LR 0.09686) => LSC_loss 0.10, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 97.28, Test_acc 85.99
+2024-08-22 15:51:19,228 [podnet.py] => Task 0, Epoch 18/150 (LR 0.09649) => LSC_loss 0.07, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.08, Test_acc 84.64
+2024-08-22 15:51:21,476 [podnet.py] => Task 0, Epoch 19/150 (LR 0.09609) => LSC_loss 0.06, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.24, Test_acc 85.80
+2024-08-22 15:51:23,606 [podnet.py] => Task 0, Epoch 20/150 (LR 0.09568) => LSC_loss 0.06, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.26, Test_acc 83.43
+2024-08-22 15:51:25,933 [podnet.py] => Task 0, Epoch 21/150 (LR 0.09524) => LSC_loss 0.03, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.24, Test_acc 88.33
+2024-08-22 15:51:28,833 [podnet.py] => Task 0, Epoch 22/150 (LR 0.09479) => LSC_loss 0.07, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.08, Test_acc 90.30
+2024-08-22 15:51:30,959 [podnet.py] => Task 0, Epoch 23/150 (LR 0.09431) => LSC_loss 0.04, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.93, Test_acc 82.26
+2024-08-22 15:51:33,333 [podnet.py] => Task 0, Epoch 24/150 (LR 0.09382) => LSC_loss 0.06, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.18, Test_acc 73.74
+2024-08-22 15:51:35,400 [podnet.py] => Task 0, Epoch 25/150 (LR 0.09330) => LSC_loss 0.15, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 95.73, Test_acc 87.26
+2024-08-22 15:51:37,759 [podnet.py] => Task 0, Epoch 26/150 (LR 0.09277) => LSC_loss 0.06, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.52, Test_acc 84.01
+2024-08-22 15:51:40,782 [podnet.py] => Task 0, Epoch 27/150 (LR 0.09222) => LSC_loss 0.05, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.77, Test_acc 87.89
+2024-08-22 15:51:43,271 [podnet.py] => Task 0, Epoch 28/150 (LR 0.09165) => LSC_loss 0.10, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 97.34, Test_acc 83.65
+2024-08-22 15:51:46,201 [podnet.py] => Task 0, Epoch 29/150 (LR 0.09106) => LSC_loss 0.04, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.15, Test_acc 90.88
+2024-08-22 15:51:49,047 [podnet.py] => Task 0, Epoch 30/150 (LR 0.09045) => LSC_loss 0.04, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.04, Test_acc 87.74
+2024-08-22 15:51:51,642 [podnet.py] => Task 0, Epoch 31/150 (LR 0.08983) => LSC_loss 0.03, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.10, Test_acc 86.68
+2024-08-22 15:51:54,562 [podnet.py] => Task 0, Epoch 32/150 (LR 0.08918) => LSC_loss 0.04, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.01, Test_acc 89.32
+2024-08-22 15:51:57,778 [podnet.py] => Task 0, Epoch 33/150 (LR 0.08853) => LSC_loss 0.07, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 97.86, Test_acc 81.35
+2024-08-22 15:52:01,059 [podnet.py] => Task 0, Epoch 34/150 (LR 0.08785) => LSC_loss 0.09, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 97.42, Test_acc 86.87
+2024-08-22 15:52:04,190 [podnet.py] => Task 0, Epoch 35/150 (LR 0.08716) => LSC_loss 0.05, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.79, Test_acc 76.38
+2024-08-22 15:52:06,938 [podnet.py] => Task 0, Epoch 36/150 (LR 0.08645) => LSC_loss 0.16, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 95.51, Test_acc 86.54
+2024-08-22 15:52:09,167 [podnet.py] => Task 0, Epoch 37/150 (LR 0.08572) => LSC_loss 0.07, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.19, Test_acc 86.01
+2024-08-22 15:52:11,401 [podnet.py] => Task 0, Epoch 38/150 (LR 0.08498) => LSC_loss 0.02, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.37, Test_acc 86.44
+2024-08-22 15:52:13,641 [podnet.py] => Task 0, Epoch 39/150 (LR 0.08423) => LSC_loss 0.04, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.91, Test_acc 70.57
+2024-08-22 15:52:15,856 [podnet.py] => Task 0, Epoch 40/150 (LR 0.08346) => LSC_loss 0.04, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.91, Test_acc 86.26
+2024-08-22 15:52:17,975 [podnet.py] => Task 0, Epoch 41/150 (LR 0.08267) => LSC_loss 0.07, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.18, Test_acc 90.55
+2024-08-22 15:52:21,169 [podnet.py] => Task 0, Epoch 42/150 (LR 0.08187) => LSC_loss 0.03, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.10, Test_acc 88.70
+2024-08-22 15:52:23,388 [podnet.py] => Task 0, Epoch 43/150 (LR 0.08106) => LSC_loss 0.04, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.10, Test_acc 87.49
+2024-08-22 15:52:25,789 [podnet.py] => Task 0, Epoch 44/150 (LR 0.08023) => LSC_loss 0.07, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.02, Test_acc 83.72
+2024-08-22 15:52:28,788 [podnet.py] => Task 0, Epoch 45/150 (LR 0.07939) => LSC_loss 0.04, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.03, Test_acc 81.79
+2024-08-22 15:52:31,204 [podnet.py] => Task 0, Epoch 46/150 (LR 0.07854) => LSC_loss 0.03, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.20, Test_acc 86.32
+2024-08-22 15:52:33,568 [podnet.py] => Task 0, Epoch 47/150 (LR 0.07767) => LSC_loss 0.09, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 97.60, Test_acc 87.00
+2024-08-22 15:52:35,764 [podnet.py] => Task 0, Epoch 48/150 (LR 0.07679) => LSC_loss 0.04, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.03, Test_acc 82.77
+2024-08-22 15:52:38,410 [podnet.py] => Task 0, Epoch 49/150 (LR 0.07590) => LSC_loss 0.07, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.20, Test_acc 89.07
+2024-08-22 15:52:40,703 [podnet.py] => Task 0, Epoch 50/150 (LR 0.07500) => LSC_loss 0.06, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.48, Test_acc 88.53
+2024-08-22 15:52:43,710 [podnet.py] => Task 0, Epoch 51/150 (LR 0.07409) => LSC_loss 0.06, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.42, Test_acc 83.80
+2024-08-22 15:52:45,867 [podnet.py] => Task 0, Epoch 52/150 (LR 0.07316) => LSC_loss 0.04, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.01, Test_acc 87.39
+2024-08-22 15:52:47,881 [podnet.py] => Task 0, Epoch 53/150 (LR 0.07223) => LSC_loss 0.02, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.56, Test_acc 84.50
+2024-08-22 15:52:50,831 [podnet.py] => Task 0, Epoch 54/150 (LR 0.07129) => LSC_loss 0.02, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.55, Test_acc 88.91
+2024-08-22 15:52:53,174 [podnet.py] => Task 0, Epoch 55/150 (LR 0.07034) => LSC_loss 0.02, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.72, Test_acc 76.63
+2024-08-22 15:52:55,630 [podnet.py] => Task 0, Epoch 56/150 (LR 0.06938) => LSC_loss 0.02, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.57, Test_acc 84.99
+2024-08-22 15:52:57,577 [podnet.py] => Task 0, Epoch 57/150 (LR 0.06841) => LSC_loss 0.04, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.67, Test_acc 91.06
+2024-08-22 15:53:00,476 [podnet.py] => Task 0, Epoch 58/150 (LR 0.06743) => LSC_loss 0.04, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.82, Test_acc 89.04
+2024-08-22 15:53:02,941 [podnet.py] => Task 0, Epoch 59/150 (LR 0.06644) => LSC_loss 0.04, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.05, Test_acc 81.02
+2024-08-22 15:53:05,379 [podnet.py] => Task 0, Epoch 60/150 (LR 0.06545) => LSC_loss 0.06, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.45, Test_acc 82.21
+2024-08-22 15:53:07,749 [podnet.py] => Task 0, Epoch 61/150 (LR 0.06445) => LSC_loss 0.11, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 96.80, Test_acc 88.24
+2024-08-22 15:53:10,700 [podnet.py] => Task 0, Epoch 62/150 (LR 0.06345) => LSC_loss 0.03, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.14, Test_acc 88.03
+2024-08-22 15:53:13,828 [podnet.py] => Task 0, Epoch 63/150 (LR 0.06243) => LSC_loss 0.07, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.10, Test_acc 84.79
+2024-08-22 15:53:16,073 [podnet.py] => Task 0, Epoch 64/150 (LR 0.06142) => LSC_loss 0.05, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.65, Test_acc 77.03
+2024-08-22 15:53:18,408 [podnet.py] => Task 0, Epoch 65/150 (LR 0.06040) => LSC_loss 0.02, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.46, Test_acc 89.38
+2024-08-22 15:53:20,707 [podnet.py] => Task 0, Epoch 66/150 (LR 0.05937) => LSC_loss 0.07, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 97.98, Test_acc 91.14
+2024-08-22 15:53:23,736 [podnet.py] => Task 0, Epoch 67/150 (LR 0.05834) => LSC_loss 0.02, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.44, Test_acc 83.77
+2024-08-22 15:53:26,072 [podnet.py] => Task 0, Epoch 68/150 (LR 0.05730) => LSC_loss 0.05, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.56, Test_acc 92.38
+2024-08-22 15:53:28,380 [podnet.py] => Task 0, Epoch 69/150 (LR 0.05627) => LSC_loss 0.02, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.33, Test_acc 89.02
+2024-08-22 15:53:30,607 [podnet.py] => Task 0, Epoch 70/150 (LR 0.05523) => LSC_loss 0.02, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.28, Test_acc 91.84
+2024-08-22 15:53:32,955 [podnet.py] => Task 0, Epoch 71/150 (LR 0.05418) => LSC_loss 0.02, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.57, Test_acc 89.42
+2024-08-22 15:53:35,421 [podnet.py] => Task 0, Epoch 72/150 (LR 0.05314) => LSC_loss 0.01, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.82, Test_acc 92.94
+2024-08-22 15:53:37,256 [podnet.py] => Task 0, Epoch 73/150 (LR 0.05209) => LSC_loss 0.02, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.54, Test_acc 87.23
+2024-08-22 15:53:40,282 [podnet.py] => Task 0, Epoch 74/150 (LR 0.05105) => LSC_loss 0.03, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.07, Test_acc 90.76
+2024-08-22 15:53:42,933 [podnet.py] => Task 0, Epoch 75/150 (LR 0.05000) => LSC_loss 0.02, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.58, Test_acc 90.57
+2024-08-22 15:53:45,302 [podnet.py] => Task 0, Epoch 76/150 (LR 0.04895) => LSC_loss 0.01, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.77, Test_acc 84.21
+2024-08-22 15:53:47,115 [podnet.py] => Task 0, Epoch 77/150 (LR 0.04791) => LSC_loss 0.03, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.41, Test_acc 88.14
+2024-08-22 15:53:48,996 [podnet.py] => Task 0, Epoch 78/150 (LR 0.04686) => LSC_loss 0.06, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.26, Test_acc 89.42
+2024-08-22 15:53:51,112 [podnet.py] => Task 0, Epoch 79/150 (LR 0.04582) => LSC_loss 0.05, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.76, Test_acc 89.80
+2024-08-22 15:53:53,739 [podnet.py] => Task 0, Epoch 80/150 (LR 0.04477) => LSC_loss 0.04, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.81, Test_acc 83.44
+2024-08-22 15:53:56,049 [podnet.py] => Task 0, Epoch 81/150 (LR 0.04373) => LSC_loss 0.06, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.56, Test_acc 89.16
+2024-08-22 15:53:58,515 [podnet.py] => Task 0, Epoch 82/150 (LR 0.04270) => LSC_loss 0.02, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.47, Test_acc 87.40
+2024-08-22 15:54:00,991 [podnet.py] => Task 0, Epoch 83/150 (LR 0.04166) => LSC_loss 0.02, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.72, Test_acc 93.15
+2024-08-22 15:54:03,053 [podnet.py] => Task 0, Epoch 84/150 (LR 0.04063) => LSC_loss 0.01, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.90, Test_acc 92.60
+2024-08-22 15:54:04,927 [podnet.py] => Task 0, Epoch 85/150 (LR 0.03960) => LSC_loss 0.01, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.92, Test_acc 88.72
+2024-08-22 15:54:07,370 [podnet.py] => Task 0, Epoch 86/150 (LR 0.03858) => LSC_loss 0.01, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.91, Test_acc 90.30
+2024-08-22 15:54:09,881 [podnet.py] => Task 0, Epoch 87/150 (LR 0.03757) => LSC_loss 0.01, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.95, Test_acc 91.25
+2024-08-22 15:54:12,400 [podnet.py] => Task 0, Epoch 88/150 (LR 0.03655) => LSC_loss 0.02, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.36, Test_acc 88.91
+2024-08-22 15:54:14,933 [podnet.py] => Task 0, Epoch 89/150 (LR 0.03555) => LSC_loss 0.01, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.80, Test_acc 90.66
+2024-08-22 15:54:17,003 [podnet.py] => Task 0, Epoch 90/150 (LR 0.03455) => LSC_loss 0.01, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.80, Test_acc 83.45
+2024-08-22 15:54:19,219 [podnet.py] => Task 0, Epoch 91/150 (LR 0.03356) => LSC_loss 0.01, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.92, Test_acc 92.60
+2024-08-22 15:54:21,497 [podnet.py] => Task 0, Epoch 92/150 (LR 0.03257) => LSC_loss 0.01, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.89, Test_acc 90.70
+2024-08-22 15:54:23,819 [podnet.py] => Task 0, Epoch 93/150 (LR 0.03159) => LSC_loss 0.01, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.92, Test_acc 87.68
+2024-08-22 15:54:26,102 [podnet.py] => Task 0, Epoch 94/150 (LR 0.03062) => LSC_loss 0.01, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.81, Test_acc 88.95
+2024-08-22 15:54:28,875 [podnet.py] => Task 0, Epoch 95/150 (LR 0.02966) => LSC_loss 0.01, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.82, Test_acc 91.80
+2024-08-22 15:54:31,674 [podnet.py] => Task 0, Epoch 96/150 (LR 0.02871) => LSC_loss 0.02, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.48, Test_acc 90.04
+2024-08-22 15:54:34,613 [podnet.py] => Task 0, Epoch 97/150 (LR 0.02777) => LSC_loss 0.01, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.87, Test_acc 91.57
+2024-08-22 15:54:36,733 [podnet.py] => Task 0, Epoch 98/150 (LR 0.02684) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.97, Test_acc 92.44
+2024-08-22 15:54:39,094 [podnet.py] => Task 0, Epoch 99/150 (LR 0.02591) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 92.78
+2024-08-22 15:54:41,799 [podnet.py] => Task 0, Epoch 100/150 (LR 0.02500) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 92.93
+2024-08-22 15:54:44,271 [podnet.py] => Task 0, Epoch 101/150 (LR 0.02410) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 92.82
+2024-08-22 15:54:47,327 [podnet.py] => Task 0, Epoch 102/150 (LR 0.02321) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.98, Test_acc 92.47
+2024-08-22 15:54:49,209 [podnet.py] => Task 0, Epoch 103/150 (LR 0.02233) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 92.34
+2024-08-22 15:54:51,613 [podnet.py] => Task 0, Epoch 104/150 (LR 0.02146) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 92.27
+2024-08-22 15:54:54,679 [podnet.py] => Task 0, Epoch 105/150 (LR 0.02061) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 92.52
+2024-08-22 15:54:57,246 [podnet.py] => Task 0, Epoch 106/150 (LR 0.01977) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 92.63
+2024-08-22 15:54:59,290 [podnet.py] => Task 0, Epoch 107/150 (LR 0.01894) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 92.52
+2024-08-22 15:55:01,489 [podnet.py] => Task 0, Epoch 108/150 (LR 0.01813) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 92.78
+2024-08-22 15:55:04,389 [podnet.py] => Task 0, Epoch 109/150 (LR 0.01733) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 92.97
+2024-08-22 15:55:07,208 [podnet.py] => Task 0, Epoch 110/150 (LR 0.01654) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 92.64
+2024-08-22 15:55:10,078 [podnet.py] => Task 0, Epoch 111/150 (LR 0.01577) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 92.82
+2024-08-22 15:55:12,785 [podnet.py] => Task 0, Epoch 112/150 (LR 0.01502) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.99, Test_acc 92.83
+2024-08-22 15:55:15,434 [podnet.py] => Task 0, Epoch 113/150 (LR 0.01428) => LSC_loss 0.01, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.66, Test_acc 90.79
+2024-08-22 15:55:17,832 [podnet.py] => Task 0, Epoch 114/150 (LR 0.01355) => LSC_loss 0.01, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.90, Test_acc 91.15
+2024-08-22 15:55:20,574 [podnet.py] => Task 0, Epoch 115/150 (LR 0.01284) => LSC_loss 0.05, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.63, Test_acc 91.18
+2024-08-22 15:55:23,217 [podnet.py] => Task 0, Epoch 116/150 (LR 0.01215) => LSC_loss 0.01, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.93, Test_acc 92.77
+2024-08-22 15:55:26,287 [podnet.py] => Task 0, Epoch 117/150 (LR 0.01147) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 92.42
+2024-08-22 15:55:29,044 [podnet.py] => Task 0, Epoch 118/150 (LR 0.01082) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 92.27
+2024-08-22 15:55:31,591 [podnet.py] => Task 0, Epoch 119/150 (LR 0.01017) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 92.45
+2024-08-22 15:55:34,468 [podnet.py] => Task 0, Epoch 120/150 (LR 0.00955) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 92.61
+2024-08-22 15:55:37,486 [podnet.py] => Task 0, Epoch 121/150 (LR 0.00894) => LSC_loss 0.01, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.97, Test_acc 92.63
+2024-08-22 15:55:39,866 [podnet.py] => Task 0, Epoch 122/150 (LR 0.00835) => LSC_loss 0.05, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 98.80, Test_acc 92.38
+2024-08-22 15:55:41,776 [podnet.py] => Task 0, Epoch 123/150 (LR 0.00778) => LSC_loss 0.01, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.83, Test_acc 92.64
+2024-08-22 15:55:44,258 [podnet.py] => Task 0, Epoch 124/150 (LR 0.00723) => LSC_loss 0.01, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.97, Test_acc 93.00
+2024-08-22 15:55:47,147 [podnet.py] => Task 0, Epoch 125/150 (LR 0.00670) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 93.17
+2024-08-22 15:55:50,394 [podnet.py] => Task 0, Epoch 126/150 (LR 0.00618) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 93.09
+2024-08-22 15:55:53,271 [podnet.py] => Task 0, Epoch 127/150 (LR 0.00569) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 93.17
+2024-08-22 15:55:56,139 [podnet.py] => Task 0, Epoch 128/150 (LR 0.00521) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 92.96
+2024-08-22 15:55:59,060 [podnet.py] => Task 0, Epoch 129/150 (LR 0.00476) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.99, Test_acc 92.46
+2024-08-22 15:56:01,455 [podnet.py] => Task 0, Epoch 130/150 (LR 0.00432) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 92.77
+2024-08-22 15:56:04,446 [podnet.py] => Task 0, Epoch 131/150 (LR 0.00391) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 92.89
+2024-08-22 15:56:06,857 [podnet.py] => Task 0, Epoch 132/150 (LR 0.00351) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 92.57
+2024-08-22 15:56:09,246 [podnet.py] => Task 0, Epoch 133/150 (LR 0.00314) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.99, Test_acc 93.27
+2024-08-22 15:56:12,468 [podnet.py] => Task 0, Epoch 134/150 (LR 0.00278) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 92.72
+2024-08-22 15:56:14,621 [podnet.py] => Task 0, Epoch 135/150 (LR 0.00245) => LSC_loss 0.01, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.98, Test_acc 92.27
+2024-08-22 15:56:17,474 [podnet.py] => Task 0, Epoch 136/150 (LR 0.00213) => LSC_loss 0.01, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.85, Test_acc 91.68
+2024-08-22 15:56:19,527 [podnet.py] => Task 0, Epoch 137/150 (LR 0.00184) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 91.38
+2024-08-22 15:56:21,393 [podnet.py] => Task 0, Epoch 138/150 (LR 0.00157) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 91.66
+2024-08-22 15:56:23,383 [podnet.py] => Task 0, Epoch 139/150 (LR 0.00132) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 91.85
+2024-08-22 15:56:26,259 [podnet.py] => Task 0, Epoch 140/150 (LR 0.00109) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 92.05
+2024-08-22 15:56:29,364 [podnet.py] => Task 0, Epoch 141/150 (LR 0.00089) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 91.91
+2024-08-22 15:56:32,648 [podnet.py] => Task 0, Epoch 142/150 (LR 0.00070) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.99, Test_acc 91.80
+2024-08-22 15:56:35,329 [podnet.py] => Task 0, Epoch 143/150 (LR 0.00054) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 91.80
+2024-08-22 15:56:38,713 [podnet.py] => Task 0, Epoch 144/150 (LR 0.00039) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 91.99
+2024-08-22 15:56:42,011 [podnet.py] => Task 0, Epoch 145/150 (LR 0.00027) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 99.99, Test_acc 91.83
+2024-08-22 15:56:44,878 [podnet.py] => Task 0, Epoch 146/150 (LR 0.00018) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 92.02
+2024-08-22 15:56:47,910 [podnet.py] => Task 0, Epoch 147/150 (LR 0.00010) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 91.86
+2024-08-22 15:56:50,575 [podnet.py] => Task 0, Epoch 148/150 (LR 0.00004) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 91.86
+2024-08-22 15:56:53,008 [podnet.py] => Task 0, Epoch 149/150 (LR 0.00001) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 91.97
+2024-08-22 15:56:55,259 [podnet.py] => Task 0, Epoch 150/150 (LR 0.00000) => LSC_loss 0.00, Spatial_loss 0.00, Flat_loss 0.00, Train_acc 100.00, Test_acc 92.02
+2024-08-22 15:56:55,850 [base.py] => Reducing exemplars...(100 per classes)
+2024-08-22 15:56:55,851 [base.py] => Constructing exemplars...(100 per classes)
+2024-08-22 15:57:01,721 [podnet.py] => Exemplar size: 500
+2024-08-22 15:57:01,721 [trainer.py] => CNN: {'total': 92.02, '00-04': 92.02, 'old': 0, 'new': 92.02}
+2024-08-22 15:57:01,721 [trainer.py] => NME: {'total': 92.04, '00-04': 92.04, 'old': 0, 'new': 92.04}
+2024-08-22 15:57:01,721 [trainer.py] => CNN top1 curve: [92.02]
+2024-08-22 15:57:01,722 [trainer.py] => CNN top5 curve: [100.0]
+2024-08-22 15:57:01,722 [trainer.py] => NME top1 curve: [92.04]
+2024-08-22 15:57:01,722 [trainer.py] => NME top5 curve: [100.0]
+
+2024-08-22 15:57:01,722 [trainer.py] => Average Accuracy (CNN): 92.02
+2024-08-22 15:57:01,722 [trainer.py] => Average Accuracy (NME): 92.04
+2024-08-22 15:57:01,722 [trainer.py] => All params: 3869505
+2024-08-22 15:57:01,723 [trainer.py] => Trainable params: 3869505
+2024-08-22 15:57:01,724 [podnet.py] => Learning on 5-7
+2024-08-22 15:57:01,803 [podnet.py] => Adaptive factor: 1.8708286933869707
+2024-08-22 15:57:03,848 [podnet.py] => Task 1, Epoch 1/150 (LR 0.09999) => LSC_loss 1.04, Spatial_loss 3.89, Flat_loss 0.43, Train_acc 70.76, Test_acc 56.69
+2024-08-22 15:57:06,444 [podnet.py] => Task 1, Epoch 2/150 (LR 0.09996) => LSC_loss 0.47, Spatial_loss 2.81, Flat_loss 0.27, Train_acc 87.58, Test_acc 58.96
+2024-08-22 15:57:09,032 [podnet.py] => Task 1, Epoch 3/150 (LR 0.09990) => LSC_loss 0.32, Spatial_loss 2.21, Flat_loss 0.22, Train_acc 92.00, Test_acc 66.22
+2024-08-22 15:57:11,599 [podnet.py] => Task 1, Epoch 4/150 (LR 0.09982) => LSC_loss 0.26, Spatial_loss 1.95, Flat_loss 0.20, Train_acc 94.20, Test_acc 64.33
+2024-08-22 15:57:13,782 [podnet.py] => Task 1, Epoch 5/150 (LR 0.09973) => LSC_loss 0.24, Spatial_loss 1.76, Flat_loss 0.18, Train_acc 94.36, Test_acc 64.76
+2024-08-22 15:57:15,752 [podnet.py] => Task 1, Epoch 6/150 (LR 0.09961) => LSC_loss 0.22, Spatial_loss 1.66, Flat_loss 0.17, Train_acc 95.29, Test_acc 65.79
+2024-08-22 15:57:18,453 [podnet.py] => Task 1, Epoch 7/150 (LR 0.09946) => LSC_loss 0.18, Spatial_loss 1.66, Flat_loss 0.17, Train_acc 95.80, Test_acc 69.34
+2024-08-22 15:57:20,858 [podnet.py] => Task 1, Epoch 8/150 (LR 0.09930) => LSC_loss 0.16, Spatial_loss 1.47, Flat_loss 0.15, Train_acc 96.91, Test_acc 72.75
+2024-08-22 15:57:23,472 [podnet.py] => Task 1, Epoch 9/150 (LR 0.09911) => LSC_loss 0.15, Spatial_loss 1.47, Flat_loss 0.15, Train_acc 97.27, Test_acc 68.72
+2024-08-22 15:57:25,522 [podnet.py] => Task 1, Epoch 10/150 (LR 0.09891) => LSC_loss 0.16, Spatial_loss 1.43, Flat_loss 0.15, Train_acc 96.93, Test_acc 73.69
+2024-08-22 15:57:27,826 [podnet.py] => Task 1, Epoch 11/150 (LR 0.09868) => LSC_loss 0.14, Spatial_loss 1.41, Flat_loss 0.15, Train_acc 97.78, Test_acc 64.38
+2024-08-22 15:57:30,373 [podnet.py] => Task 1, Epoch 12/150 (LR 0.09843) => LSC_loss 0.13, Spatial_loss 1.45, Flat_loss 0.15, Train_acc 97.76, Test_acc 74.47
+2024-08-22 15:57:32,899 [podnet.py] => Task 1, Epoch 13/150 (LR 0.09816) => LSC_loss 0.11, Spatial_loss 1.31, Flat_loss 0.14, Train_acc 98.69, Test_acc 65.76
+2024-08-22 15:57:35,574 [podnet.py] => Task 1, Epoch 14/150 (LR 0.09787) => LSC_loss 0.11, Spatial_loss 1.28, Flat_loss 0.14, Train_acc 99.00, Test_acc 68.95
+2024-08-22 15:57:37,495 [podnet.py] => Task 1, Epoch 15/150 (LR 0.09755) => LSC_loss 0.11, Spatial_loss 1.28, Flat_loss 0.14, Train_acc 98.89, Test_acc 64.34
+2024-08-22 15:57:39,679 [podnet.py] => Task 1, Epoch 16/150 (LR 0.09722) => LSC_loss 0.11, Spatial_loss 1.31, Flat_loss 0.14, Train_acc 98.51, Test_acc 71.56
+2024-08-22 15:57:42,027 [podnet.py] => Task 1, Epoch 17/150 (LR 0.09686) => LSC_loss 0.10, Spatial_loss 1.22, Flat_loss 0.13, Train_acc 99.13, Test_acc 66.34
+2024-08-22 15:57:44,656 [podnet.py] => Task 1, Epoch 18/150 (LR 0.09649) => LSC_loss 0.10, Spatial_loss 1.26, Flat_loss 0.13, Train_acc 98.78, Test_acc 67.47
+2024-08-22 15:57:46,387 [podnet.py] => Task 1, Epoch 19/150 (LR 0.09609) => LSC_loss 0.09, Spatial_loss 1.22, Flat_loss 0.13, Train_acc 99.27, Test_acc 68.27
+2024-08-22 15:57:48,109 [podnet.py] => Task 1, Epoch 20/150 (LR 0.09568) => LSC_loss 0.09, Spatial_loss 1.19, Flat_loss 0.13, Train_acc 99.36, Test_acc 55.62
+2024-08-22 15:57:50,761 [podnet.py] => Task 1, Epoch 21/150 (LR 0.09524) => LSC_loss 0.08, Spatial_loss 1.18, Flat_loss 0.12, Train_acc 99.49, Test_acc 55.13
+2024-08-22 15:57:53,359 [podnet.py] => Task 1, Epoch 22/150 (LR 0.09479) => LSC_loss 0.08, Spatial_loss 1.12, Flat_loss 0.12, Train_acc 99.69, Test_acc 72.42
+2024-08-22 15:57:56,150 [podnet.py] => Task 1, Epoch 23/150 (LR 0.09431) => LSC_loss 0.08, Spatial_loss 1.14, Flat_loss 0.12, Train_acc 99.49, Test_acc 66.86
+2024-08-22 15:57:58,709 [podnet.py] => Task 1, Epoch 24/150 (LR 0.09382) => LSC_loss 0.08, Spatial_loss 1.09, Flat_loss 0.12, Train_acc 99.56, Test_acc 76.27
+2024-08-22 15:58:01,525 [podnet.py] => Task 1, Epoch 25/150 (LR 0.09330) => LSC_loss 0.07, Spatial_loss 1.12, Flat_loss 0.12, Train_acc 99.60, Test_acc 73.37
+2024-08-22 15:58:04,077 [podnet.py] => Task 1, Epoch 26/150 (LR 0.09277) => LSC_loss 0.08, Spatial_loss 1.09, Flat_loss 0.12, Train_acc 99.60, Test_acc 67.05
+2024-08-22 15:58:06,627 [podnet.py] => Task 1, Epoch 27/150 (LR 0.09222) => LSC_loss 0.08, Spatial_loss 1.10, Flat_loss 0.12, Train_acc 99.60, Test_acc 60.29
+2024-08-22 15:58:08,778 [podnet.py] => Task 1, Epoch 28/150 (LR 0.09165) => LSC_loss 0.09, Spatial_loss 1.15, Flat_loss 0.13, Train_acc 99.13, Test_acc 71.10
+2024-08-22 15:58:11,319 [podnet.py] => Task 1, Epoch 29/150 (LR 0.09106) => LSC_loss 0.10, Spatial_loss 1.20, Flat_loss 0.13, Train_acc 98.56, Test_acc 71.28
+2024-08-22 15:58:13,813 [podnet.py] => Task 1, Epoch 30/150 (LR 0.09045) => LSC_loss 0.07, Spatial_loss 1.06, Flat_loss 0.12, Train_acc 99.62, Test_acc 72.17
+2024-08-22 15:58:16,431 [podnet.py] => Task 1, Epoch 31/150 (LR 0.08983) => LSC_loss 0.07, Spatial_loss 1.12, Flat_loss 0.12, Train_acc 99.60, Test_acc 71.35
+2024-08-22 15:58:18,957 [podnet.py] => Task 1, Epoch 32/150 (LR 0.08918) => LSC_loss 0.07, Spatial_loss 1.09, Flat_loss 0.12, Train_acc 99.71, Test_acc 74.29
+2024-08-22 15:58:21,297 [podnet.py] => Task 1, Epoch 33/150 (LR 0.08853) => LSC_loss 0.06, Spatial_loss 1.08, Flat_loss 0.11, Train_acc 99.84, Test_acc 79.58
+2024-08-22 15:58:23,843 [podnet.py] => Task 1, Epoch 34/150 (LR 0.08785) => LSC_loss 0.06, Spatial_loss 1.02, Flat_loss 0.11, Train_acc 99.80, Test_acc 67.08
+2024-08-22 15:58:26,276 [podnet.py] => Task 1, Epoch 35/150 (LR 0.08716) => LSC_loss 0.06, Spatial_loss 1.04, Flat_loss 0.11, Train_acc 99.84, Test_acc 65.44
+2024-08-22 15:58:28,206 [podnet.py] => Task 1, Epoch 36/150 (LR 0.08645) => LSC_loss 0.06, Spatial_loss 1.02, Flat_loss 0.11, Train_acc 99.71, Test_acc 71.08
+2024-08-22 15:58:30,399 [podnet.py] => Task 1, Epoch 37/150 (LR 0.08572) => LSC_loss 0.06, Spatial_loss 0.97, Flat_loss 0.11, Train_acc 99.78, Test_acc 67.10
+2024-08-22 15:58:32,451 [podnet.py] => Task 1, Epoch 38/150 (LR 0.08498) => LSC_loss 0.06, Spatial_loss 1.02, Flat_loss 0.11, Train_acc 99.84, Test_acc 78.04
+2024-08-22 15:58:35,194 [podnet.py] => Task 1, Epoch 39/150 (LR 0.08423) => LSC_loss 0.06, Spatial_loss 0.98, Flat_loss 0.11, Train_acc 99.87, Test_acc 66.15
+2024-08-22 15:58:37,516 [podnet.py] => Task 1, Epoch 40/150 (LR 0.08346) => LSC_loss 0.06, Spatial_loss 0.99, Flat_loss 0.11, Train_acc 99.78, Test_acc 73.65
+2024-08-22 15:58:39,826 [podnet.py] => Task 1, Epoch 41/150 (LR 0.08267) => LSC_loss 0.05, Spatial_loss 1.00, Flat_loss 0.11, Train_acc 99.87, Test_acc 73.00
+2024-08-22 15:58:41,886 [podnet.py] => Task 1, Epoch 42/150 (LR 0.08187) => LSC_loss 0.06, Spatial_loss 1.00, Flat_loss 0.11, Train_acc 99.82, Test_acc 72.10
+2024-08-22 15:58:44,187 [podnet.py] => Task 1, Epoch 43/150 (LR 0.08106) => LSC_loss 0.05, Spatial_loss 1.00, Flat_loss 0.11, Train_acc 99.80, Test_acc 77.72
+2024-08-22 15:58:46,601 [podnet.py] => Task 1, Epoch 44/150 (LR 0.08023) => LSC_loss 0.06, Spatial_loss 1.00, Flat_loss 0.11, Train_acc 99.96, Test_acc 71.46
+2024-08-22 15:58:48,998 [podnet.py] => Task 1, Epoch 45/150 (LR 0.07939) => LSC_loss 0.07, Spatial_loss 1.00, Flat_loss 0.11, Train_acc 99.58, Test_acc 68.32
+2024-08-22 15:58:50,855 [podnet.py] => Task 1, Epoch 46/150 (LR 0.07854) => LSC_loss 0.06, Spatial_loss 1.02, Flat_loss 0.11, Train_acc 99.73, Test_acc 71.36
+2024-08-22 15:58:52,850 [podnet.py] => Task 1, Epoch 47/150 (LR 0.07767) => LSC_loss 0.06, Spatial_loss 0.93, Flat_loss 0.11, Train_acc 99.76, Test_acc 72.87
+2024-08-22 15:58:55,160 [podnet.py] => Task 1, Epoch 48/150 (LR 0.07679) => LSC_loss 0.05, Spatial_loss 0.94, Flat_loss 0.10, Train_acc 99.87, Test_acc 71.72
+2024-08-22 15:58:57,780 [podnet.py] => Task 1, Epoch 49/150 (LR 0.07590) => LSC_loss 0.05, Spatial_loss 0.93, Flat_loss 0.11, Train_acc 99.87, Test_acc 69.17
+2024-08-22 15:59:00,209 [podnet.py] => Task 1, Epoch 50/150 (LR 0.07500) => LSC_loss 0.05, Spatial_loss 0.96, Flat_loss 0.10, Train_acc 99.82, Test_acc 66.48
+2024-08-22 15:59:02,759 [podnet.py] => Task 1, Epoch 51/150 (LR 0.07409) => LSC_loss 0.05, Spatial_loss 0.96, Flat_loss 0.10, Train_acc 99.89, Test_acc 76.09
+2024-08-22 15:59:04,631 [podnet.py] => Task 1, Epoch 52/150 (LR 0.07316) => LSC_loss 0.05, Spatial_loss 0.89, Flat_loss 0.10, Train_acc 99.96, Test_acc 75.37
+2024-08-22 15:59:06,675 [podnet.py] => Task 1, Epoch 53/150 (LR 0.07223) => LSC_loss 0.05, Spatial_loss 0.91, Flat_loss 0.11, Train_acc 99.93, Test_acc 74.46
+2024-08-22 15:59:09,138 [podnet.py] => Task 1, Epoch 54/150 (LR 0.07129) => LSC_loss 0.05, Spatial_loss 0.88, Flat_loss 0.10, Train_acc 99.96, Test_acc 70.51
+2024-08-22 15:59:11,660 [podnet.py] => Task 1, Epoch 55/150 (LR 0.07034) => LSC_loss 0.05, Spatial_loss 0.89, Flat_loss 0.10, Train_acc 99.87, Test_acc 72.68
+2024-08-22 15:59:13,613 [podnet.py] => Task 1, Epoch 56/150 (LR 0.06938) => LSC_loss 0.05, Spatial_loss 0.85, Flat_loss 0.10, Train_acc 99.98, Test_acc 69.22
+2024-08-22 15:59:15,436 [podnet.py] => Task 1, Epoch 57/150 (LR 0.06841) => LSC_loss 0.05, Spatial_loss 0.86, Flat_loss 0.10, Train_acc 100.00, Test_acc 71.68
+2024-08-22 15:59:17,871 [podnet.py] => Task 1, Epoch 58/150 (LR 0.06743) => LSC_loss 0.05, Spatial_loss 0.91, Flat_loss 0.11, Train_acc 99.89, Test_acc 75.01
+2024-08-22 15:59:20,359 [podnet.py] => Task 1, Epoch 59/150 (LR 0.06644) => LSC_loss 0.05, Spatial_loss 0.89, Flat_loss 0.10, Train_acc 99.87, Test_acc 69.99
+2024-08-22 15:59:22,948 [podnet.py] => Task 1, Epoch 60/150 (LR 0.06545) => LSC_loss 0.05, Spatial_loss 0.90, Flat_loss 0.10, Train_acc 99.93, Test_acc 73.95
+2024-08-22 15:59:25,496 [podnet.py] => Task 1, Epoch 61/150 (LR 0.06445) => LSC_loss 0.05, Spatial_loss 0.88, Flat_loss 0.10, Train_acc 99.87, Test_acc 67.32
+2024-08-22 15:59:28,031 [podnet.py] => Task 1, Epoch 62/150 (LR 0.06345) => LSC_loss 0.05, Spatial_loss 0.83, Flat_loss 0.10, Train_acc 100.00, Test_acc 72.47
+2024-08-22 15:59:30,604 [podnet.py] => Task 1, Epoch 63/150 (LR 0.06243) => LSC_loss 0.05, Spatial_loss 0.89, Flat_loss 0.10, Train_acc 99.89, Test_acc 75.04
+2024-08-22 15:59:32,754 [podnet.py] => Task 1, Epoch 64/150 (LR 0.06142) => LSC_loss 0.05, Spatial_loss 0.84, Flat_loss 0.10, Train_acc 99.96, Test_acc 75.16
+2024-08-22 15:59:34,861 [podnet.py] => Task 1, Epoch 65/150 (LR 0.06040) => LSC_loss 0.05, Spatial_loss 0.80, Flat_loss 0.10, Train_acc 99.91, Test_acc 67.86
+2024-08-22 15:59:37,332 [podnet.py] => Task 1, Epoch 66/150 (LR 0.05937) => LSC_loss 0.05, Spatial_loss 0.88, Flat_loss 0.10, Train_acc 99.78, Test_acc 73.67
+2024-08-22 15:59:39,851 [podnet.py] => Task 1, Epoch 67/150 (LR 0.05834) => LSC_loss 0.05, Spatial_loss 0.88, Flat_loss 0.10, Train_acc 99.93, Test_acc 67.93
+2024-08-22 15:59:42,484 [podnet.py] => Task 1, Epoch 68/150 (LR 0.05730) => LSC_loss 0.05, Spatial_loss 0.82, Flat_loss 0.10, Train_acc 99.91, Test_acc 71.63
+2024-08-22 15:59:44,603 [podnet.py] => Task 1, Epoch 69/150 (LR 0.05627) => LSC_loss 0.05, Spatial_loss 0.82, Flat_loss 0.10, Train_acc 99.98, Test_acc 73.12
+2024-08-22 15:59:46,640 [podnet.py] => Task 1, Epoch 70/150 (LR 0.05523) => LSC_loss 0.05, Spatial_loss 0.87, Flat_loss 0.10, Train_acc 100.00, Test_acc 75.35
+2024-08-22 15:59:48,780 [podnet.py] => Task 1, Epoch 71/150 (LR 0.05418) => LSC_loss 0.05, Spatial_loss 0.86, Flat_loss 0.10, Train_acc 99.98, Test_acc 67.52
+2024-08-22 15:59:50,733 [podnet.py] => Task 1, Epoch 72/150 (LR 0.05314) => LSC_loss 0.05, Spatial_loss 0.81, Flat_loss 0.10, Train_acc 99.96, Test_acc 77.35
+2024-08-22 15:59:52,543 [podnet.py] => Task 1, Epoch 73/150 (LR 0.05209) => LSC_loss 0.05, Spatial_loss 0.81, Flat_loss 0.09, Train_acc 99.93, Test_acc 69.27
+2024-08-22 15:59:54,574 [podnet.py] => Task 1, Epoch 74/150 (LR 0.05105) => LSC_loss 0.05, Spatial_loss 0.80, Flat_loss 0.10, Train_acc 99.96, Test_acc 75.82
+2024-08-22 15:59:56,431 [podnet.py] => Task 1, Epoch 75/150 (LR 0.05000) => LSC_loss 0.04, Spatial_loss 0.79, Flat_loss 0.09, Train_acc 100.00, Test_acc 74.26
+2024-08-22 15:59:58,600 [podnet.py] => Task 1, Epoch 76/150 (LR 0.04895) => LSC_loss 0.05, Spatial_loss 0.80, Flat_loss 0.10, Train_acc 99.93, Test_acc 71.78
+2024-08-22 16:00:00,425 [podnet.py] => Task 1, Epoch 77/150 (LR 0.04791) => LSC_loss 0.05, Spatial_loss 0.78, Flat_loss 0.09, Train_acc 99.93, Test_acc 72.63
+2024-08-22 16:00:02,721 [podnet.py] => Task 1, Epoch 78/150 (LR 0.04686) => LSC_loss 0.06, Spatial_loss 0.86, Flat_loss 0.11, Train_acc 99.76, Test_acc 74.88
+2024-08-22 16:00:04,863 [podnet.py] => Task 1, Epoch 79/150 (LR 0.04582) => LSC_loss 0.05, Spatial_loss 0.81, Flat_loss 0.10, Train_acc 99.80, Test_acc 68.16
+2024-08-22 16:00:06,714 [podnet.py] => Task 1, Epoch 80/150 (LR 0.04477) => LSC_loss 0.05, Spatial_loss 0.78, Flat_loss 0.09, Train_acc 99.98, Test_acc 76.65
+2024-08-22 16:00:08,840 [podnet.py] => Task 1, Epoch 81/150 (LR 0.04373) => LSC_loss 0.04, Spatial_loss 0.76, Flat_loss 0.09, Train_acc 99.98, Test_acc 74.33
+2024-08-22 16:00:10,719 [podnet.py] => Task 1, Epoch 82/150 (LR 0.04270) => LSC_loss 0.04, Spatial_loss 0.76, Flat_loss 0.09, Train_acc 99.96, Test_acc 71.31
+2024-08-22 16:00:12,298 [podnet.py] => Task 1, Epoch 83/150 (LR 0.04166) => LSC_loss 0.05, Spatial_loss 0.71, Flat_loss 0.09, Train_acc 99.98, Test_acc 77.02
+2024-08-22 16:00:14,387 [podnet.py] => Task 1, Epoch 84/150 (LR 0.04063) => LSC_loss 0.04, Spatial_loss 0.76, Flat_loss 0.09, Train_acc 100.00, Test_acc 70.95
+2024-08-22 16:00:16,896 [podnet.py] => Task 1, Epoch 85/150 (LR 0.03960) => LSC_loss 0.04, Spatial_loss 0.75, Flat_loss 0.09, Train_acc 99.96, Test_acc 69.70
+2024-08-22 16:00:19,187 [podnet.py] => Task 1, Epoch 86/150 (LR 0.03858) => LSC_loss 0.04, Spatial_loss 0.73, Flat_loss 0.09, Train_acc 99.96, Test_acc 73.87
+2024-08-22 16:00:21,671 [podnet.py] => Task 1, Epoch 87/150 (LR 0.03757) => LSC_loss 0.04, Spatial_loss 0.74, Flat_loss 0.09, Train_acc 100.00, Test_acc 67.76
+2024-08-22 16:00:24,226 [podnet.py] => Task 1, Epoch 88/150 (LR 0.03655) => LSC_loss 0.04, Spatial_loss 0.72, Flat_loss 0.09, Train_acc 100.00, Test_acc 70.84
+2024-08-22 16:00:26,913 [podnet.py] => Task 1, Epoch 89/150 (LR 0.03555) => LSC_loss 0.04, Spatial_loss 0.73, Flat_loss 0.09, Train_acc 100.00, Test_acc 75.00
+2024-08-22 16:00:29,014 [podnet.py] => Task 1, Epoch 90/150 (LR 0.03455) => LSC_loss 0.04, Spatial_loss 0.70, Flat_loss 0.09, Train_acc 100.00, Test_acc 75.95
+2024-08-22 16:00:31,442 [podnet.py] => Task 1, Epoch 91/150 (LR 0.03356) => LSC_loss 0.04, Spatial_loss 0.70, Flat_loss 0.09, Train_acc 99.98, Test_acc 75.37
+2024-08-22 16:00:33,151 [podnet.py] => Task 1, Epoch 92/150 (LR 0.03257) => LSC_loss 0.04, Spatial_loss 0.69, Flat_loss 0.09, Train_acc 100.00, Test_acc 75.61
+2024-08-22 16:00:35,481 [podnet.py] => Task 1, Epoch 93/150 (LR 0.03159) => LSC_loss 0.04, Spatial_loss 0.70, Flat_loss 0.09, Train_acc 100.00, Test_acc 70.99
+2024-08-22 16:00:37,018 [podnet.py] => Task 1, Epoch 94/150 (LR 0.03062) => LSC_loss 0.04, Spatial_loss 0.70, Flat_loss 0.09, Train_acc 100.00, Test_acc 74.76
+2024-08-22 16:00:39,467 [podnet.py] => Task 1, Epoch 95/150 (LR 0.02966) => LSC_loss 0.04, Spatial_loss 0.70, Flat_loss 0.09, Train_acc 100.00, Test_acc 76.97
+2024-08-22 16:00:41,773 [podnet.py] => Task 1, Epoch 96/150 (LR 0.02871) => LSC_loss 0.04, Spatial_loss 0.68, Flat_loss 0.09, Train_acc 100.00, Test_acc 74.34
+2024-08-22 16:00:43,676 [podnet.py] => Task 1, Epoch 97/150 (LR 0.02777) => LSC_loss 0.04, Spatial_loss 0.67, Flat_loss 0.09, Train_acc 100.00, Test_acc 70.62
+2024-08-22 16:00:46,004 [podnet.py] => Task 1, Epoch 98/150 (LR 0.02684) => LSC_loss 0.04, Spatial_loss 0.68, Flat_loss 0.09, Train_acc 99.96, Test_acc 74.72
+2024-08-22 16:00:47,941 [podnet.py] => Task 1, Epoch 99/150 (LR 0.02591) => LSC_loss 0.04, Spatial_loss 0.66, Flat_loss 0.09, Train_acc 99.98, Test_acc 69.12
+2024-08-22 16:00:50,521 [podnet.py] => Task 1, Epoch 100/150 (LR 0.02500) => LSC_loss 0.04, Spatial_loss 0.66, Flat_loss 0.09, Train_acc 100.00, Test_acc 74.23
+2024-08-22 16:00:52,687 [podnet.py] => Task 1, Epoch 101/150 (LR 0.02410) => LSC_loss 0.04, Spatial_loss 0.64, Flat_loss 0.09, Train_acc 99.96, Test_acc 74.08
+2024-08-22 16:00:55,020 [podnet.py] => Task 1, Epoch 102/150 (LR 0.02321) => LSC_loss 0.04, Spatial_loss 0.67, Flat_loss 0.09, Train_acc 100.00, Test_acc 73.13
+2024-08-22 16:00:57,418 [podnet.py] => Task 1, Epoch 103/150 (LR 0.02233) => LSC_loss 0.04, Spatial_loss 0.63, Flat_loss 0.09, Train_acc 100.00, Test_acc 74.43
+2024-08-22 16:01:00,076 [podnet.py] => Task 1, Epoch 104/150 (LR 0.02146) => LSC_loss 0.04, Spatial_loss 0.67, Flat_loss 0.09, Train_acc 99.96, Test_acc 74.86
+2024-08-22 16:01:02,515 [podnet.py] => Task 1, Epoch 105/150 (LR 0.02061) => LSC_loss 0.05, Spatial_loss 0.64, Flat_loss 0.09, Train_acc 99.89, Test_acc 74.84
+2024-08-22 16:01:04,816 [podnet.py] => Task 1, Epoch 106/150 (LR 0.01977) => LSC_loss 0.04, Spatial_loss 0.67, Flat_loss 0.09, Train_acc 99.98, Test_acc 77.35
+2024-08-22 16:01:06,556 [podnet.py] => Task 1, Epoch 107/150 (LR 0.01894) => LSC_loss 0.04, Spatial_loss 0.64, Flat_loss 0.09, Train_acc 100.00, Test_acc 75.07
+2024-08-22 16:01:08,624 [podnet.py] => Task 1, Epoch 108/150 (LR 0.01813) => LSC_loss 0.04, Spatial_loss 0.63, Flat_loss 0.09, Train_acc 99.98, Test_acc 75.46
+2024-08-22 16:01:10,571 [podnet.py] => Task 1, Epoch 109/150 (LR 0.01733) => LSC_loss 0.04, Spatial_loss 0.64, Flat_loss 0.09, Train_acc 99.98, Test_acc 72.75
+2024-08-22 16:01:12,446 [podnet.py] => Task 1, Epoch 110/150 (LR 0.01654) => LSC_loss 0.04, Spatial_loss 0.65, Flat_loss 0.09, Train_acc 100.00, Test_acc 77.75
+2024-08-22 16:01:14,154 [podnet.py] => Task 1, Epoch 111/150 (LR 0.01577) => LSC_loss 0.04, Spatial_loss 0.61, Flat_loss 0.09, Train_acc 99.98, Test_acc 74.59
+2024-08-22 16:01:16,144 [podnet.py] => Task 1, Epoch 112/150 (LR 0.01502) => LSC_loss 0.04, Spatial_loss 0.59, Flat_loss 0.08, Train_acc 99.98, Test_acc 73.97
+2024-08-22 16:01:18,035 [podnet.py] => Task 1, Epoch 113/150 (LR 0.01428) => LSC_loss 0.04, Spatial_loss 0.60, Flat_loss 0.08, Train_acc 100.00, Test_acc 75.64
+2024-08-22 16:01:20,135 [podnet.py] => Task 1, Epoch 114/150 (LR 0.01355) => LSC_loss 0.04, Spatial_loss 0.56, Flat_loss 0.08, Train_acc 100.00, Test_acc 77.57
+2024-08-22 16:01:22,575 [podnet.py] => Task 1, Epoch 115/150 (LR 0.01284) => LSC_loss 0.04, Spatial_loss 0.59, Flat_loss 0.08, Train_acc 100.00, Test_acc 76.31
+2024-08-22 16:01:24,503 [podnet.py] => Task 1, Epoch 116/150 (LR 0.01215) => LSC_loss 0.04, Spatial_loss 0.58, Flat_loss 0.08, Train_acc 100.00, Test_acc 77.51
+2024-08-22 16:01:26,818 [podnet.py] => Task 1, Epoch 117/150 (LR 0.01147) => LSC_loss 0.04, Spatial_loss 0.57, Flat_loss 0.08, Train_acc 100.00, Test_acc 75.76
+2024-08-22 16:01:29,318 [podnet.py] => Task 1, Epoch 118/150 (LR 0.01082) => LSC_loss 0.04, Spatial_loss 0.56, Flat_loss 0.08, Train_acc 100.00, Test_acc 72.74
+2024-08-22 16:01:31,034 [podnet.py] => Task 1, Epoch 119/150 (LR 0.01017) => LSC_loss 0.04, Spatial_loss 0.58, Flat_loss 0.09, Train_acc 100.00, Test_acc 76.58
+2024-08-22 16:01:33,222 [podnet.py] => Task 1, Epoch 120/150 (LR 0.00955) => LSC_loss 0.04, Spatial_loss 0.58, Flat_loss 0.08, Train_acc 100.00, Test_acc 77.22
+2024-08-22 16:01:35,549 [podnet.py] => Task 1, Epoch 121/150 (LR 0.00894) => LSC_loss 0.04, Spatial_loss 0.53, Flat_loss 0.08, Train_acc 99.98, Test_acc 77.17
+2024-08-22 16:01:37,913 [podnet.py] => Task 1, Epoch 122/150 (LR 0.00835) => LSC_loss 0.04, Spatial_loss 0.55, Flat_loss 0.08, Train_acc 100.00, Test_acc 77.73
+2024-08-22 16:01:40,201 [podnet.py] => Task 1, Epoch 123/150 (LR 0.00778) => LSC_loss 0.04, Spatial_loss 0.56, Flat_loss 0.08, Train_acc 100.00, Test_acc 74.73
+2024-08-22 16:01:42,749 [podnet.py] => Task 1, Epoch 124/150 (LR 0.00723) => LSC_loss 0.04, Spatial_loss 0.55, Flat_loss 0.08, Train_acc 100.00, Test_acc 75.73
+2024-08-22 16:01:44,437 [podnet.py] => Task 1, Epoch 125/150 (LR 0.00670) => LSC_loss 0.04, Spatial_loss 0.57, Flat_loss 0.08, Train_acc 100.00, Test_acc 78.25
+2024-08-22 16:01:47,047 [podnet.py] => Task 1, Epoch 126/150 (LR 0.00618) => LSC_loss 0.04, Spatial_loss 0.55, Flat_loss 0.08, Train_acc 100.00, Test_acc 76.13
+2024-08-22 16:01:49,446 [podnet.py] => Task 1, Epoch 127/150 (LR 0.00569) => LSC_loss 0.04, Spatial_loss 0.55, Flat_loss 0.08, Train_acc 100.00, Test_acc 76.11
+2024-08-22 16:01:51,592 [podnet.py] => Task 1, Epoch 128/150 (LR 0.00521) => LSC_loss 0.04, Spatial_loss 0.54, Flat_loss 0.08, Train_acc 100.00, Test_acc 74.82
+2024-08-22 16:01:53,996 [podnet.py] => Task 1, Epoch 129/150 (LR 0.00476) => LSC_loss 0.04, Spatial_loss 0.53, Flat_loss 0.08, Train_acc 100.00, Test_acc 77.18
+2024-08-22 16:01:56,443 [podnet.py] => Task 1, Epoch 130/150 (LR 0.00432) => LSC_loss 0.04, Spatial_loss 0.52, Flat_loss 0.08, Train_acc 100.00, Test_acc 74.71
+2024-08-22 16:01:58,433 [podnet.py] => Task 1, Epoch 131/150 (LR 0.00391) => LSC_loss 0.04, Spatial_loss 0.54, Flat_loss 0.08, Train_acc 100.00, Test_acc 76.01
+2024-08-22 16:02:00,710 [podnet.py] => Task 1, Epoch 132/150 (LR 0.00351) => LSC_loss 0.04, Spatial_loss 0.52, Flat_loss 0.08, Train_acc 100.00, Test_acc 77.14
+2024-08-22 16:02:02,583 [podnet.py] => Task 1, Epoch 133/150 (LR 0.00314) => LSC_loss 0.04, Spatial_loss 0.50, Flat_loss 0.08, Train_acc 100.00, Test_acc 76.98
+2024-08-22 16:02:04,767 [podnet.py] => Task 1, Epoch 134/150 (LR 0.00278) => LSC_loss 0.04, Spatial_loss 0.50, Flat_loss 0.08, Train_acc 100.00, Test_acc 77.52
+2024-08-22 16:02:06,894 [podnet.py] => Task 1, Epoch 135/150 (LR 0.00245) => LSC_loss 0.04, Spatial_loss 0.54, Flat_loss 0.08, Train_acc 100.00, Test_acc 77.12
+2024-08-22 16:02:08,715 [podnet.py] => Task 1, Epoch 136/150 (LR 0.00213) => LSC_loss 0.04, Spatial_loss 0.52, Flat_loss 0.08, Train_acc 100.00, Test_acc 77.00
+2024-08-22 16:02:10,705 [podnet.py] => Task 1, Epoch 137/150 (LR 0.00184) => LSC_loss 0.04, Spatial_loss 0.51, Flat_loss 0.08, Train_acc 100.00, Test_acc 76.11
+2024-08-22 16:02:12,320 [podnet.py] => Task 1, Epoch 138/150 (LR 0.00157) => LSC_loss 0.04, Spatial_loss 0.49, Flat_loss 0.08, Train_acc 100.00, Test_acc 76.81
+2024-08-22 16:02:14,827 [podnet.py] => Task 1, Epoch 139/150 (LR 0.00132) => LSC_loss 0.04, Spatial_loss 0.49, Flat_loss 0.08, Train_acc 100.00, Test_acc 76.68
+2024-08-22 16:02:17,228 [podnet.py] => Task 1, Epoch 140/150 (LR 0.00109) => LSC_loss 0.04, Spatial_loss 0.49, Flat_loss 0.08, Train_acc 100.00, Test_acc 77.04
+2024-08-22 16:02:19,618 [podnet.py] => Task 1, Epoch 141/150 (LR 0.00089) => LSC_loss 0.04, Spatial_loss 0.49, Flat_loss 0.08, Train_acc 100.00, Test_acc 76.83
+2024-08-22 16:02:22,164 [podnet.py] => Task 1, Epoch 142/150 (LR 0.00070) => LSC_loss 0.04, Spatial_loss 0.47, Flat_loss 0.08, Train_acc 100.00, Test_acc 77.47
+2024-08-22 16:02:23,949 [podnet.py] => Task 1, Epoch 143/150 (LR 0.00054) => LSC_loss 0.04, Spatial_loss 0.49, Flat_loss 0.08, Train_acc 100.00, Test_acc 76.66
+2024-08-22 16:02:26,055 [podnet.py] => Task 1, Epoch 144/150 (LR 0.00039) => LSC_loss 0.04, Spatial_loss 0.50, Flat_loss 0.08, Train_acc 100.00, Test_acc 76.63
+2024-08-22 16:02:27,956 [podnet.py] => Task 1, Epoch 145/150 (LR 0.00027) => LSC_loss 0.04, Spatial_loss 0.48, Flat_loss 0.08, Train_acc 100.00, Test_acc 77.13
+2024-08-22 16:02:29,541 [podnet.py] => Task 1, Epoch 146/150 (LR 0.00018) => LSC_loss 0.04, Spatial_loss 0.47, Flat_loss 0.08, Train_acc 100.00, Test_acc 76.25
+2024-08-22 16:02:31,800 [podnet.py] => Task 1, Epoch 147/150 (LR 0.00010) => LSC_loss 0.04, Spatial_loss 0.46, Flat_loss 0.08, Train_acc 100.00, Test_acc 76.56
+2024-08-22 16:02:34,438 [podnet.py] => Task 1, Epoch 148/150 (LR 0.00004) => LSC_loss 0.04, Spatial_loss 0.47, Flat_loss 0.08, Train_acc 100.00, Test_acc 76.80
+2024-08-22 16:02:36,840 [podnet.py] => Task 1, Epoch 149/150 (LR 0.00001) => LSC_loss 0.04, Spatial_loss 0.49, Flat_loss 0.08, Train_acc 100.00, Test_acc 77.22
+2024-08-22 16:02:39,067 [podnet.py] => Task 1, Epoch 150/150 (LR 0.00000) => LSC_loss 0.04, Spatial_loss 0.48, Flat_loss 0.08, Train_acc 100.00, Test_acc 77.43
+2024-08-22 16:02:39,773 [podnet.py] => Finetune the network (classifier part) with the undersampled dataset!
+2024-08-22 16:02:39,773 [base.py] => Reducing exemplars...(100 per classes)
+2024-08-22 16:02:40,633 [base.py] => Constructing exemplars...(100 per classes)
+2024-08-22 16:02:42,462 [podnet.py] => The size of finetune dataset: 700
+2024-08-22 16:02:43,637 [podnet.py] => Task 1, Epoch 1/20 (LR 0.00497) => LSC_loss 0.05, Spatial_loss 0.62, Flat_loss 0.05, Train_acc 100.00, Test_acc 75.66
+2024-08-22 16:02:44,643 [podnet.py] => Task 1, Epoch 2/20 (LR 0.00488) => LSC_loss 0.05, Spatial_loss 0.53, Flat_loss 0.04, Train_acc 99.86, Test_acc 75.38
+2024-08-22 16:02:45,706 [podnet.py] => Task 1, Epoch 3/20 (LR 0.00473) => LSC_loss 0.04, Spatial_loss 0.56, Flat_loss 0.04, Train_acc 100.00, Test_acc 75.05
+2024-08-22 16:02:46,709 [podnet.py] => Task 1, Epoch 4/20 (LR 0.00452) => LSC_loss 0.03, Spatial_loss 0.51, Flat_loss 0.03, Train_acc 100.00, Test_acc 75.85
+2024-08-22 16:02:47,806 [podnet.py] => Task 1, Epoch 5/20 (LR 0.00427) => LSC_loss 0.03, Spatial_loss 0.50, Flat_loss 0.03, Train_acc 100.00, Test_acc 75.99
+2024-08-22 16:02:48,837 [podnet.py] => Task 1, Epoch 6/20 (LR 0.00397) => LSC_loss 0.03, Spatial_loss 0.46, Flat_loss 0.03, Train_acc 100.00, Test_acc 76.63
+2024-08-22 16:02:49,899 [podnet.py] => Task 1, Epoch 7/20 (LR 0.00363) => LSC_loss 0.03, Spatial_loss 0.47, Flat_loss 0.03, Train_acc 100.00, Test_acc 76.16
+2024-08-22 16:02:50,990 [podnet.py] => Task 1, Epoch 8/20 (LR 0.00327) => LSC_loss 0.03, Spatial_loss 0.45, Flat_loss 0.03, Train_acc 100.00, Test_acc 76.43
+2024-08-22 16:02:52,027 [podnet.py] => Task 1, Epoch 9/20 (LR 0.00289) => LSC_loss 0.02, Spatial_loss 0.46, Flat_loss 0.03, Train_acc 100.00, Test_acc 75.31
+2024-08-22 16:02:53,082 [podnet.py] => Task 1, Epoch 10/20 (LR 0.00250) => LSC_loss 0.02, Spatial_loss 0.47, Flat_loss 0.03, Train_acc 100.00, Test_acc 75.68
+2024-08-22 16:02:54,117 [podnet.py] => Task 1, Epoch 11/20 (LR 0.00211) => LSC_loss 0.02, Spatial_loss 0.43, Flat_loss 0.03, Train_acc 100.00, Test_acc 76.07
+2024-08-22 16:02:55,156 [podnet.py] => Task 1, Epoch 12/20 (LR 0.00173) => LSC_loss 0.02, Spatial_loss 0.43, Flat_loss 0.03, Train_acc 100.00, Test_acc 76.21
+2024-08-22 16:02:56,190 [podnet.py] => Task 1, Epoch 13/20 (LR 0.00137) => LSC_loss 0.02, Spatial_loss 0.43, Flat_loss 0.03, Train_acc 100.00, Test_acc 76.08
+2024-08-22 16:02:57,217 [podnet.py] => Task 1, Epoch 14/20 (LR 0.00103) => LSC_loss 0.02, Spatial_loss 0.45, Flat_loss 0.03, Train_acc 100.00, Test_acc 76.59
+2024-08-22 16:02:58,218 [podnet.py] => Task 1, Epoch 15/20 (LR 0.00073) => LSC_loss 0.02, Spatial_loss 0.39, Flat_loss 0.03, Train_acc 100.00, Test_acc 75.86
+2024-08-22 16:02:59,224 [podnet.py] => Task 1, Epoch 16/20 (LR 0.00048) => LSC_loss 0.02, Spatial_loss 0.43, Flat_loss 0.03, Train_acc 100.00, Test_acc 76.16
+2024-08-22 16:03:00,311 [podnet.py] => Task 1, Epoch 17/20 (LR 0.00027) => LSC_loss 0.02, Spatial_loss 0.49, Flat_loss 0.03, Train_acc 100.00, Test_acc 76.18
+2024-08-22 16:03:01,372 [podnet.py] => Task 1, Epoch 18/20 (LR 0.00012) => LSC_loss 0.02, Spatial_loss 0.46, Flat_loss 0.03, Train_acc 100.00, Test_acc 75.91
+2024-08-22 16:03:02,395 [podnet.py] => Task 1, Epoch 19/20 (LR 0.00003) => LSC_loss 0.02, Spatial_loss 0.45, Flat_loss 0.03, Train_acc 100.00, Test_acc 76.12
+2024-08-22 16:03:03,399 [podnet.py] => Task 1, Epoch 20/20 (LR 0.00000) => LSC_loss 0.02, Spatial_loss 0.47, Flat_loss 0.03, Train_acc 100.00, Test_acc 75.88
+2024-08-22 16:03:04,132 [base.py] => Reducing exemplars...(71 per classes)
+2024-08-22 16:03:05,050 [base.py] => Constructing exemplars...(71 per classes)
+2024-08-22 16:03:08,215 [podnet.py] => Exemplar size: 497
+2024-08-22 16:03:08,216 [trainer.py] => CNN: {'total': 75.88, '00-04': 70.57, '05-06': 96.73, 'old': 70.57, 'new': 96.73}
+2024-08-22 16:03:08,216 [trainer.py] => NME: {'total': 81.45, '00-04': 85.86, '05-06': 64.11, 'old': 85.86, 'new': 64.11}
+2024-08-22 16:03:08,216 [trainer.py] => CNN top1 curve: [92.02, 75.88]
+2024-08-22 16:03:08,216 [trainer.py] => CNN top5 curve: [100.0, 98.86]
+2024-08-22 16:03:08,216 [trainer.py] => NME top1 curve: [92.04, 81.45]
+2024-08-22 16:03:08,216 [trainer.py] => NME top5 curve: [100.0, 98.94]
+
+2024-08-22 16:03:08,216 [trainer.py] => Average Accuracy (CNN): 83.94999999999999
+2024-08-22 16:03:08,216 [trainer.py] => Average Accuracy (NME): 86.745
+2024-08-22 16:03:08,217 [trainer.py] => All params: 3879745
+2024-08-22 16:03:08,217 [trainer.py] => Trainable params: 3879745
+2024-08-22 16:03:08,218 [podnet.py] => Learning on 7-9
+2024-08-22 16:03:08,291 [podnet.py] => Adaptive factor: 2.1213203435596424
+2024-08-22 16:03:10,927 [podnet.py] => Task 2, Epoch 1/150 (LR 0.09999) => LSC_loss 1.38, Spatial_loss 2.72, Flat_loss 0.34, Train_acc 78.50, Test_acc 18.19
+2024-08-22 16:03:13,516 [podnet.py] => Task 2, Epoch 2/150 (LR 0.09996) => LSC_loss 0.44, Spatial_loss 2.22, Flat_loss 0.20, Train_acc 90.62, Test_acc 30.14
+2024-08-22 16:03:16,224 [podnet.py] => Task 2, Epoch 3/150 (LR 0.09990) => LSC_loss 0.31, Spatial_loss 1.86, Flat_loss 0.15, Train_acc 93.46, Test_acc 30.65
+2024-08-22 16:03:18,622 [podnet.py] => Task 2, Epoch 4/150 (LR 0.09982) => LSC_loss 0.24, Spatial_loss 1.61, Flat_loss 0.13, Train_acc 95.91, Test_acc 35.92
+2024-08-22 16:03:20,635 [podnet.py] => Task 2, Epoch 5/150 (LR 0.09973) => LSC_loss 0.21, Spatial_loss 1.56, Flat_loss 0.12, Train_acc 96.64, Test_acc 39.33
+2024-08-22 16:03:23,263 [podnet.py] => Task 2, Epoch 6/150 (LR 0.09961) => LSC_loss 0.17, Spatial_loss 1.50, Flat_loss 0.11, Train_acc 97.87, Test_acc 46.42
+2024-08-22 16:03:25,239 [podnet.py] => Task 2, Epoch 7/150 (LR 0.09946) => LSC_loss 0.16, Spatial_loss 1.43, Flat_loss 0.11, Train_acc 98.38, Test_acc 37.05
+2024-08-22 16:03:26,967 [podnet.py] => Task 2, Epoch 8/150 (LR 0.09930) => LSC_loss 0.14, Spatial_loss 1.37, Flat_loss 0.11, Train_acc 98.40, Test_acc 42.34
+2024-08-22 16:03:28,724 [podnet.py] => Task 2, Epoch 9/150 (LR 0.09911) => LSC_loss 0.13, Spatial_loss 1.36, Flat_loss 0.10, Train_acc 98.98, Test_acc 37.81
+2024-08-22 16:03:31,235 [podnet.py] => Task 2, Epoch 10/150 (LR 0.09891) => LSC_loss 0.14, Spatial_loss 1.37, Flat_loss 0.11, Train_acc 98.49, Test_acc 49.98
+2024-08-22 16:03:33,325 [podnet.py] => Task 2, Epoch 11/150 (LR 0.09868) => LSC_loss 0.12, Spatial_loss 1.27, Flat_loss 0.10, Train_acc 99.11, Test_acc 52.30
+2024-08-22 16:03:35,445 [podnet.py] => Task 2, Epoch 12/150 (LR 0.09843) => LSC_loss 0.11, Spatial_loss 1.22, Flat_loss 0.09, Train_acc 99.49, Test_acc 38.90
+2024-08-22 16:03:37,453 [podnet.py] => Task 2, Epoch 13/150 (LR 0.09816) => LSC_loss 0.10, Spatial_loss 1.21, Flat_loss 0.09, Train_acc 99.76, Test_acc 46.29
+2024-08-22 16:03:39,949 [podnet.py] => Task 2, Epoch 14/150 (LR 0.09787) => LSC_loss 0.10, Spatial_loss 1.27, Flat_loss 0.09, Train_acc 99.58, Test_acc 46.18
+2024-08-22 16:03:42,302 [podnet.py] => Task 2, Epoch 15/150 (LR 0.09755) => LSC_loss 0.09, Spatial_loss 1.20, Flat_loss 0.09, Train_acc 99.73, Test_acc 51.16
+2024-08-22 16:03:44,866 [podnet.py] => Task 2, Epoch 16/150 (LR 0.09722) => LSC_loss 0.09, Spatial_loss 1.26, Flat_loss 0.09, Train_acc 99.62, Test_acc 50.12
+2024-08-22 16:03:47,551 [podnet.py] => Task 2, Epoch 17/150 (LR 0.09686) => LSC_loss 0.09, Spatial_loss 1.21, Flat_loss 0.09, Train_acc 99.76, Test_acc 41.01
+2024-08-22 16:03:50,190 [podnet.py] => Task 2, Epoch 18/150 (LR 0.09649) => LSC_loss 0.08, Spatial_loss 1.14, Flat_loss 0.09, Train_acc 99.80, Test_acc 54.19
+2024-08-22 16:03:52,778 [podnet.py] => Task 2, Epoch 19/150 (LR 0.09609) => LSC_loss 0.08, Spatial_loss 1.11, Flat_loss 0.08, Train_acc 99.89, Test_acc 42.23
+2024-08-22 16:03:55,293 [podnet.py] => Task 2, Epoch 20/150 (LR 0.09568) => LSC_loss 0.08, Spatial_loss 1.14, Flat_loss 0.08, Train_acc 99.89, Test_acc 45.66
+2024-08-22 16:03:57,703 [podnet.py] => Task 2, Epoch 21/150 (LR 0.09524) => LSC_loss 0.09, Spatial_loss 1.13, Flat_loss 0.08, Train_acc 99.67, Test_acc 42.59
+2024-08-22 16:04:00,036 [podnet.py] => Task 2, Epoch 22/150 (LR 0.09479) => LSC_loss 0.08, Spatial_loss 1.13, Flat_loss 0.08, Train_acc 99.78, Test_acc 44.10
+2024-08-22 16:04:02,942 [podnet.py] => Task 2, Epoch 23/150 (LR 0.09431) => LSC_loss 0.08, Spatial_loss 1.14, Flat_loss 0.08, Train_acc 99.62, Test_acc 55.94
+2024-08-22 16:04:05,503 [podnet.py] => Task 2, Epoch 24/150 (LR 0.09382) => LSC_loss 0.07, Spatial_loss 1.12, Flat_loss 0.08, Train_acc 99.89, Test_acc 44.38
+2024-08-22 16:04:07,888 [podnet.py] => Task 2, Epoch 25/150 (LR 0.09330) => LSC_loss 0.07, Spatial_loss 1.17, Flat_loss 0.08, Train_acc 99.73, Test_acc 46.13
+2024-08-22 16:04:09,750 [podnet.py] => Task 2, Epoch 26/150 (LR 0.09277) => LSC_loss 0.07, Spatial_loss 1.09, Flat_loss 0.08, Train_acc 99.84, Test_acc 49.87
+2024-08-22 16:04:11,593 [podnet.py] => Task 2, Epoch 27/150 (LR 0.09222) => LSC_loss 0.07, Spatial_loss 1.12, Flat_loss 0.08, Train_acc 99.89, Test_acc 47.73
+2024-08-22 16:04:13,865 [podnet.py] => Task 2, Epoch 28/150 (LR 0.09165) => LSC_loss 0.07, Spatial_loss 1.11, Flat_loss 0.08, Train_acc 100.00, Test_acc 47.87
+2024-08-22 16:04:16,633 [podnet.py] => Task 2, Epoch 29/150 (LR 0.09106) => LSC_loss 0.07, Spatial_loss 1.11, Flat_loss 0.08, Train_acc 99.87, Test_acc 44.73
+2024-08-22 16:04:19,111 [podnet.py] => Task 2, Epoch 30/150 (LR 0.09045) => LSC_loss 0.07, Spatial_loss 1.15, Flat_loss 0.08, Train_acc 99.87, Test_acc 48.87
+2024-08-22 16:04:21,892 [podnet.py] => Task 2, Epoch 31/150 (LR 0.08983) => LSC_loss 0.07, Spatial_loss 1.09, Flat_loss 0.08, Train_acc 99.84, Test_acc 55.13
+2024-08-22 16:04:24,225 [podnet.py] => Task 2, Epoch 32/150 (LR 0.08918) => LSC_loss 0.09, Spatial_loss 1.20, Flat_loss 0.09, Train_acc 99.42, Test_acc 51.56
+2024-08-22 16:04:26,897 [podnet.py] => Task 2, Epoch 33/150 (LR 0.08853) => LSC_loss 0.07, Spatial_loss 1.12, Flat_loss 0.08, Train_acc 99.73, Test_acc 48.35
+2024-08-22 16:04:29,382 [podnet.py] => Task 2, Epoch 34/150 (LR 0.08785) => LSC_loss 0.07, Spatial_loss 1.05, Flat_loss 0.08, Train_acc 99.84, Test_acc 49.06
+2024-08-22 16:04:31,713 [podnet.py] => Task 2, Epoch 35/150 (LR 0.08716) => LSC_loss 0.06, Spatial_loss 1.03, Flat_loss 0.08, Train_acc 99.96, Test_acc 50.41
+2024-08-22 16:04:33,729 [podnet.py] => Task 2, Epoch 36/150 (LR 0.08645) => LSC_loss 0.07, Spatial_loss 1.09, Flat_loss 0.08, Train_acc 99.93, Test_acc 49.91
+2024-08-22 16:04:36,113 [podnet.py] => Task 2, Epoch 37/150 (LR 0.08572) => LSC_loss 0.08, Spatial_loss 1.08, Flat_loss 0.08, Train_acc 99.71, Test_acc 50.54
+2024-08-22 16:04:38,443 [podnet.py] => Task 2, Epoch 38/150 (LR 0.08498) => LSC_loss 0.09, Spatial_loss 1.22, Flat_loss 0.10, Train_acc 99.27, Test_acc 49.82
+2024-08-22 16:04:40,376 [podnet.py] => Task 2, Epoch 39/150 (LR 0.08423) => LSC_loss 0.07, Spatial_loss 1.12, Flat_loss 0.08, Train_acc 99.82, Test_acc 51.95
+2024-08-22 16:04:42,259 [podnet.py] => Task 2, Epoch 40/150 (LR 0.08346) => LSC_loss 0.06, Spatial_loss 1.04, Flat_loss 0.08, Train_acc 100.00, Test_acc 51.42
+2024-08-22 16:04:44,566 [podnet.py] => Task 2, Epoch 41/150 (LR 0.08267) => LSC_loss 0.06, Spatial_loss 1.04, Flat_loss 0.08, Train_acc 99.98, Test_acc 52.85
+2024-08-22 16:04:47,312 [podnet.py] => Task 2, Epoch 42/150 (LR 0.08187) => LSC_loss 0.06, Spatial_loss 1.04, Flat_loss 0.08, Train_acc 99.98, Test_acc 50.25
+2024-08-22 16:04:49,904 [podnet.py] => Task 2, Epoch 43/150 (LR 0.08106) => LSC_loss 0.06, Spatial_loss 1.07, Flat_loss 0.08, Train_acc 99.89, Test_acc 40.43
+2024-08-22 16:04:52,091 [podnet.py] => Task 2, Epoch 44/150 (LR 0.08023) => LSC_loss 0.06, Spatial_loss 1.10, Flat_loss 0.08, Train_acc 99.96, Test_acc 46.86
+2024-08-22 16:04:53,957 [podnet.py] => Task 2, Epoch 45/150 (LR 0.07939) => LSC_loss 0.06, Spatial_loss 1.07, Flat_loss 0.08, Train_acc 99.93, Test_acc 46.72
+2024-08-22 16:04:56,083 [podnet.py] => Task 2, Epoch 46/150 (LR 0.07854) => LSC_loss 0.06, Spatial_loss 1.03, Flat_loss 0.07, Train_acc 99.98, Test_acc 47.87
+2024-08-22 16:04:58,296 [podnet.py] => Task 2, Epoch 47/150 (LR 0.07767) => LSC_loss 0.06, Spatial_loss 0.97, Flat_loss 0.07, Train_acc 99.98, Test_acc 53.81
+2024-08-22 16:05:00,405 [podnet.py] => Task 2, Epoch 48/150 (LR 0.07679) => LSC_loss 0.06, Spatial_loss 0.99, Flat_loss 0.07, Train_acc 99.91, Test_acc 45.21
+2024-08-22 16:05:02,941 [podnet.py] => Task 2, Epoch 49/150 (LR 0.07590) => LSC_loss 0.06, Spatial_loss 0.97, Flat_loss 0.07, Train_acc 99.98, Test_acc 48.38
+2024-08-22 16:05:05,607 [podnet.py] => Task 2, Epoch 50/150 (LR 0.07500) => LSC_loss 0.06, Spatial_loss 0.96, Flat_loss 0.07, Train_acc 99.96, Test_acc 44.53
+2024-08-22 16:05:08,328 [podnet.py] => Task 2, Epoch 51/150 (LR 0.07409) => LSC_loss 0.06, Spatial_loss 1.03, Flat_loss 0.07, Train_acc 99.96, Test_acc 54.76
+2024-08-22 16:05:11,082 [podnet.py] => Task 2, Epoch 52/150 (LR 0.07316) => LSC_loss 0.06, Spatial_loss 1.00, Flat_loss 0.07, Train_acc 100.00, Test_acc 42.25
+2024-08-22 16:05:13,639 [podnet.py] => Task 2, Epoch 53/150 (LR 0.07223) => LSC_loss 0.06, Spatial_loss 0.99, Flat_loss 0.07, Train_acc 100.00, Test_acc 51.18
+2024-08-22 16:05:16,153 [podnet.py] => Task 2, Epoch 54/150 (LR 0.07129) => LSC_loss 0.06, Spatial_loss 0.94, Flat_loss 0.07, Train_acc 99.96, Test_acc 48.65
+2024-08-22 16:05:17,919 [podnet.py] => Task 2, Epoch 55/150 (LR 0.07034) => LSC_loss 0.06, Spatial_loss 0.96, Flat_loss 0.07, Train_acc 99.98, Test_acc 49.48
+2024-08-22 16:05:20,444 [podnet.py] => Task 2, Epoch 56/150 (LR 0.06938) => LSC_loss 0.06, Spatial_loss 0.96, Flat_loss 0.07, Train_acc 99.93, Test_acc 45.55
+2024-08-22 16:05:23,163 [podnet.py] => Task 2, Epoch 57/150 (LR 0.06841) => LSC_loss 0.06, Spatial_loss 0.93, Flat_loss 0.07, Train_acc 100.00, Test_acc 51.08
+2024-08-22 16:05:25,199 [podnet.py] => Task 2, Epoch 58/150 (LR 0.06743) => LSC_loss 0.06, Spatial_loss 1.01, Flat_loss 0.07, Train_acc 100.00, Test_acc 48.33
+2024-08-22 16:05:27,289 [podnet.py] => Task 2, Epoch 59/150 (LR 0.06644) => LSC_loss 0.06, Spatial_loss 0.93, Flat_loss 0.07, Train_acc 100.00, Test_acc 48.46
+2024-08-22 16:05:29,930 [podnet.py] => Task 2, Epoch 60/150 (LR 0.06545) => LSC_loss 0.06, Spatial_loss 0.95, Flat_loss 0.07, Train_acc 99.98, Test_acc 50.71
+2024-08-22 16:05:32,563 [podnet.py] => Task 2, Epoch 61/150 (LR 0.06445) => LSC_loss 0.06, Spatial_loss 0.92, Flat_loss 0.07, Train_acc 100.00, Test_acc 50.56
+2024-08-22 16:05:34,808 [podnet.py] => Task 2, Epoch 62/150 (LR 0.06345) => LSC_loss 0.06, Spatial_loss 0.92, Flat_loss 0.07, Train_acc 100.00, Test_acc 48.81
+2024-08-22 16:05:37,514 [podnet.py] => Task 2, Epoch 63/150 (LR 0.06243) => LSC_loss 0.06, Spatial_loss 0.88, Flat_loss 0.07, Train_acc 99.98, Test_acc 46.89
+2024-08-22 16:05:40,371 [podnet.py] => Task 2, Epoch 64/150 (LR 0.06142) => LSC_loss 0.06, Spatial_loss 0.93, Flat_loss 0.07, Train_acc 99.98, Test_acc 54.78
+2024-08-22 16:05:42,898 [podnet.py] => Task 2, Epoch 65/150 (LR 0.06040) => LSC_loss 0.06, Spatial_loss 0.90, Flat_loss 0.07, Train_acc 100.00, Test_acc 53.12
+2024-08-22 16:05:45,064 [podnet.py] => Task 2, Epoch 66/150 (LR 0.05937) => LSC_loss 0.06, Spatial_loss 0.95, Flat_loss 0.07, Train_acc 100.00, Test_acc 48.83
+2024-08-22 16:05:47,536 [podnet.py] => Task 2, Epoch 67/150 (LR 0.05834) => LSC_loss 0.06, Spatial_loss 0.92, Flat_loss 0.07, Train_acc 99.96, Test_acc 50.93
+2024-08-22 16:05:50,184 [podnet.py] => Task 2, Epoch 68/150 (LR 0.05730) => LSC_loss 0.06, Spatial_loss 0.89, Flat_loss 0.07, Train_acc 100.00, Test_acc 53.88
+2024-08-22 16:05:52,961 [podnet.py] => Task 2, Epoch 69/150 (LR 0.05627) => LSC_loss 0.06, Spatial_loss 0.87, Flat_loss 0.07, Train_acc 100.00, Test_acc 54.29
+2024-08-22 16:05:55,401 [podnet.py] => Task 2, Epoch 70/150 (LR 0.05523) => LSC_loss 0.10, Spatial_loss 0.93, Flat_loss 0.07, Train_acc 99.87, Test_acc 60.81
+2024-08-22 16:05:57,898 [podnet.py] => Task 2, Epoch 71/150 (LR 0.05418) => LSC_loss 0.25, Spatial_loss 1.70, Flat_loss 0.15, Train_acc 94.08, Test_acc 52.35
+2024-08-22 16:06:00,091 [podnet.py] => Task 2, Epoch 72/150 (LR 0.05314) => LSC_loss 0.10, Spatial_loss 1.26, Flat_loss 0.10, Train_acc 98.98, Test_acc 52.64
+2024-08-22 16:06:02,404 [podnet.py] => Task 2, Epoch 73/150 (LR 0.05209) => LSC_loss 0.07, Spatial_loss 1.12, Flat_loss 0.09, Train_acc 99.62, Test_acc 47.80
+2024-08-22 16:06:05,034 [podnet.py] => Task 2, Epoch 74/150 (LR 0.05105) => LSC_loss 0.07, Spatial_loss 0.96, Flat_loss 0.08, Train_acc 99.96, Test_acc 51.99
+2024-08-22 16:06:07,574 [podnet.py] => Task 2, Epoch 75/150 (LR 0.05000) => LSC_loss 0.06, Spatial_loss 0.96, Flat_loss 0.08, Train_acc 99.96, Test_acc 53.86
+2024-08-22 16:06:09,931 [podnet.py] => Task 2, Epoch 76/150 (LR 0.04895) => LSC_loss 0.06, Spatial_loss 0.93, Flat_loss 0.07, Train_acc 99.98, Test_acc 50.34
+2024-08-22 16:06:11,860 [podnet.py] => Task 2, Epoch 77/150 (LR 0.04791) => LSC_loss 0.06, Spatial_loss 0.88, Flat_loss 0.07, Train_acc 99.98, Test_acc 52.91
+2024-08-22 16:06:13,958 [podnet.py] => Task 2, Epoch 78/150 (LR 0.04686) => LSC_loss 0.06, Spatial_loss 0.87, Flat_loss 0.07, Train_acc 100.00, Test_acc 51.92
+2024-08-22 16:06:15,844 [podnet.py] => Task 2, Epoch 79/150 (LR 0.04582) => LSC_loss 0.06, Spatial_loss 0.91, Flat_loss 0.07, Train_acc 99.98, Test_acc 54.85
+2024-08-22 16:06:18,045 [podnet.py] => Task 2, Epoch 80/150 (LR 0.04477) => LSC_loss 0.06, Spatial_loss 0.88, Flat_loss 0.07, Train_acc 99.98, Test_acc 51.24
+2024-08-22 16:06:20,393 [podnet.py] => Task 2, Epoch 81/150 (LR 0.04373) => LSC_loss 0.06, Spatial_loss 0.90, Flat_loss 0.07, Train_acc 100.00, Test_acc 51.24
+2024-08-22 16:06:22,784 [podnet.py] => Task 2, Epoch 82/150 (LR 0.04270) => LSC_loss 0.06, Spatial_loss 0.91, Flat_loss 0.07, Train_acc 99.98, Test_acc 51.95
+2024-08-22 16:06:25,330 [podnet.py] => Task 2, Epoch 83/150 (LR 0.04166) => LSC_loss 0.06, Spatial_loss 0.86, Flat_loss 0.07, Train_acc 99.98, Test_acc 50.92
+2024-08-22 16:06:27,376 [podnet.py] => Task 2, Epoch 84/150 (LR 0.04063) => LSC_loss 0.06, Spatial_loss 0.85, Flat_loss 0.07, Train_acc 100.00, Test_acc 53.28
+2024-08-22 16:06:29,603 [podnet.py] => Task 2, Epoch 85/150 (LR 0.03960) => LSC_loss 0.07, Spatial_loss 0.85, Flat_loss 0.07, Train_acc 99.98, Test_acc 52.82
+2024-08-22 16:06:32,329 [podnet.py] => Task 2, Epoch 86/150 (LR 0.03858) => LSC_loss 0.06, Spatial_loss 0.90, Flat_loss 0.07, Train_acc 99.96, Test_acc 52.62
+2024-08-22 16:06:34,307 [podnet.py] => Task 2, Epoch 87/150 (LR 0.03757) => LSC_loss 0.06, Spatial_loss 0.84, Flat_loss 0.07, Train_acc 99.98, Test_acc 49.11
+2024-08-22 16:06:36,700 [podnet.py] => Task 2, Epoch 88/150 (LR 0.03655) => LSC_loss 0.06, Spatial_loss 0.83, Flat_loss 0.07, Train_acc 100.00, Test_acc 51.71
+2024-08-22 16:06:39,319 [podnet.py] => Task 2, Epoch 89/150 (LR 0.03555) => LSC_loss 0.06, Spatial_loss 0.82, Flat_loss 0.07, Train_acc 99.98, Test_acc 55.14
+2024-08-22 16:06:41,694 [podnet.py] => Task 2, Epoch 90/150 (LR 0.03455) => LSC_loss 0.06, Spatial_loss 0.83, Flat_loss 0.07, Train_acc 100.00, Test_acc 52.49
+2024-08-22 16:06:44,209 [podnet.py] => Task 2, Epoch 91/150 (LR 0.03356) => LSC_loss 0.06, Spatial_loss 0.77, Flat_loss 0.07, Train_acc 100.00, Test_acc 52.99
+2024-08-22 16:06:46,049 [podnet.py] => Task 2, Epoch 92/150 (LR 0.03257) => LSC_loss 0.06, Spatial_loss 0.78, Flat_loss 0.06, Train_acc 99.98, Test_acc 51.61
+2024-08-22 16:06:47,880 [podnet.py] => Task 2, Epoch 93/150 (LR 0.03159) => LSC_loss 0.05, Spatial_loss 0.77, Flat_loss 0.07, Train_acc 100.00, Test_acc 52.08
+2024-08-22 16:06:50,213 [podnet.py] => Task 2, Epoch 94/150 (LR 0.03062) => LSC_loss 0.06, Spatial_loss 0.78, Flat_loss 0.06, Train_acc 100.00, Test_acc 56.06
+2024-08-22 16:06:52,913 [podnet.py] => Task 2, Epoch 95/150 (LR 0.02966) => LSC_loss 0.06, Spatial_loss 0.76, Flat_loss 0.06, Train_acc 100.00, Test_acc 51.52
+2024-08-22 16:06:55,709 [podnet.py] => Task 2, Epoch 96/150 (LR 0.02871) => LSC_loss 0.06, Spatial_loss 0.75, Flat_loss 0.06, Train_acc 100.00, Test_acc 52.37
+2024-08-22 16:06:57,771 [podnet.py] => Task 2, Epoch 97/150 (LR 0.02777) => LSC_loss 0.05, Spatial_loss 0.78, Flat_loss 0.06, Train_acc 100.00, Test_acc 49.29
+2024-08-22 16:07:00,661 [podnet.py] => Task 2, Epoch 98/150 (LR 0.02684) => LSC_loss 0.06, Spatial_loss 0.76, Flat_loss 0.06, Train_acc 100.00, Test_acc 52.48
+2024-08-22 16:07:03,137 [podnet.py] => Task 2, Epoch 99/150 (LR 0.02591) => LSC_loss 0.06, Spatial_loss 0.77, Flat_loss 0.06, Train_acc 100.00, Test_acc 50.58
+2024-08-22 16:07:05,826 [podnet.py] => Task 2, Epoch 100/150 (LR 0.02500) => LSC_loss 0.06, Spatial_loss 0.75, Flat_loss 0.06, Train_acc 100.00, Test_acc 51.53
+2024-08-22 16:07:08,093 [podnet.py] => Task 2, Epoch 101/150 (LR 0.02410) => LSC_loss 0.05, Spatial_loss 0.78, Flat_loss 0.06, Train_acc 100.00, Test_acc 53.15
+2024-08-22 16:07:10,538 [podnet.py] => Task 2, Epoch 102/150 (LR 0.02321) => LSC_loss 0.05, Spatial_loss 0.74, Flat_loss 0.06, Train_acc 100.00, Test_acc 55.39
+2024-08-22 16:07:12,668 [podnet.py] => Task 2, Epoch 103/150 (LR 0.02233) => LSC_loss 0.05, Spatial_loss 0.71, Flat_loss 0.06, Train_acc 100.00, Test_acc 54.81
+2024-08-22 16:07:15,311 [podnet.py] => Task 2, Epoch 104/150 (LR 0.02146) => LSC_loss 0.05, Spatial_loss 0.74, Flat_loss 0.06, Train_acc 100.00, Test_acc 50.12
+2024-08-22 16:07:17,853 [podnet.py] => Task 2, Epoch 105/150 (LR 0.02061) => LSC_loss 0.05, Spatial_loss 0.73, Flat_loss 0.06, Train_acc 100.00, Test_acc 50.63
+2024-08-22 16:07:19,635 [podnet.py] => Task 2, Epoch 106/150 (LR 0.01977) => LSC_loss 0.05, Spatial_loss 0.71, Flat_loss 0.06, Train_acc 100.00, Test_acc 49.66
+2024-08-22 16:07:21,732 [podnet.py] => Task 2, Epoch 107/150 (LR 0.01894) => LSC_loss 0.05, Spatial_loss 0.70, Flat_loss 0.06, Train_acc 100.00, Test_acc 50.75
+2024-08-22 16:07:24,223 [podnet.py] => Task 2, Epoch 108/150 (LR 0.01813) => LSC_loss 0.05, Spatial_loss 0.71, Flat_loss 0.06, Train_acc 100.00, Test_acc 54.46
+2024-08-22 16:07:26,668 [podnet.py] => Task 2, Epoch 109/150 (LR 0.01733) => LSC_loss 0.05, Spatial_loss 0.69, Flat_loss 0.06, Train_acc 100.00, Test_acc 50.77
+2024-08-22 16:07:28,611 [podnet.py] => Task 2, Epoch 110/150 (LR 0.01654) => LSC_loss 0.05, Spatial_loss 0.72, Flat_loss 0.06, Train_acc 100.00, Test_acc 51.02
+2024-08-22 16:07:30,803 [podnet.py] => Task 2, Epoch 111/150 (LR 0.01577) => LSC_loss 0.05, Spatial_loss 0.71, Flat_loss 0.06, Train_acc 100.00, Test_acc 51.46
+2024-08-22 16:07:33,149 [podnet.py] => Task 2, Epoch 112/150 (LR 0.01502) => LSC_loss 0.05, Spatial_loss 0.67, Flat_loss 0.06, Train_acc 100.00, Test_acc 53.26
+2024-08-22 16:07:35,729 [podnet.py] => Task 2, Epoch 113/150 (LR 0.01428) => LSC_loss 0.05, Spatial_loss 0.66, Flat_loss 0.06, Train_acc 100.00, Test_acc 51.93
+2024-08-22 16:07:37,722 [podnet.py] => Task 2, Epoch 114/150 (LR 0.01355) => LSC_loss 0.05, Spatial_loss 0.68, Flat_loss 0.06, Train_acc 100.00, Test_acc 51.27
+2024-08-22 16:07:39,746 [podnet.py] => Task 2, Epoch 115/150 (LR 0.01284) => LSC_loss 0.05, Spatial_loss 0.68, Flat_loss 0.06, Train_acc 100.00, Test_acc 52.40
+2024-08-22 16:07:42,106 [podnet.py] => Task 2, Epoch 116/150 (LR 0.01215) => LSC_loss 0.05, Spatial_loss 0.66, Flat_loss 0.06, Train_acc 100.00, Test_acc 53.12
+2024-08-22 16:07:44,789 [podnet.py] => Task 2, Epoch 117/150 (LR 0.01147) => LSC_loss 0.05, Spatial_loss 0.66, Flat_loss 0.06, Train_acc 100.00, Test_acc 51.27
+2024-08-22 16:07:46,851 [podnet.py] => Task 2, Epoch 118/150 (LR 0.01082) => LSC_loss 0.05, Spatial_loss 0.65, Flat_loss 0.06, Train_acc 100.00, Test_acc 53.52
+2024-08-22 16:07:49,424 [podnet.py] => Task 2, Epoch 119/150 (LR 0.01017) => LSC_loss 0.05, Spatial_loss 0.63, Flat_loss 0.06, Train_acc 100.00, Test_acc 52.45
+2024-08-22 16:07:51,944 [podnet.py] => Task 2, Epoch 120/150 (LR 0.00955) => LSC_loss 0.05, Spatial_loss 0.64, Flat_loss 0.06, Train_acc 100.00, Test_acc 52.51
+2024-08-22 16:07:54,368 [podnet.py] => Task 2, Epoch 121/150 (LR 0.00894) => LSC_loss 0.06, Spatial_loss 0.59, Flat_loss 0.06, Train_acc 100.00, Test_acc 52.94
+2024-08-22 16:07:56,481 [podnet.py] => Task 2, Epoch 122/150 (LR 0.00835) => LSC_loss 0.05, Spatial_loss 0.68, Flat_loss 0.06, Train_acc 100.00, Test_acc 53.03
+2024-08-22 16:07:59,124 [podnet.py] => Task 2, Epoch 123/150 (LR 0.00778) => LSC_loss 0.05, Spatial_loss 0.62, Flat_loss 0.06, Train_acc 100.00, Test_acc 53.37
+2024-08-22 16:08:01,187 [podnet.py] => Task 2, Epoch 124/150 (LR 0.00723) => LSC_loss 0.05, Spatial_loss 0.63, Flat_loss 0.06, Train_acc 100.00, Test_acc 52.58
+2024-08-22 16:08:03,842 [podnet.py] => Task 2, Epoch 125/150 (LR 0.00670) => LSC_loss 0.05, Spatial_loss 0.59, Flat_loss 0.06, Train_acc 100.00, Test_acc 52.71
+2024-08-22 16:08:06,358 [podnet.py] => Task 2, Epoch 126/150 (LR 0.00618) => LSC_loss 0.06, Spatial_loss 0.60, Flat_loss 0.06, Train_acc 100.00, Test_acc 52.47
+2024-08-22 16:08:08,622 [podnet.py] => Task 2, Epoch 127/150 (LR 0.00569) => LSC_loss 0.05, Spatial_loss 0.61, Flat_loss 0.06, Train_acc 100.00, Test_acc 54.49
+2024-08-22 16:08:10,561 [podnet.py] => Task 2, Epoch 128/150 (LR 0.00521) => LSC_loss 0.05, Spatial_loss 0.62, Flat_loss 0.06, Train_acc 100.00, Test_acc 51.43
+2024-08-22 16:08:13,156 [podnet.py] => Task 2, Epoch 129/150 (LR 0.00476) => LSC_loss 0.05, Spatial_loss 0.60, Flat_loss 0.06, Train_acc 100.00, Test_acc 52.52
+2024-08-22 16:08:15,690 [podnet.py] => Task 2, Epoch 130/150 (LR 0.00432) => LSC_loss 0.05, Spatial_loss 0.59, Flat_loss 0.06, Train_acc 100.00, Test_acc 53.06
+2024-08-22 16:08:18,522 [podnet.py] => Task 2, Epoch 131/150 (LR 0.00391) => LSC_loss 0.05, Spatial_loss 0.57, Flat_loss 0.06, Train_acc 100.00, Test_acc 52.14
+2024-08-22 16:08:20,402 [podnet.py] => Task 2, Epoch 132/150 (LR 0.00351) => LSC_loss 0.05, Spatial_loss 0.58, Flat_loss 0.06, Train_acc 100.00, Test_acc 53.06
+2024-08-22 16:08:22,303 [podnet.py] => Task 2, Epoch 133/150 (LR 0.00314) => LSC_loss 0.05, Spatial_loss 0.56, Flat_loss 0.06, Train_acc 100.00, Test_acc 52.50
+2024-08-22 16:08:25,035 [podnet.py] => Task 2, Epoch 134/150 (LR 0.00278) => LSC_loss 0.05, Spatial_loss 0.57, Flat_loss 0.06, Train_acc 100.00, Test_acc 52.76
+2024-08-22 16:08:27,654 [podnet.py] => Task 2, Epoch 135/150 (LR 0.00245) => LSC_loss 0.05, Spatial_loss 0.56, Flat_loss 0.06, Train_acc 100.00, Test_acc 52.63
+2024-08-22 16:08:30,443 [podnet.py] => Task 2, Epoch 136/150 (LR 0.00213) => LSC_loss 0.05, Spatial_loss 0.58, Flat_loss 0.06, Train_acc 100.00, Test_acc 53.41
+2024-08-22 16:08:32,725 [podnet.py] => Task 2, Epoch 137/150 (LR 0.00184) => LSC_loss 0.05, Spatial_loss 0.57, Flat_loss 0.06, Train_acc 100.00, Test_acc 52.18
+2024-08-22 16:08:35,423 [podnet.py] => Task 2, Epoch 138/150 (LR 0.00157) => LSC_loss 0.05, Spatial_loss 0.54, Flat_loss 0.06, Train_acc 100.00, Test_acc 52.49
+2024-08-22 16:08:38,351 [podnet.py] => Task 2, Epoch 139/150 (LR 0.00132) => LSC_loss 0.05, Spatial_loss 0.54, Flat_loss 0.06, Train_acc 100.00, Test_acc 52.44
+2024-08-22 16:08:40,893 [podnet.py] => Task 2, Epoch 140/150 (LR 0.00109) => LSC_loss 0.05, Spatial_loss 0.55, Flat_loss 0.06, Train_acc 100.00, Test_acc 52.41
+2024-08-22 16:08:43,730 [podnet.py] => Task 2, Epoch 141/150 (LR 0.00089) => LSC_loss 0.05, Spatial_loss 0.53, Flat_loss 0.06, Train_acc 100.00, Test_acc 53.30
+2024-08-22 16:08:46,398 [podnet.py] => Task 2, Epoch 142/150 (LR 0.00070) => LSC_loss 0.05, Spatial_loss 0.54, Flat_loss 0.06, Train_acc 100.00, Test_acc 53.17
+2024-08-22 16:08:48,742 [podnet.py] => Task 2, Epoch 143/150 (LR 0.00054) => LSC_loss 0.05, Spatial_loss 0.54, Flat_loss 0.06, Train_acc 100.00, Test_acc 53.27
+2024-08-22 16:08:51,441 [podnet.py] => Task 2, Epoch 144/150 (LR 0.00039) => LSC_loss 0.05, Spatial_loss 0.54, Flat_loss 0.06, Train_acc 100.00, Test_acc 52.48
+2024-08-22 16:08:53,995 [podnet.py] => Task 2, Epoch 145/150 (LR 0.00027) => LSC_loss 0.05, Spatial_loss 0.53, Flat_loss 0.06, Train_acc 100.00, Test_acc 53.26
+2024-08-22 16:08:56,141 [podnet.py] => Task 2, Epoch 146/150 (LR 0.00018) => LSC_loss 0.05, Spatial_loss 0.52, Flat_loss 0.06, Train_acc 100.00, Test_acc 53.22
+2024-08-22 16:08:58,716 [podnet.py] => Task 2, Epoch 147/150 (LR 0.00010) => LSC_loss 0.05, Spatial_loss 0.52, Flat_loss 0.06, Train_acc 100.00, Test_acc 52.99
+2024-08-22 16:09:01,346 [podnet.py] => Task 2, Epoch 148/150 (LR 0.00004) => LSC_loss 0.05, Spatial_loss 0.54, Flat_loss 0.06, Train_acc 100.00, Test_acc 53.14
+2024-08-22 16:09:03,659 [podnet.py] => Task 2, Epoch 149/150 (LR 0.00001) => LSC_loss 0.05, Spatial_loss 0.53, Flat_loss 0.06, Train_acc 100.00, Test_acc 53.08
+2024-08-22 16:09:05,557 [podnet.py] => Task 2, Epoch 150/150 (LR 0.00000) => LSC_loss 0.05, Spatial_loss 0.51, Flat_loss 0.06, Train_acc 100.00, Test_acc 54.02
+2024-08-22 16:09:06,468 [podnet.py] => Finetune the network (classifier part) with the undersampled dataset!
+2024-08-22 16:09:06,469 [base.py] => Reducing exemplars...(71 per classes)
+2024-08-22 16:09:07,801 [base.py] => Constructing exemplars...(71 per classes)
+2024-08-22 16:09:09,475 [podnet.py] => The size of finetune dataset: 639
+2024-08-22 16:09:10,790 [podnet.py] => Task 2, Epoch 1/20 (LR 0.00497) => LSC_loss 0.14, Spatial_loss 0.88, Flat_loss 0.05, Train_acc 99.37, Test_acc 50.34
+2024-08-22 16:09:11,953 [podnet.py] => Task 2, Epoch 2/20 (LR 0.00488) => LSC_loss 0.09, Spatial_loss 0.67, Flat_loss 0.04, Train_acc 100.00, Test_acc 49.82
+2024-08-22 16:09:13,079 [podnet.py] => Task 2, Epoch 3/20 (LR 0.00473) => LSC_loss 0.07, Spatial_loss 0.56, Flat_loss 0.04, Train_acc 100.00, Test_acc 50.51
+2024-08-22 16:09:14,344 [podnet.py] => Task 2, Epoch 4/20 (LR 0.00452) => LSC_loss 0.06, Spatial_loss 0.56, Flat_loss 0.03, Train_acc 100.00, Test_acc 50.60
+2024-08-22 16:09:15,568 [podnet.py] => Task 2, Epoch 5/20 (LR 0.00427) => LSC_loss 0.06, Spatial_loss 0.56, Flat_loss 0.03, Train_acc 100.00, Test_acc 50.91
+2024-08-22 16:09:16,749 [podnet.py] => Task 2, Epoch 6/20 (LR 0.00397) => LSC_loss 0.05, Spatial_loss 0.47, Flat_loss 0.03, Train_acc 100.00, Test_acc 51.33
+2024-08-22 16:09:17,861 [podnet.py] => Task 2, Epoch 7/20 (LR 0.00363) => LSC_loss 0.05, Spatial_loss 0.53, Flat_loss 0.03, Train_acc 100.00, Test_acc 51.75
+2024-08-22 16:09:19,052 [podnet.py] => Task 2, Epoch 8/20 (LR 0.00327) => LSC_loss 0.05, Spatial_loss 0.48, Flat_loss 0.03, Train_acc 100.00, Test_acc 52.23
+2024-08-22 16:09:20,154 [podnet.py] => Task 2, Epoch 9/20 (LR 0.00289) => LSC_loss 0.05, Spatial_loss 0.49, Flat_loss 0.03, Train_acc 100.00, Test_acc 52.33
+2024-08-22 16:09:21,300 [podnet.py] => Task 2, Epoch 10/20 (LR 0.00250) => LSC_loss 0.05, Spatial_loss 0.45, Flat_loss 0.03, Train_acc 100.00, Test_acc 52.09
+2024-08-22 16:09:22,495 [podnet.py] => Task 2, Epoch 11/20 (LR 0.00211) => LSC_loss 0.05, Spatial_loss 0.53, Flat_loss 0.03, Train_acc 100.00, Test_acc 51.95
+2024-08-22 16:09:23,643 [podnet.py] => Task 2, Epoch 12/20 (LR 0.00173) => LSC_loss 0.05, Spatial_loss 0.46, Flat_loss 0.03, Train_acc 100.00, Test_acc 51.95
+2024-08-22 16:09:24,930 [podnet.py] => Task 2, Epoch 13/20 (LR 0.00137) => LSC_loss 0.05, Spatial_loss 0.46, Flat_loss 0.03, Train_acc 100.00, Test_acc 51.99
+2024-08-22 16:09:26,123 [podnet.py] => Task 2, Epoch 14/20 (LR 0.00103) => LSC_loss 0.05, Spatial_loss 0.55, Flat_loss 0.03, Train_acc 100.00, Test_acc 52.19
+2024-08-22 16:09:27,350 [podnet.py] => Task 2, Epoch 15/20 (LR 0.00073) => LSC_loss 0.05, Spatial_loss 0.49, Flat_loss 0.03, Train_acc 100.00, Test_acc 52.23
+2024-08-22 16:09:28,532 [podnet.py] => Task 2, Epoch 16/20 (LR 0.00048) => LSC_loss 0.05, Spatial_loss 0.49, Flat_loss 0.03, Train_acc 100.00, Test_acc 52.14
+2024-08-22 16:09:29,722 [podnet.py] => Task 2, Epoch 17/20 (LR 0.00027) => LSC_loss 0.05, Spatial_loss 0.52, Flat_loss 0.03, Train_acc 100.00, Test_acc 52.35
+2024-08-22 16:09:30,929 [podnet.py] => Task 2, Epoch 18/20 (LR 0.00012) => LSC_loss 0.05, Spatial_loss 0.45, Flat_loss 0.03, Train_acc 100.00, Test_acc 52.33
+2024-08-22 16:09:32,071 [podnet.py] => Task 2, Epoch 19/20 (LR 0.00003) => LSC_loss 0.05, Spatial_loss 0.47, Flat_loss 0.03, Train_acc 100.00, Test_acc 52.24
+2024-08-22 16:09:33,237 [podnet.py] => Task 2, Epoch 20/20 (LR 0.00000) => LSC_loss 0.05, Spatial_loss 0.44, Flat_loss 0.03, Train_acc 100.00, Test_acc 52.13
+2024-08-22 16:09:34,106 [base.py] => Reducing exemplars...(55 per classes)
+2024-08-22 16:09:35,387 [base.py] => Constructing exemplars...(55 per classes)
+2024-08-22 16:09:38,789 [podnet.py] => Exemplar size: 495
+2024-08-22 16:09:38,790 [trainer.py] => CNN: {'total': 52.13, '00-04': 40.09, '05-06': 52.57, '07-08': 98.83, 'old': 42.62, 'new': 98.83}
+2024-08-22 16:09:38,790 [trainer.py] => NME: {'total': 64.19, '00-04': 63.83, '05-06': 45.45, '07-08': 84.27, 'old': 60.1, 'new': 84.27}
+2024-08-22 16:09:38,790 [trainer.py] => CNN top1 curve: [92.02, 75.88, 52.13]
+2024-08-22 16:09:38,790 [trainer.py] => CNN top5 curve: [100.0, 98.86, 95.02]
+2024-08-22 16:09:38,790 [trainer.py] => NME top1 curve: [92.04, 81.45, 64.19]
+2024-08-22 16:09:38,790 [trainer.py] => NME top5 curve: [100.0, 98.94, 96.78]
+
+2024-08-22 16:09:38,790 [trainer.py] => Average Accuracy (CNN): 73.34333333333332
+2024-08-22 16:09:38,790 [trainer.py] => Average Accuracy (NME): 79.22666666666667
+2024-08-22 16:09:38,791 [trainer.py] => Forgetting (CNN): 48.045

@@ -1,0 +1,22 @@
+{
+    "prefix": "cil",
+    "dataset": "hrrp9",
+    "memory_size": 500,
+    "memory_per_class": 20,
+    "fixed_memory": false,
+    "shuffle": true,
+    "init_cls": 5,
+    "increment": 2,
+    "model_name": "knn",
+    "batch_size": 128,
+    "num_workers": 8,
+    "device": ["2"],
+    "topk": 5,
+
+    "init_train": false,
+    "seed": [1993],
+    "convnet_path": "checkpoints/init_train/resnet18_42503.pth",
+    "fc_path": "checkpoints/init_train/fc_42503.pth",
+    "seed2": [2001],
+    "seed1": [110]
+}

@@ -1,0 +1,237 @@
+2024-10-30 17:29:49,209 [trainer.py] => config: ./exps/POD_foster.json
+2024-10-30 17:29:49,209 [trainer.py] => prefix: cil
+2024-10-30 17:29:49,210 [trainer.py] => dataset: hrrp9
+2024-10-30 17:29:49,210 [trainer.py] => memory_size: 500
+2024-10-30 17:29:49,211 [trainer.py] => memory_per_class: 20
+2024-10-30 17:29:49,211 [trainer.py] => fixed_memory: False
+2024-10-30 17:29:49,211 [trainer.py] => shuffle: True
+2024-10-30 17:29:49,211 [trainer.py] => init_cls: 5
+2024-10-30 17:29:49,212 [trainer.py] => increment: 2
+2024-10-30 17:29:49,212 [trainer.py] => model_name: POD_foster
+2024-10-30 17:29:49,212 [trainer.py] => convnet_type: resnet18
+2024-10-30 17:29:49,213 [trainer.py] => init_train: False
+2024-10-30 17:29:49,213 [trainer.py] => convnet_path2: checkpoints/init_train/resnet18_35172.pth
+2024-10-30 17:29:49,213 [trainer.py] => fc_path2: checkpoints/init_train/fc_35172.pth
+2024-10-30 17:29:49,214 [trainer.py] => convnet_path1: checkpoints/init_train/resnet18_42503.pth
+2024-10-30 17:29:49,214 [trainer.py] => fc_path1: checkpoints/init_train/fc_42503.pth
+2024-10-30 17:29:49,215 [trainer.py] => convnet_path: checkpoints/init_train/resnet18_42871.pth
+2024-10-30 17:29:49,215 [trainer.py] => fc_path: checkpoints/init_train/fc_42871.pth
+2024-10-30 17:29:49,216 [trainer.py] => device: [device(type='cuda', index=4)]
+2024-10-30 17:29:49,216 [trainer.py] => seed: 110
+2024-10-30 17:29:49,217 [trainer.py] => beta1: 0.96
+2024-10-30 17:29:49,217 [trainer.py] => beta2: 0.97
+2024-10-30 17:29:49,217 [trainer.py] => oofc: ft
+2024-10-30 17:29:49,218 [trainer.py] => is_teacher_wa: True
+2024-10-30 17:29:49,218 [trainer.py] => is_student_wa: False
+2024-10-30 17:29:49,218 [trainer.py] => is_teacher_la: True
+2024-10-30 17:29:49,219 [trainer.py] => is_student_la: True
+2024-10-30 17:29:49,219 [trainer.py] => lambda_okd: 0
+2024-10-30 17:29:49,219 [trainer.py] => wa_value: 1
+2024-10-30 17:29:49,220 [trainer.py] => init_epochs: 0
+2024-10-30 17:29:49,220 [trainer.py] => init_lr: 0.1
+2024-10-30 17:29:49,221 [trainer.py] => init_weight_decay: 0.0005
+2024-10-30 17:29:49,222 [trainer.py] => boosting_epochs: 150
+2024-10-30 17:29:49,222 [trainer.py] => compression_epochs: 120
+2024-10-30 17:29:49,223 [trainer.py] => lr: 0.1
+2024-10-30 17:29:49,223 [trainer.py] => batch_size: 128
+2024-10-30 17:29:49,223 [trainer.py] => weight_decay: 0.0005
+2024-10-30 17:29:49,224 [trainer.py] => num_workers: 8
+2024-10-30 17:29:49,224 [trainer.py] => momentum: 0.9
+2024-10-30 17:29:49,224 [trainer.py] => T: 2
+2024-10-30 17:29:49,225 [trainer.py] => lambda_c_base: 0.7
+2024-10-30 17:29:49,225 [trainer.py] => lambda_f_base: 1.0
+2024-10-30 17:29:49,226 [trainer.py] => POD: w
+2024-10-30 17:29:50,025 [data_manager.py] => [4, 2, 8, 7, 1, 6, 5, 3, 0]
+2024-10-30 17:29:50,082 [trainer.py] => All params: 0
+2024-10-30 17:29:50,082 [trainer.py] => Trainable params: 0
+2024-10-30 17:29:50,841 [pod_foster.py] => Learning on 0-5
+2024-10-30 17:29:50,842 [pod_foster.py] => All params: 3849034
+2024-10-30 17:29:50,843 [pod_foster.py] => Trainable params: 3849034
+2024-10-30 17:29:50,974 [pod_foster.py] => Adaptive factor: 0
+2024-10-30 17:29:51,465 [pod_foster.py] => init_train?---False
+2024-10-30 17:29:53,156 [base.py] => Reducing exemplars...(100 per classes)
+2024-10-30 17:29:53,157 [base.py] => Constructing exemplars...(100 per classes)
+2024-10-30 17:30:01,190 [trainer.py] => All params: 3849034
+2024-10-30 17:30:02,637 [pod_foster.py] => Exemplar size: 500
+2024-10-30 17:30:02,638 [trainer.py] => CNN: {'total': 96.3, '00-04': 96.3, 'old': 0, 'new': 96.3}
+2024-10-30 17:30:02,638 [trainer.py] => NME: {'total': 96.27, '00-04': 96.27, 'old': 0, 'new': 96.27}
+2024-10-30 17:30:02,638 [trainer.py] => CNN top1 curve: [96.3]
+2024-10-30 17:30:02,638 [trainer.py] => CNN top5 curve: [100.0]
+2024-10-30 17:30:02,638 [trainer.py] => NME top1 curve: [96.27]
+2024-10-30 17:30:02,638 [trainer.py] => NME top5 curve: [100.0]
+
+2024-10-30 17:30:02,638 [trainer.py] => Average Accuracy (CNN): 96.3
+2024-10-30 17:30:02,638 [trainer.py] => Average Accuracy (NME): 96.27
+2024-10-30 17:30:02,639 [trainer.py] => All params: 3849034
+2024-10-30 17:30:02,639 [trainer.py] => Trainable params: 3849034
+2024-10-30 17:30:02,685 [pod_foster.py] => Learning on 5-7
+2024-10-30 17:30:02,687 [pod_foster.py] => All params: 7701139
+2024-10-30 17:30:02,688 [pod_foster.py] => Trainable params: 3854670
+2024-10-30 17:30:02,739 [pod_foster.py] => Adaptive factor: 1.8708286933869707
+2024-10-30 17:30:02,749 [pod_foster.py] => per cls weights : [1.00484344 1.00484344 1.00484344 1.00484344 1.00484344 0.98789141
+ 0.98789141]
+2024-10-30 17:30:06,070 [pod_foster.py] => Task 1, Epoch 1/150 => Loss 2.121, Loss_clf 0.797, Loss_fe 0.659, Loss_pod 0.440, Loss_flat 0.224, Train_accy 84.29, Test_accy 67.88
+2024-10-30 17:30:17,285 [pod_foster.py] => Task 1, Epoch 6/150 => Loss 0.369, Loss_clf 0.014, Loss_fe 0.051, Loss_pod 0.227, Loss_flat 0.078, Train_accy 99.84, Test_accy 82.07
+2024-10-30 17:30:29,086 [pod_foster.py] => Task 1, Epoch 11/150 => Loss 0.311, Loss_clf 0.011, Loss_fe 0.020, Loss_pod 0.212, Loss_flat 0.068, Train_accy 99.89, Test_accy 82.24
+2024-10-30 17:30:41,106 [pod_foster.py] => Task 1, Epoch 16/150 => Loss 0.212, Loss_clf 0.006, Loss_fe 0.009, Loss_pod 0.156, Loss_flat 0.041, Train_accy 100.00, Test_accy 82.10
+2024-10-30 17:30:52,710 [pod_foster.py] => Task 1, Epoch 21/150 => Loss 0.212, Loss_clf 0.009, Loss_fe 0.012, Loss_pod 0.149, Loss_flat 0.042, Train_accy 99.96, Test_accy 80.26
+2024-10-30 17:31:04,510 [pod_foster.py] => Task 1, Epoch 26/150 => Loss 0.355, Loss_clf 0.012, Loss_fe 0.022, Loss_pod 0.243, Loss_flat 0.078, Train_accy 99.76, Test_accy 80.67
+2024-10-30 17:31:19,256 [pod_foster.py] => Task 1, Epoch 31/150 => Loss 0.248, Loss_clf 0.009, Loss_fe 0.012, Loss_pod 0.177, Loss_flat 0.049, Train_accy 99.82, Test_accy 84.12
+2024-10-30 17:31:33,853 [pod_foster.py] => Task 1, Epoch 36/150 => Loss 0.181, Loss_clf 0.004, Loss_fe 0.006, Loss_pod 0.139, Loss_flat 0.031, Train_accy 100.00, Test_accy 81.21
+2024-10-30 17:31:48,575 [pod_foster.py] => Task 1, Epoch 41/150 => Loss 0.159, Loss_clf 0.004, Loss_fe 0.006, Loss_pod 0.124, Loss_flat 0.026, Train_accy 100.00, Test_accy 79.83
+2024-10-30 17:32:03,710 [pod_foster.py] => Task 1, Epoch 46/150 => Loss 0.151, Loss_clf 0.004, Loss_fe 0.006, Loss_pod 0.117, Loss_flat 0.024, Train_accy 100.00, Test_accy 80.81
+2024-10-30 17:32:19,849 [pod_foster.py] => Task 1, Epoch 51/150 => Loss 0.144, Loss_clf 0.004, Loss_fe 0.005, Loss_pod 0.112, Loss_flat 0.022, Train_accy 100.00, Test_accy 79.93
+2024-10-30 17:32:33,965 [pod_foster.py] => Task 1, Epoch 56/150 => Loss 0.141, Loss_clf 0.004, Loss_fe 0.005, Loss_pod 0.110, Loss_flat 0.022, Train_accy 100.00, Test_accy 81.48
+2024-10-30 17:32:48,404 [pod_foster.py] => Task 1, Epoch 61/150 => Loss 0.167, Loss_clf 0.007, Loss_fe 0.009, Loss_pod 0.122, Loss_flat 0.029, Train_accy 99.98, Test_accy 81.95
+2024-10-30 17:33:03,102 [pod_foster.py] => Task 1, Epoch 66/150 => Loss 0.140, Loss_clf 0.004, Loss_fe 0.006, Loss_pod 0.107, Loss_flat 0.023, Train_accy 100.00, Test_accy 78.55
+2024-10-30 17:33:15,303 [pod_foster.py] => Task 1, Epoch 71/150 => Loss 0.131, Loss_clf 0.004, Loss_fe 0.005, Loss_pod 0.100, Loss_flat 0.021, Train_accy 100.00, Test_accy 82.26
+2024-10-30 17:33:27,269 [pod_foster.py] => Task 1, Epoch 76/150 => Loss 0.131, Loss_clf 0.004, Loss_fe 0.005, Loss_pod 0.102, Loss_flat 0.020, Train_accy 100.00, Test_accy 80.31
+2024-10-30 17:33:39,099 [pod_foster.py] => Task 1, Epoch 81/150 => Loss 0.121, Loss_clf 0.004, Loss_fe 0.005, Loss_pod 0.094, Loss_flat 0.018, Train_accy 100.00, Test_accy 79.31
+2024-10-30 17:33:50,547 [pod_foster.py] => Task 1, Epoch 86/150 => Loss 0.125, Loss_clf 0.004, Loss_fe 0.005, Loss_pod 0.097, Loss_flat 0.019, Train_accy 100.00, Test_accy 77.02
+2024-10-30 17:34:02,286 [pod_foster.py] => Task 1, Epoch 91/150 => Loss 0.119, Loss_clf 0.004, Loss_fe 0.005, Loss_pod 0.092, Loss_flat 0.018, Train_accy 100.00, Test_accy 79.69
+2024-10-30 17:34:13,777 [pod_foster.py] => Task 1, Epoch 96/150 => Loss 0.138, Loss_clf 0.005, Loss_fe 0.006, Loss_pod 0.102, Loss_flat 0.024, Train_accy 100.00, Test_accy 78.50
+2024-10-30 17:34:28,288 [pod_foster.py] => Task 1, Epoch 101/150 => Loss 0.117, Loss_clf 0.004, Loss_fe 0.005, Loss_pod 0.089, Loss_flat 0.019, Train_accy 100.00, Test_accy 79.67
+2024-10-30 17:34:44,817 [pod_foster.py] => Task 1, Epoch 106/150 => Loss 0.111, Loss_clf 0.004, Loss_fe 0.005, Loss_pod 0.085, Loss_flat 0.018, Train_accy 100.00, Test_accy 80.88
+2024-10-30 17:35:00,735 [pod_foster.py] => Task 1, Epoch 111/150 => Loss 0.111, Loss_clf 0.004, Loss_fe 0.005, Loss_pod 0.084, Loss_flat 0.018, Train_accy 100.00, Test_accy 78.90
+2024-10-30 17:35:17,444 [pod_foster.py] => Task 1, Epoch 116/150 => Loss 0.108, Loss_clf 0.004, Loss_fe 0.005, Loss_pod 0.081, Loss_flat 0.018, Train_accy 100.00, Test_accy 80.33
+2024-10-30 17:35:33,654 [pod_foster.py] => Task 1, Epoch 121/150 => Loss 0.099, Loss_clf 0.003, Loss_fe 0.005, Loss_pod 0.075, Loss_flat 0.016, Train_accy 100.00, Test_accy 79.33
+2024-10-30 17:35:48,445 [pod_foster.py] => Task 1, Epoch 126/150 => Loss 0.101, Loss_clf 0.004, Loss_fe 0.005, Loss_pod 0.076, Loss_flat 0.017, Train_accy 100.00, Test_accy 79.12
+2024-10-30 17:36:03,131 [pod_foster.py] => Task 1, Epoch 131/150 => Loss 0.099, Loss_clf 0.003, Loss_fe 0.005, Loss_pod 0.074, Loss_flat 0.016, Train_accy 100.00, Test_accy 79.71
+2024-10-30 17:36:18,153 [pod_foster.py] => Task 1, Epoch 136/150 => Loss 0.098, Loss_clf 0.003, Loss_fe 0.005, Loss_pod 0.073, Loss_flat 0.017, Train_accy 100.00, Test_accy 80.02
+2024-10-30 17:36:29,522 [pod_foster.py] => Task 1, Epoch 141/150 => Loss 0.097, Loss_clf 0.004, Loss_fe 0.005, Loss_pod 0.071, Loss_flat 0.017, Train_accy 100.00, Test_accy 79.79
+2024-10-30 17:36:40,972 [pod_foster.py] => Task 1, Epoch 146/150 => Loss 0.101, Loss_clf 0.004, Loss_fe 0.005, Loss_pod 0.076, Loss_flat 0.017, Train_accy 100.00, Test_accy 80.43
+2024-10-30 17:36:49,343 [pod_foster.py] => Task 1, Epoch 150/150 => Loss 0.096, Loss_clf 0.003, Loss_fe 0.005, Loss_pod 0.071, Loss_flat 0.017, Train_accy 100.00
+2024-10-30 17:36:49,344 [inc_net.py] => align weights, gamma = 0.4961267113685608 
+2024-10-30 17:36:49,346 [pod_foster.py] => per cls weights : [1.01377356 1.01377356 1.01377356 1.01377356 1.01377356 0.96556609
+ 0.96556609]
+2024-10-30 17:36:52,050 [pod_foster.py] => SNet: Task 1, Epoch 1/120 => Loss 1.325,  Train_accy 72.69, Test_accy 68.76
+2024-10-30 17:37:02,210 [pod_foster.py] => SNet: Task 1, Epoch 6/120 => Loss 1.032,  Train_accy 96.20, Test_accy 84.71
+2024-10-30 17:37:12,398 [pod_foster.py] => SNet: Task 1, Epoch 11/120 => Loss 1.026,  Train_accy 96.69, Test_accy 84.10
+2024-10-30 17:37:22,712 [pod_foster.py] => SNet: Task 1, Epoch 16/120 => Loss 1.021,  Train_accy 96.71, Test_accy 86.21
+2024-10-30 17:37:35,799 [pod_foster.py] => SNet: Task 1, Epoch 21/120 => Loss 1.019,  Train_accy 97.04, Test_accy 86.38
+2024-10-30 17:37:50,434 [pod_foster.py] => SNet: Task 1, Epoch 26/120 => Loss 1.017,  Train_accy 97.00, Test_accy 86.98
+2024-10-30 17:38:03,129 [pod_foster.py] => SNet: Task 1, Epoch 31/120 => Loss 1.018,  Train_accy 97.02, Test_accy 86.36
+2024-10-30 17:38:16,197 [pod_foster.py] => SNet: Task 1, Epoch 36/120 => Loss 1.017,  Train_accy 97.18, Test_accy 86.43
+2024-10-30 17:38:28,477 [pod_foster.py] => SNet: Task 1, Epoch 41/120 => Loss 1.016,  Train_accy 97.36, Test_accy 86.07
+2024-10-30 17:38:41,009 [pod_foster.py] => SNet: Task 1, Epoch 46/120 => Loss 1.013,  Train_accy 97.24, Test_accy 85.48
+2024-10-30 17:38:55,177 [pod_foster.py] => SNet: Task 1, Epoch 51/120 => Loss 1.015,  Train_accy 97.51, Test_accy 86.76
+2024-10-30 17:39:10,426 [pod_foster.py] => SNet: Task 1, Epoch 56/120 => Loss 1.012,  Train_accy 97.42, Test_accy 86.98
+2024-10-30 17:39:21,994 [pod_foster.py] => SNet: Task 1, Epoch 61/120 => Loss 1.014,  Train_accy 97.47, Test_accy 86.64
+2024-10-30 17:39:32,841 [pod_foster.py] => SNet: Task 1, Epoch 66/120 => Loss 1.015,  Train_accy 97.60, Test_accy 86.62
+2024-10-30 17:39:43,087 [pod_foster.py] => SNet: Task 1, Epoch 71/120 => Loss 1.014,  Train_accy 97.33, Test_accy 86.88
+2024-10-30 17:39:53,189 [pod_foster.py] => SNet: Task 1, Epoch 76/120 => Loss 1.011,  Train_accy 97.53, Test_accy 86.98
+2024-10-30 17:40:03,336 [pod_foster.py] => SNet: Task 1, Epoch 81/120 => Loss 1.012,  Train_accy 97.31, Test_accy 86.48
+2024-10-30 17:40:13,527 [pod_foster.py] => SNet: Task 1, Epoch 86/120 => Loss 1.012,  Train_accy 97.60, Test_accy 87.00
+2024-10-30 17:40:23,471 [pod_foster.py] => SNet: Task 1, Epoch 91/120 => Loss 1.014,  Train_accy 97.62, Test_accy 87.17
+2024-10-30 17:40:33,408 [pod_foster.py] => SNet: Task 1, Epoch 96/120 => Loss 1.012,  Train_accy 97.71, Test_accy 86.79
+2024-10-30 17:40:47,575 [pod_foster.py] => SNet: Task 1, Epoch 101/120 => Loss 1.010,  Train_accy 97.51, Test_accy 86.57
+2024-10-30 17:41:01,105 [pod_foster.py] => SNet: Task 1, Epoch 106/120 => Loss 1.013,  Train_accy 97.89, Test_accy 86.40
+2024-10-30 17:41:16,510 [pod_foster.py] => SNet: Task 1, Epoch 111/120 => Loss 1.013,  Train_accy 97.80, Test_accy 86.81
+2024-10-30 17:41:32,630 [pod_foster.py] => SNet: Task 1, Epoch 116/120 => Loss 1.012,  Train_accy 97.51, Test_accy 86.98
+2024-10-30 17:41:44,083 [pod_foster.py] => SNet: Task 1, Epoch 120/120 => Loss 1.012,  Train_accy 97.71
+2024-10-30 17:41:44,083 [pod_foster.py] => do not weight align student!
+2024-10-30 17:41:45,605 [pod_foster.py] => darknet eval: 
+2024-10-30 17:41:45,605 [pod_foster.py] => CNN top1 curve: 86.6
+2024-10-30 17:41:45,607 [pod_foster.py] => CNN top5 curve: 99.64
+2024-10-30 17:41:45,607 [pod_foster.py] => CNN: {'total': 86.6, '00-04': 86.33, '05-06': 87.25, 'old': 86.33, 'new': 87.25}
+2024-10-30 17:41:45,609 [pod_foster.py] => All params after compression: 3851086
+2024-10-30 17:41:45,610 [base.py] => Reducing exemplars...(71 per classes)
+2024-10-30 17:41:48,390 [base.py] => Constructing exemplars...(71 per classes)
+2024-10-30 17:41:54,562 [trainer.py] => All params: 7701139
+2024-10-30 17:41:58,583 [pod_foster.py] => Exemplar size: 497
+2024-10-30 17:41:58,595 [trainer.py] => CNN: {'total': 87.26, '00-04': 89.3, '05-06': 82.17, 'old': 89.3, 'new': 82.17}
+2024-10-30 17:41:58,596 [trainer.py] => NME: {'total': 81.88, '00-04': 85.57, '05-06': 72.67, 'old': 85.57, 'new': 72.67}
+2024-10-30 17:41:58,596 [trainer.py] => CNN top1 curve: [96.3, 87.26]
+2024-10-30 17:41:58,596 [trainer.py] => CNN top5 curve: [100.0, 99.69]
+2024-10-30 17:41:58,596 [trainer.py] => NME top1 curve: [96.27, 81.88]
+2024-10-30 17:41:58,596 [trainer.py] => NME top5 curve: [100.0, 99.76]
+
+2024-10-30 17:41:58,596 [trainer.py] => Average Accuracy (CNN): 91.78
+2024-10-30 17:41:58,596 [trainer.py] => Average Accuracy (NME): 89.07499999999999
+2024-10-30 17:41:58,597 [trainer.py] => All params: 7701139
+2024-10-30 17:41:58,598 [trainer.py] => Trainable params: 3854670
+2024-10-30 17:41:58,701 [pod_foster.py] => Learning on 7-9
+2024-10-30 17:41:58,708 [pod_foster.py] => All params: 7705241
+2024-10-30 17:41:58,720 [pod_foster.py] => Trainable params: 3857746
+2024-10-30 17:41:58,787 [pod_foster.py] => Adaptive factor: 2.1213203435596424
+2024-10-30 17:41:58,795 [pod_foster.py] => per cls weights : [1.01239929 1.01239929 1.01239929 1.01239929 1.01239929 1.01239929
+ 1.01239929 0.95660248 0.95660248]
+2024-10-30 17:42:03,657 [pod_foster.py] => Task 2, Epoch 1/150 => Loss 2.094, Loss_clf 0.660, Loss_fe 0.745, Loss_pod 0.480, Loss_flat 0.209, Train_accy 82.59, Test_accy 56.65
+2024-10-30 17:42:18,699 [pod_foster.py] => Task 2, Epoch 6/150 => Loss 0.508, Loss_clf 0.026, Loss_fe 0.073, Loss_pod 0.306, Loss_flat 0.103, Train_accy 99.64, Test_accy 61.87
+2024-10-30 17:42:33,721 [pod_foster.py] => Task 2, Epoch 11/150 => Loss 0.271, Loss_clf 0.009, Loss_fe 0.013, Loss_pod 0.197, Loss_flat 0.052, Train_accy 100.00, Test_accy 62.31
+2024-10-30 17:42:45,386 [pod_foster.py] => Task 2, Epoch 16/150 => Loss 0.234, Loss_clf 0.007, Loss_fe 0.010, Loss_pod 0.176, Loss_flat 0.042, Train_accy 100.00, Test_accy 62.19
+2024-10-30 17:42:57,259 [pod_foster.py] => Task 2, Epoch 21/150 => Loss 0.197, Loss_clf 0.005, Loss_fe 0.008, Loss_pod 0.151, Loss_flat 0.033, Train_accy 100.00, Test_accy 62.96
+2024-10-30 17:43:09,221 [pod_foster.py] => Task 2, Epoch 26/150 => Loss 0.881, Loss_clf 0.087, Loss_fe 0.212, Loss_pod 0.422, Loss_flat 0.160, Train_accy 97.22, Test_accy 43.00
+2024-10-30 17:43:21,202 [pod_foster.py] => Task 2, Epoch 31/150 => Loss 0.360, Loss_clf 0.018, Loss_fe 0.024, Loss_pod 0.245, Loss_flat 0.074, Train_accy 99.67, Test_accy 61.67
+2024-10-30 17:43:33,227 [pod_foster.py] => Task 2, Epoch 36/150 => Loss 0.219, Loss_clf 0.006, Loss_fe 0.007, Loss_pod 0.168, Loss_flat 0.038, Train_accy 100.00, Test_accy 59.30
+2024-10-30 17:43:49,161 [pod_foster.py] => Task 2, Epoch 41/150 => Loss 0.241, Loss_clf 0.005, Loss_fe 0.007, Loss_pod 0.185, Loss_flat 0.044, Train_accy 100.00, Test_accy 62.31
+2024-10-30 17:44:08,672 [pod_foster.py] => Task 2, Epoch 46/150 => Loss 0.192, Loss_clf 0.005, Loss_fe 0.006, Loss_pod 0.150, Loss_flat 0.031, Train_accy 100.00, Test_accy 59.74
+2024-10-30 17:44:29,679 [pod_foster.py] => Task 2, Epoch 51/150 => Loss 0.185, Loss_clf 0.006, Loss_fe 0.007, Loss_pod 0.144, Loss_flat 0.028, Train_accy 100.00, Test_accy 59.00
+2024-10-30 17:44:50,197 [pod_foster.py] => Task 2, Epoch 56/150 => Loss 0.180, Loss_clf 0.005, Loss_fe 0.007, Loss_pod 0.140, Loss_flat 0.028, Train_accy 100.00, Test_accy 63.37
+2024-10-30 17:45:10,160 [pod_foster.py] => Task 2, Epoch 61/150 => Loss 0.196, Loss_clf 0.007, Loss_fe 0.008, Loss_pod 0.150, Loss_flat 0.031, Train_accy 99.98, Test_accy 64.48
+2024-10-30 17:45:30,136 [pod_foster.py] => Task 2, Epoch 66/150 => Loss 0.189, Loss_clf 0.005, Loss_fe 0.006, Loss_pod 0.145, Loss_flat 0.032, Train_accy 100.00, Test_accy 61.15
+2024-10-30 17:45:49,951 [pod_foster.py] => Task 2, Epoch 71/150 => Loss 0.198, Loss_clf 0.006, Loss_fe 0.007, Loss_pod 0.151, Loss_flat 0.034, Train_accy 99.96, Test_accy 61.69
+2024-10-30 17:46:06,186 [pod_foster.py] => Task 2, Epoch 76/150 => Loss 0.162, Loss_clf 0.005, Loss_fe 0.006, Loss_pod 0.128, Loss_flat 0.024, Train_accy 100.00, Test_accy 62.46
+2024-10-30 17:46:17,706 [pod_foster.py] => Task 2, Epoch 81/150 => Loss 0.174, Loss_clf 0.005, Loss_fe 0.006, Loss_pod 0.133, Loss_flat 0.031, Train_accy 100.00, Test_accy 63.70
+2024-10-30 17:46:29,673 [pod_foster.py] => Task 2, Epoch 86/150 => Loss 0.156, Loss_clf 0.004, Loss_fe 0.005, Loss_pod 0.122, Loss_flat 0.024, Train_accy 100.00, Test_accy 60.22
+2024-10-30 17:46:41,383 [pod_foster.py] => Task 2, Epoch 91/150 => Loss 0.157, Loss_clf 0.004, Loss_fe 0.005, Loss_pod 0.122, Loss_flat 0.025, Train_accy 100.00, Test_accy 62.80
+2024-10-30 17:46:53,425 [pod_foster.py] => Task 2, Epoch 96/150 => Loss 0.146, Loss_clf 0.004, Loss_fe 0.005, Loss_pod 0.115, Loss_flat 0.022, Train_accy 100.00, Test_accy 60.69
+2024-10-30 17:47:05,556 [pod_foster.py] => Task 2, Epoch 101/150 => Loss 0.145, Loss_clf 0.005, Loss_fe 0.006, Loss_pod 0.113, Loss_flat 0.022, Train_accy 100.00, Test_accy 59.87
+2024-10-30 17:47:17,378 [pod_foster.py] => Task 2, Epoch 106/150 => Loss 0.147, Loss_clf 0.005, Loss_fe 0.007, Loss_pod 0.112, Loss_flat 0.024, Train_accy 100.00, Test_accy 59.83
+2024-10-30 17:47:34,815 [pod_foster.py] => Task 2, Epoch 111/150 => Loss 0.140, Loss_clf 0.005, Loss_fe 0.006, Loss_pod 0.108, Loss_flat 0.021, Train_accy 100.00, Test_accy 61.24
+2024-10-30 17:47:53,577 [pod_foster.py] => Task 2, Epoch 116/150 => Loss 0.139, Loss_clf 0.005, Loss_fe 0.006, Loss_pod 0.107, Loss_flat 0.022, Train_accy 100.00, Test_accy 61.19
+2024-10-30 17:48:11,541 [pod_foster.py] => Task 2, Epoch 121/150 => Loss 0.129, Loss_clf 0.004, Loss_fe 0.005, Loss_pod 0.100, Loss_flat 0.021, Train_accy 100.00, Test_accy 61.46
+2024-10-30 17:48:29,077 [pod_foster.py] => Task 2, Epoch 126/150 => Loss 0.130, Loss_clf 0.004, Loss_fe 0.005, Loss_pod 0.100, Loss_flat 0.021, Train_accy 100.00, Test_accy 62.00
+2024-10-30 17:48:46,272 [pod_foster.py] => Task 2, Epoch 131/150 => Loss 0.127, Loss_clf 0.004, Loss_fe 0.005, Loss_pod 0.097, Loss_flat 0.020, Train_accy 100.00, Test_accy 61.93
+2024-10-30 17:49:05,369 [pod_foster.py] => Task 2, Epoch 136/150 => Loss 0.122, Loss_clf 0.004, Loss_fe 0.005, Loss_pod 0.093, Loss_flat 0.020, Train_accy 100.00, Test_accy 61.52
+2024-10-30 17:49:22,544 [pod_foster.py] => Task 2, Epoch 141/150 => Loss 0.118, Loss_clf 0.004, Loss_fe 0.005, Loss_pod 0.089, Loss_flat 0.020, Train_accy 100.00, Test_accy 61.35
+2024-10-30 17:49:36,445 [pod_foster.py] => Task 2, Epoch 146/150 => Loss 0.123, Loss_clf 0.004, Loss_fe 0.006, Loss_pod 0.092, Loss_flat 0.021, Train_accy 100.00, Test_accy 59.59
+2024-10-30 17:49:45,256 [pod_foster.py] => Task 2, Epoch 150/150 => Loss 0.118, Loss_clf 0.004, Loss_fe 0.005, Loss_pod 0.090, Loss_flat 0.020, Train_accy 100.00
+2024-10-30 17:49:45,259 [inc_net.py] => align weights, gamma = 0.5086840391159058 
+2024-10-30 17:49:45,261 [pod_foster.py] => per cls weights : [1.02623168 1.02623168 1.02623168 1.02623168 1.02623168 1.02623168
+ 1.02623168 0.90818914 0.90818914]
+2024-10-30 17:49:48,244 [pod_foster.py] => SNet: Task 2, Epoch 1/120 => Loss 1.548,  Train_accy 73.85, Test_accy 69.19
+2024-10-30 17:49:58,048 [pod_foster.py] => SNet: Task 2, Epoch 6/120 => Loss 1.297,  Train_accy 95.24, Test_accy 74.22
+2024-10-30 17:50:08,153 [pod_foster.py] => SNet: Task 2, Epoch 11/120 => Loss 1.294,  Train_accy 95.91, Test_accy 75.17
+2024-10-30 17:50:18,617 [pod_foster.py] => SNet: Task 2, Epoch 16/120 => Loss 1.292,  Train_accy 95.98, Test_accy 75.39
+2024-10-30 17:50:29,053 [pod_foster.py] => SNet: Task 2, Epoch 21/120 => Loss 1.289,  Train_accy 96.42, Test_accy 76.35
+2024-10-30 17:50:39,327 [pod_foster.py] => SNet: Task 2, Epoch 26/120 => Loss 1.290,  Train_accy 96.40, Test_accy 75.98
+2024-10-30 17:50:52,861 [pod_foster.py] => SNet: Task 2, Epoch 31/120 => Loss 1.286,  Train_accy 96.55, Test_accy 76.04
+2024-10-30 17:51:10,288 [pod_foster.py] => SNet: Task 2, Epoch 36/120 => Loss 1.287,  Train_accy 96.40, Test_accy 76.80
+2024-10-30 17:51:28,385 [pod_foster.py] => SNet: Task 2, Epoch 41/120 => Loss 1.285,  Train_accy 96.73, Test_accy 75.50
+2024-10-30 17:51:46,158 [pod_foster.py] => SNet: Task 2, Epoch 46/120 => Loss 1.283,  Train_accy 96.73, Test_accy 77.04
+2024-10-30 17:52:01,032 [pod_foster.py] => SNet: Task 2, Epoch 51/120 => Loss 1.286,  Train_accy 96.84, Test_accy 76.56
+2024-10-30 17:52:17,572 [pod_foster.py] => SNet: Task 2, Epoch 56/120 => Loss 1.285,  Train_accy 96.75, Test_accy 76.74
+2024-10-30 17:52:34,004 [pod_foster.py] => SNet: Task 2, Epoch 61/120 => Loss 1.286,  Train_accy 97.13, Test_accy 77.85
+2024-10-30 17:52:49,689 [pod_foster.py] => SNet: Task 2, Epoch 66/120 => Loss 1.284,  Train_accy 97.24, Test_accy 76.41
+2024-10-30 17:53:02,078 [pod_foster.py] => SNet: Task 2, Epoch 71/120 => Loss 1.284,  Train_accy 96.86, Test_accy 77.00
+2024-10-30 17:53:12,453 [pod_foster.py] => SNet: Task 2, Epoch 76/120 => Loss 1.282,  Train_accy 97.18, Test_accy 77.52
+2024-10-30 17:53:22,709 [pod_foster.py] => SNet: Task 2, Epoch 81/120 => Loss 1.285,  Train_accy 96.93, Test_accy 76.28
+2024-10-30 17:53:32,521 [pod_foster.py] => SNet: Task 2, Epoch 86/120 => Loss 1.279,  Train_accy 96.95, Test_accy 76.83
+2024-10-30 17:53:42,769 [pod_foster.py] => SNet: Task 2, Epoch 91/120 => Loss 1.282,  Train_accy 96.95, Test_accy 77.15
+2024-10-30 17:53:53,034 [pod_foster.py] => SNet: Task 2, Epoch 96/120 => Loss 1.281,  Train_accy 97.22, Test_accy 76.56
+2024-10-30 17:54:03,436 [pod_foster.py] => SNet: Task 2, Epoch 101/120 => Loss 1.280,  Train_accy 97.04, Test_accy 76.28
+2024-10-30 17:54:20,597 [pod_foster.py] => SNet: Task 2, Epoch 106/120 => Loss 1.281,  Train_accy 97.04, Test_accy 77.35
+2024-10-30 17:54:37,419 [pod_foster.py] => SNet: Task 2, Epoch 111/120 => Loss 1.283,  Train_accy 97.13, Test_accy 76.91
+2024-10-30 17:54:53,742 [pod_foster.py] => SNet: Task 2, Epoch 116/120 => Loss 1.284,  Train_accy 97.00, Test_accy 76.26
+2024-10-30 17:55:04,281 [pod_foster.py] => SNet: Task 2, Epoch 120/120 => Loss 1.282,  Train_accy 97.04
+2024-10-30 17:55:04,282 [pod_foster.py] => do not weight align student!
+2024-10-30 17:55:05,759 [pod_foster.py] => darknet eval: 
+2024-10-30 17:55:05,759 [pod_foster.py] => CNN top1 curve: 77.17
+2024-10-30 17:55:05,760 [pod_foster.py] => CNN top5 curve: 98.5
+2024-10-30 17:55:05,760 [pod_foster.py] => CNN: {'total': 77.17, '00-04': 71.5, '05-06': 85.83, '07-08': 82.67, 'old': 75.6, 'new': 82.67}
+2024-10-30 17:55:05,761 [pod_foster.py] => All params after compression: 3853138
+2024-10-30 17:55:05,762 [base.py] => Reducing exemplars...(55 per classes)
+2024-10-30 17:55:09,398 [base.py] => Constructing exemplars...(55 per classes)
+2024-10-30 17:55:16,467 [trainer.py] => All params: 7705241
+2024-10-30 17:55:20,309 [pod_foster.py] => Exemplar size: 495
+2024-10-30 17:55:20,310 [trainer.py] => CNN: {'total': 76.41, '00-04': 70.5, '05-06': 90.67, '07-08': 76.92, 'old': 76.26, 'new': 76.92}
+2024-10-30 17:55:20,311 [trainer.py] => NME: {'total': 70.83, '00-04': 75.13, '05-06': 71.33, '07-08': 59.58, 'old': 74.05, 'new': 59.58}
+2024-10-30 17:55:20,311 [trainer.py] => CNN top1 curve: [96.3, 87.26, 76.41]
+2024-10-30 17:55:20,311 [trainer.py] => CNN top5 curve: [100.0, 99.69, 98.54]
+2024-10-30 17:55:20,312 [trainer.py] => NME top1 curve: [96.27, 81.88, 70.83]
+2024-10-30 17:55:20,312 [trainer.py] => NME top5 curve: [100.0, 99.76, 98.31]
+
+2024-10-30 17:55:20,315 [trainer.py] => Average Accuracy (CNN): 86.65666666666668
+2024-10-30 17:55:20,316 [trainer.py] => Average Accuracy (NME): 82.99333333333333
+2024-10-30 17:55:20,317 [trainer.py] => Forgetting (CNN): 12.899999999999999

@@ -1,0 +1,145 @@
+2024-10-21 17:36:44,078 [trainer.py] => config: ./exps/icarl.json
+2024-10-21 17:36:44,078 [trainer.py] => prefix: cil
+2024-10-21 17:36:44,078 [trainer.py] => dataset: hrrp9
+2024-10-21 17:36:44,078 [trainer.py] => memory_size: 500
+2024-10-21 17:36:44,078 [trainer.py] => memory_per_class: 20
+2024-10-21 17:36:44,078 [trainer.py] => fixed_memory: False
+2024-10-21 17:36:44,078 [trainer.py] => shuffle: True
+2024-10-21 17:36:44,079 [trainer.py] => init_cls: 5
+2024-10-21 17:36:44,079 [trainer.py] => increment: 2
+2024-10-21 17:36:44,079 [trainer.py] => model_name: icarl
+2024-10-21 17:36:44,079 [trainer.py] => convnet_type: resnet18
+2024-10-21 17:36:44,079 [trainer.py] => device: [device(type='cuda', index=3)]
+2024-10-21 17:36:44,079 [trainer.py] => init_train: False
+2024-10-21 17:36:44,079 [trainer.py] => convnet_path1: checkpoints/init_train/resnet18_42503.pth
+2024-10-21 17:36:44,079 [trainer.py] => fc_path1: checkpoints/init_train/fc_42503.pth
+2024-10-21 17:36:44,079 [trainer.py] => convnet_path: checkpoints/init_train/resnet18_35172.pth
+2024-10-21 17:36:44,079 [trainer.py] => fc_path: checkpoints/init_train/fc_35172.pth
+2024-10-21 17:36:44,079 [trainer.py] => seed: 2001
+2024-10-21 17:36:44,079 [trainer.py] => init_epoch: 0
+2024-10-21 17:36:44,079 [trainer.py] => init_lr: 0.1
+2024-10-21 17:36:44,079 [trainer.py] => init_milestones: [60, 120, 170]
+2024-10-21 17:36:44,079 [trainer.py] => init_lr_decay: 0.1
+2024-10-21 17:36:44,079 [trainer.py] => init_weight_decay: 0.0005
+2024-10-21 17:36:44,080 [trainer.py] => epochs: 150
+2024-10-21 17:36:44,080 [trainer.py] => lrate: 0.1
+2024-10-21 17:36:44,080 [trainer.py] => milestones: [80, 120]
+2024-10-21 17:36:44,080 [trainer.py] => lrate_decay: 0.1
+2024-10-21 17:36:44,080 [trainer.py] => momentum: 0.9
+2024-10-21 17:36:44,080 [trainer.py] => batch_size: 128
+2024-10-21 17:36:44,080 [trainer.py] => weight_decay: 0.0002
+2024-10-21 17:36:44,080 [trainer.py] => num_workers: 8
+2024-10-21 17:36:44,080 [trainer.py] => T: 2
+2024-10-21 17:36:44,824 [data_manager.py] => [3, 5, 1, 7, 2, 8, 6, 4, 0]
+2024-10-21 17:36:45,367 [trainer.py] => All params: 3843904
+2024-10-21 17:36:45,368 [trainer.py] => Trainable params: 3843904
+2024-10-21 17:36:45,372 [icarl.py] => Learning on 0-5
+2024-10-21 17:36:45,454 [icarl.py] => init_train?---False
+2024-10-21 17:36:46,545 [base.py] => Reducing exemplars...(100 per classes)
+2024-10-21 17:36:46,545 [base.py] => Constructing exemplars...(100 per classes)
+2024-10-21 17:36:53,724 [trainer.py] => All params: 3846469
+2024-10-21 17:36:54,975 [icarl.py] => Exemplar size: 500
+2024-10-21 17:36:54,975 [trainer.py] => CNN: {'total': 90.13, '00-04': 90.13, 'old': 0, 'new': 90.13}
+2024-10-21 17:36:54,975 [trainer.py] => NME: {'total': 89.53, '00-04': 89.53, 'old': 0, 'new': 89.53}
+2024-10-21 17:36:54,976 [trainer.py] => CNN top1 curve: [90.13]
+2024-10-21 17:36:54,976 [trainer.py] => CNN top5 curve: [100.0]
+2024-10-21 17:36:54,976 [trainer.py] => NME top1 curve: [89.53]
+2024-10-21 17:36:54,976 [trainer.py] => NME top5 curve: [100.0]
+
+2024-10-21 17:36:54,976 [trainer.py] => Average Accuracy (CNN): 90.13
+2024-10-21 17:36:54,976 [trainer.py] => Average Accuracy (NME): 89.53
+2024-10-21 17:36:54,976 [trainer.py] => All params: 3846469
+2024-10-21 17:36:54,977 [trainer.py] => Trainable params: 3846469
+2024-10-21 17:36:54,978 [icarl.py] => Learning on 5-7
+2024-10-21 17:36:57,297 [icarl.py] => Task 1, Epoch 1/150 => Loss 2.391, Train_accy 65.96, Test_accy 23.14
+2024-10-21 17:37:05,685 [icarl.py] => Task 1, Epoch 6/150 => Loss 1.194, Train_accy 98.18, Test_accy 51.60
+2024-10-21 17:37:13,742 [icarl.py] => Task 1, Epoch 11/150 => Loss 1.052, Train_accy 100.00, Test_accy 76.98
+2024-10-21 17:37:20,770 [icarl.py] => Task 1, Epoch 16/150 => Loss 1.129, Train_accy 98.53, Test_accy 65.88
+2024-10-21 17:37:27,513 [icarl.py] => Task 1, Epoch 21/150 => Loss 1.019, Train_accy 100.00, Test_accy 78.69
+2024-10-21 17:37:34,256 [icarl.py] => Task 1, Epoch 26/150 => Loss 1.009, Train_accy 100.00, Test_accy 77.95
+2024-10-21 17:37:41,916 [icarl.py] => Task 1, Epoch 31/150 => Loss 1.013, Train_accy 100.00, Test_accy 78.88
+2024-10-21 17:37:49,377 [icarl.py] => Task 1, Epoch 36/150 => Loss 1.009, Train_accy 100.00, Test_accy 78.43
+2024-10-21 17:37:56,366 [icarl.py] => Task 1, Epoch 41/150 => Loss 1.009, Train_accy 100.00, Test_accy 77.57
+2024-10-21 17:38:03,056 [icarl.py] => Task 1, Epoch 46/150 => Loss 1.009, Train_accy 100.00, Test_accy 78.36
+2024-10-21 17:38:09,773 [icarl.py] => Task 1, Epoch 51/150 => Loss 1.010, Train_accy 100.00, Test_accy 77.71
+2024-10-21 17:38:16,266 [icarl.py] => Task 1, Epoch 56/150 => Loss 1.011, Train_accy 100.00, Test_accy 78.21
+2024-10-21 17:38:23,309 [icarl.py] => Task 1, Epoch 61/150 => Loss 1.008, Train_accy 100.00, Test_accy 77.86
+2024-10-21 17:38:30,243 [icarl.py] => Task 1, Epoch 66/150 => Loss 1.009, Train_accy 100.00, Test_accy 77.43
+2024-10-21 17:38:37,131 [icarl.py] => Task 1, Epoch 71/150 => Loss 1.008, Train_accy 100.00, Test_accy 77.43
+2024-10-21 17:38:44,017 [icarl.py] => Task 1, Epoch 76/150 => Loss 1.008, Train_accy 100.00, Test_accy 77.88
+2024-10-21 17:38:51,756 [icarl.py] => Task 1, Epoch 81/150 => Loss 1.007, Train_accy 100.00, Test_accy 77.67
+2024-10-21 17:39:01,042 [icarl.py] => Task 1, Epoch 86/150 => Loss 1.001, Train_accy 100.00, Test_accy 77.64
+2024-10-21 17:39:08,645 [icarl.py] => Task 1, Epoch 91/150 => Loss 0.999, Train_accy 100.00, Test_accy 77.71
+2024-10-21 17:39:16,041 [icarl.py] => Task 1, Epoch 96/150 => Loss 1.001, Train_accy 100.00, Test_accy 77.50
+2024-10-21 17:39:23,535 [icarl.py] => Task 1, Epoch 101/150 => Loss 1.000, Train_accy 100.00, Test_accy 78.48
+2024-10-21 17:39:30,725 [icarl.py] => Task 1, Epoch 106/150 => Loss 1.001, Train_accy 100.00, Test_accy 78.12
+2024-10-21 17:39:37,680 [icarl.py] => Task 1, Epoch 111/150 => Loss 1.002, Train_accy 100.00, Test_accy 78.31
+2024-10-21 17:39:44,656 [icarl.py] => Task 1, Epoch 116/150 => Loss 1.000, Train_accy 100.00, Test_accy 77.76
+2024-10-21 17:39:51,384 [icarl.py] => Task 1, Epoch 121/150 => Loss 0.999, Train_accy 100.00, Test_accy 78.05
+2024-10-21 17:39:58,241 [icarl.py] => Task 1, Epoch 126/150 => Loss 0.999, Train_accy 100.00, Test_accy 77.95
+2024-10-21 17:40:04,944 [icarl.py] => Task 1, Epoch 131/150 => Loss 0.999, Train_accy 100.00, Test_accy 78.10
+2024-10-21 17:40:11,501 [icarl.py] => Task 1, Epoch 136/150 => Loss 0.997, Train_accy 100.00, Test_accy 77.64
+2024-10-21 17:40:18,355 [icarl.py] => Task 1, Epoch 141/150 => Loss 1.002, Train_accy 100.00, Test_accy 77.83
+2024-10-21 17:40:24,718 [icarl.py] => Task 1, Epoch 146/150 => Loss 0.999, Train_accy 100.00, Test_accy 78.17
+2024-10-21 17:40:29,479 [icarl.py] => Task 1, Epoch 150/150 => Loss 1.000, Train_accy 100.00
+2024-10-21 17:40:29,480 [base.py] => Reducing exemplars...(71 per classes)
+2024-10-21 17:40:30,821 [base.py] => Constructing exemplars...(71 per classes)
+2024-10-21 17:40:33,381 [trainer.py] => All params: 3847495
+2024-10-21 17:40:34,831 [icarl.py] => Exemplar size: 497
+2024-10-21 17:40:34,831 [trainer.py] => CNN: {'total': 77.83, '00-04': 71.23, '05-06': 94.33, 'old': 71.23, 'new': 94.33}
+2024-10-21 17:40:34,831 [trainer.py] => NME: {'total': 83.0, '00-04': 80.43, '05-06': 89.42, 'old': 80.43, 'new': 89.42}
+2024-10-21 17:40:34,831 [trainer.py] => CNN top1 curve: [90.13, 77.83]
+2024-10-21 17:40:34,831 [trainer.py] => CNN top5 curve: [100.0, 99.48]
+2024-10-21 17:40:34,831 [trainer.py] => NME top1 curve: [89.53, 83.0]
+2024-10-21 17:40:34,831 [trainer.py] => NME top5 curve: [100.0, 99.48]
+
+2024-10-21 17:40:34,831 [trainer.py] => Average Accuracy (CNN): 83.97999999999999
+2024-10-21 17:40:34,831 [trainer.py] => Average Accuracy (NME): 86.265
+2024-10-21 17:40:34,832 [trainer.py] => All params: 3847495
+2024-10-21 17:40:34,832 [trainer.py] => Trainable params: 3847495
+2024-10-21 17:40:34,833 [icarl.py] => Learning on 7-9
+2024-10-21 17:40:36,868 [icarl.py] => Task 2, Epoch 1/150 => Loss 3.029, Train_accy 68.53, Test_accy 11.15
+2024-10-21 17:40:43,423 [icarl.py] => Task 2, Epoch 6/150 => Loss 1.736, Train_accy 89.93, Test_accy 28.31
+2024-10-21 17:40:50,329 [icarl.py] => Task 2, Epoch 11/150 => Loss 1.410, Train_accy 96.44, Test_accy 42.28
+2024-10-21 17:40:56,957 [icarl.py] => Task 2, Epoch 16/150 => Loss 1.222, Train_accy 99.91, Test_accy 61.46
+2024-10-21 17:41:03,821 [icarl.py] => Task 2, Epoch 21/150 => Loss 1.188, Train_accy 100.00, Test_accy 60.26
+2024-10-21 17:41:10,440 [icarl.py] => Task 2, Epoch 26/150 => Loss 1.204, Train_accy 99.69, Test_accy 61.89
+2024-10-21 17:41:17,447 [icarl.py] => Task 2, Epoch 31/150 => Loss 1.156, Train_accy 100.00, Test_accy 59.07
+2024-10-21 17:41:24,416 [icarl.py] => Task 2, Epoch 36/150 => Loss 1.149, Train_accy 100.00, Test_accy 61.06
+2024-10-21 17:41:31,408 [icarl.py] => Task 2, Epoch 41/150 => Loss 1.140, Train_accy 100.00, Test_accy 58.83
+2024-10-21 17:41:38,120 [icarl.py] => Task 2, Epoch 46/150 => Loss 1.143, Train_accy 100.00, Test_accy 58.39
+2024-10-21 17:41:44,657 [icarl.py] => Task 2, Epoch 51/150 => Loss 1.137, Train_accy 100.00, Test_accy 58.94
+2024-10-21 17:41:51,467 [icarl.py] => Task 2, Epoch 56/150 => Loss 1.182, Train_accy 99.56, Test_accy 58.98
+2024-10-21 17:41:58,035 [icarl.py] => Task 2, Epoch 61/150 => Loss 1.160, Train_accy 99.93, Test_accy 49.04
+2024-10-21 17:42:04,559 [icarl.py] => Task 2, Epoch 66/150 => Loss 1.180, Train_accy 100.00, Test_accy 59.39
+2024-10-21 17:42:10,875 [icarl.py] => Task 2, Epoch 71/150 => Loss 1.147, Train_accy 100.00, Test_accy 60.94
+2024-10-21 17:42:17,329 [icarl.py] => Task 2, Epoch 76/150 => Loss 1.145, Train_accy 100.00, Test_accy 59.37
+2024-10-21 17:42:23,642 [icarl.py] => Task 2, Epoch 81/150 => Loss 1.130, Train_accy 100.00, Test_accy 59.76
+2024-10-21 17:42:29,968 [icarl.py] => Task 2, Epoch 86/150 => Loss 1.133, Train_accy 100.00, Test_accy 59.94
+2024-10-21 17:42:36,121 [icarl.py] => Task 2, Epoch 91/150 => Loss 1.130, Train_accy 100.00, Test_accy 60.80
+2024-10-21 17:42:42,602 [icarl.py] => Task 2, Epoch 96/150 => Loss 1.129, Train_accy 100.00, Test_accy 60.69
+2024-10-21 17:42:49,074 [icarl.py] => Task 2, Epoch 101/150 => Loss 1.128, Train_accy 100.00, Test_accy 61.35
+2024-10-21 17:42:55,254 [icarl.py] => Task 2, Epoch 106/150 => Loss 1.127, Train_accy 100.00, Test_accy 61.13
+2024-10-21 17:43:01,644 [icarl.py] => Task 2, Epoch 111/150 => Loss 1.128, Train_accy 100.00, Test_accy 60.26
+2024-10-21 17:43:07,921 [icarl.py] => Task 2, Epoch 116/150 => Loss 1.130, Train_accy 100.00, Test_accy 61.17
+2024-10-21 17:43:13,933 [icarl.py] => Task 2, Epoch 121/150 => Loss 1.125, Train_accy 100.00, Test_accy 60.54
+2024-10-21 17:43:19,895 [icarl.py] => Task 2, Epoch 126/150 => Loss 1.126, Train_accy 100.00, Test_accy 60.26
+2024-10-21 17:43:26,088 [icarl.py] => Task 2, Epoch 131/150 => Loss 1.125, Train_accy 100.00, Test_accy 60.56
+2024-10-21 17:43:32,089 [icarl.py] => Task 2, Epoch 136/150 => Loss 1.127, Train_accy 100.00, Test_accy 59.81
+2024-10-21 17:43:38,263 [icarl.py] => Task 2, Epoch 141/150 => Loss 1.129, Train_accy 100.00, Test_accy 61.13
+2024-10-21 17:43:44,310 [icarl.py] => Task 2, Epoch 146/150 => Loss 1.121, Train_accy 100.00, Test_accy 60.70
+2024-10-21 17:43:48,630 [icarl.py] => Task 2, Epoch 150/150 => Loss 1.125, Train_accy 100.00
+2024-10-21 17:43:48,631 [base.py] => Reducing exemplars...(55 per classes)
+2024-10-21 17:43:50,281 [base.py] => Constructing exemplars...(55 per classes)
+2024-10-21 17:43:52,175 [trainer.py] => All params: 3848521
+2024-10-21 17:43:53,604 [icarl.py] => Exemplar size: 495
+2024-10-21 17:43:53,604 [trainer.py] => CNN: {'total': 60.5, '00-04': 53.4, '05-06': 50.5, '07-08': 88.25, 'old': 52.57, 'new': 88.25}
+2024-10-21 17:43:53,604 [trainer.py] => NME: {'total': 71.46, '00-04': 67.9, '05-06': 69.42, '07-08': 82.42, 'old': 68.33, 'new': 82.42}
+2024-10-21 17:43:53,604 [trainer.py] => CNN top1 curve: [90.13, 77.83, 60.5]
+2024-10-21 17:43:53,604 [trainer.py] => CNN top5 curve: [100.0, 99.48, 96.24]
+2024-10-21 17:43:53,604 [trainer.py] => NME top1 curve: [89.53, 83.0, 71.46]
+2024-10-21 17:43:53,604 [trainer.py] => NME top5 curve: [100.0, 99.48, 97.33]
+
+2024-10-21 17:43:53,604 [trainer.py] => Average Accuracy (CNN): 76.15333333333332
+2024-10-21 17:43:53,604 [trainer.py] => Average Accuracy (NME): 81.33
+2024-10-21 17:43:53,605 [trainer.py] => Forgetting (CNN): 40.28

@@ -1,0 +1,119 @@
+2024-10-16 21:03:34,184 [trainer.py] => config: ./exps/bic.json
+2024-10-16 21:03:34,185 [trainer.py] => prefix: cil
+2024-10-16 21:03:34,185 [trainer.py] => dataset: hrrp9
+2024-10-16 21:03:34,185 [trainer.py] => memory_size: 500
+2024-10-16 21:03:34,185 [trainer.py] => memory_per_class: 20
+2024-10-16 21:03:34,185 [trainer.py] => fixed_memory: False
+2024-10-16 21:03:34,185 [trainer.py] => shuffle: True
+2024-10-16 21:03:34,185 [trainer.py] => init_cls: 5
+2024-10-16 21:03:34,185 [trainer.py] => increment: 2
+2024-10-16 21:03:34,185 [trainer.py] => model_name: bic
+2024-10-16 21:03:34,185 [trainer.py] => convnet_type: resnet18
+2024-10-16 21:03:34,185 [trainer.py] => device: [device(type='cuda', index=1)]
+2024-10-16 21:03:34,185 [trainer.py] => init_train: False
+2024-10-16 21:03:34,185 [trainer.py] => convnet_path: checkpoints/init_train/resnet18_42503.pth
+2024-10-16 21:03:34,185 [trainer.py] => fc_path: checkpoints/init_train/fc_42503.pth
+2024-10-16 21:03:34,185 [trainer.py] => seed: 1993
+2024-10-16 21:03:34,185 [trainer.py] => init_epochs: 0
+2024-10-16 21:03:34,185 [trainer.py] => epochs: 5
+2024-10-16 21:03:34,185 [trainer.py] => lrate: 0.1
+2024-10-16 21:03:34,185 [trainer.py] => milestones: [80, 120]
+2024-10-16 21:03:34,185 [trainer.py] => lrate_decay: 0.1
+2024-10-16 21:03:34,186 [trainer.py] => momentum: 0.9
+2024-10-16 21:03:34,186 [trainer.py] => batch_size: 128
+2024-10-16 21:03:34,186 [trainer.py] => split_ratio: 0.1
+2024-10-16 21:03:34,186 [trainer.py] => weight_decay: 0.0002
+2024-10-16 21:03:34,186 [trainer.py] => num_workers: 0
+2024-10-16 21:03:34,186 [trainer.py] => T: 2
+2024-10-16 21:03:34,826 [data_manager.py] => [4, 2, 5, 0, 3, 6, 7, 8, 1]
+2024-10-16 21:03:35,709 [trainer.py] => All params: 3843904
+2024-10-16 21:03:35,709 [trainer.py] => Trainable params: 3843904
+2024-10-16 21:03:35,731 [bic.py] => Learning on 0-5
+2024-10-16 21:03:35,768 [bic.py] => Parameters of bias layer:
+2024-10-16 21:03:35,769 [bic.py] => 0 => 1.000, 0.000
+2024-10-16 21:03:36,008 [base.py] => Reducing exemplars...(100 per classes)
+2024-10-16 21:03:36,009 [base.py] => Constructing exemplars...(100 per classes)
+2024-10-16 21:03:41,532 [bic.py] => Parameters of bias layer:
+2024-10-16 21:03:41,533 [bic.py] => 0 => 1.000, 0.000
+2024-10-16 21:03:41,534 [trainer.py] => All params: 3846471
+2024-10-16 21:03:41,975 [bic.py] => Exemplar size: 500
+2024-10-16 21:03:41,975 [trainer.py] => CNN: {'total': 89.93, '00-04': 89.93, 'old': 0, 'new': 89.93}
+2024-10-16 21:03:41,975 [trainer.py] => NME: {'total': 90.0, '00-04': 90.0, 'old': 0, 'new': 90.0}
+2024-10-16 21:03:41,975 [trainer.py] => CNN top1 curve: [89.93]
+2024-10-16 21:03:41,975 [trainer.py] => CNN top5 curve: [100.0]
+2024-10-16 21:03:41,975 [trainer.py] => NME top1 curve: [90.0]
+2024-10-16 21:03:41,975 [trainer.py] => NME top5 curve: [100.0]
+
+2024-10-16 21:03:41,976 [trainer.py] => Average Accuracy (CNN): 89.93
+2024-10-16 21:03:41,976 [trainer.py] => Average Accuracy (NME): 90.0
+2024-10-16 21:03:41,976 [trainer.py] => All params: 3846471
+2024-10-16 21:03:41,976 [trainer.py] => Trainable params: 3846471
+2024-10-16 21:03:41,977 [bic.py] => Learning on 5-7
+2024-10-16 21:03:41,989 [bic.py] => Stage1 dset: 4430, Stage2 dset: 70
+2024-10-16 21:03:41,990 [bic.py] => Lambda: 0.714
+2024-10-16 21:03:41,996 [bic.py] => Parameters of bias layer:
+2024-10-16 21:03:41,996 [bic.py] => 0 => 1.000, 0.000
+2024-10-16 21:03:41,996 [bic.py] => 1 => 1.000, 0.000
+2024-10-16 21:03:43,349 [bic.py] => training => Task 1, Epoch 1/5 => Loss 1.008, Train_accy 88.870, Test_accy 41.950
+2024-10-16 21:03:44,391 [bic.py] => training => Task 1, Epoch 2/5 => Loss 0.758, Train_accy 96.570, Test_accy 55.900
+2024-10-16 21:03:45,531 [bic.py] => training => Task 1, Epoch 3/5 => Loss 0.705, Train_accy 98.940, Test_accy 62.450
+2024-10-16 21:03:46,507 [bic.py] => training => Task 1, Epoch 4/5 => Loss 0.688, Train_accy 99.640, Test_accy 60.860
+2024-10-16 21:03:47,560 [bic.py] => training => Task 1, Epoch 5/5 => Loss 0.681, Train_accy 99.890, Test_accy 62.740
+2024-10-16 21:03:47,746 [bic.py] => bias_correction => Task 1, Epoch 1/5 => Loss 1.415, Train_accy 90.000, Test_accy 65.400
+2024-10-16 21:03:47,904 [bic.py] => bias_correction => Task 1, Epoch 2/5 => Loss 1.381, Train_accy 95.710, Test_accy 70.450
+2024-10-16 21:03:48,056 [bic.py] => bias_correction => Task 1, Epoch 3/5 => Loss 1.328, Train_accy 95.710, Test_accy 75.760
+2024-10-16 21:03:48,213 [bic.py] => bias_correction => Task 1, Epoch 4/5 => Loss 1.286, Train_accy 95.710, Test_accy 78.310
+2024-10-16 21:03:48,372 [bic.py] => bias_correction => Task 1, Epoch 5/5 => Loss 1.276, Train_accy 90.000, Test_accy 77.600
+2024-10-16 21:03:48,373 [base.py] => Reducing exemplars...(71 per classes)
+2024-10-16 21:03:49,448 [base.py] => Constructing exemplars...(71 per classes)
+2024-10-16 21:03:51,403 [bic.py] => Parameters of bias layer:
+2024-10-16 21:03:51,404 [bic.py] => 0 => 1.000, 0.000
+2024-10-16 21:03:51,404 [bic.py] => 1 => 0.438, -0.113
+2024-10-16 21:03:51,405 [trainer.py] => All params: 3847499
+2024-10-16 21:03:51,985 [bic.py] => Exemplar size: 497
+2024-10-16 21:03:51,986 [trainer.py] => CNN: {'total': 77.6, '00-04': 82.27, '05-06': 65.92, 'old': 82.27, 'new': 65.92}
+2024-10-16 21:03:51,986 [trainer.py] => NME: {'total': 81.71, '00-04': 80.3, '05-06': 85.25, 'old': 80.3, 'new': 85.25}
+2024-10-16 21:03:51,986 [trainer.py] => CNN top1 curve: [89.93, 77.6]
+2024-10-16 21:03:51,986 [trainer.py] => CNN top5 curve: [100.0, 99.1]
+2024-10-16 21:03:51,986 [trainer.py] => NME top1 curve: [90.0, 81.71]
+2024-10-16 21:03:51,986 [trainer.py] => NME top5 curve: [100.0, 99.12]
+
+2024-10-16 21:03:51,986 [trainer.py] => Average Accuracy (CNN): 83.765
+2024-10-16 21:03:51,986 [trainer.py] => Average Accuracy (NME): 85.85499999999999
+2024-10-16 21:03:51,987 [trainer.py] => All params: 3847499
+2024-10-16 21:03:51,987 [trainer.py] => Trainable params: 3847499
+2024-10-16 21:03:51,988 [bic.py] => Learning on 7-9
+2024-10-16 21:03:52,001 [bic.py] => Stage1 dset: 4434, Stage2 dset: 63
+2024-10-16 21:03:52,001 [bic.py] => Lambda: 0.778
+2024-10-16 21:03:52,012 [bic.py] => Parameters of bias layer:
+2024-10-16 21:03:52,013 [bic.py] => 0 => 1.000, 0.000
+2024-10-16 21:03:52,013 [bic.py] => 1 => 0.438, -0.113
+2024-10-16 21:03:52,013 [bic.py] => 2 => 1.000, 0.000
+2024-10-16 21:03:53,165 [bic.py] => training => Task 2, Epoch 1/5 => Loss 1.303, Train_accy 90.960, Test_accy 30.780
+2024-10-16 21:03:54,213 [bic.py] => training => Task 2, Epoch 2/5 => Loss 1.129, Train_accy 95.710, Test_accy 42.410
+2024-10-16 21:03:55,301 [bic.py] => training => Task 2, Epoch 3/5 => Loss 1.104, Train_accy 97.180, Test_accy 47.570
+2024-10-16 21:03:56,422 [bic.py] => training => Task 2, Epoch 4/5 => Loss 1.093, Train_accy 97.970, Test_accy 50.500
+2024-10-16 21:03:57,529 [bic.py] => training => Task 2, Epoch 5/5 => Loss 1.082, Train_accy 99.500, Test_accy 59.220
+2024-10-16 21:03:57,759 [bic.py] => bias_correction => Task 2, Epoch 1/5 => Loss 1.861, Train_accy 80.950, Test_accy 59.800
+2024-10-16 21:03:57,963 [bic.py] => bias_correction => Task 2, Epoch 2/5 => Loss 1.828, Train_accy 84.130, Test_accy 63.240
+2024-10-16 21:03:58,170 [bic.py] => bias_correction => Task 2, Epoch 3/5 => Loss 1.759, Train_accy 88.890, Test_accy 69.520
+2024-10-16 21:03:58,369 [bic.py] => bias_correction => Task 2, Epoch 4/5 => Loss 1.667, Train_accy 93.650, Test_accy 74.170
+2024-10-16 21:03:58,575 [bic.py] => bias_correction => Task 2, Epoch 5/5 => Loss 1.611, Train_accy 88.890, Test_accy 70.870
+2024-10-16 21:03:58,575 [base.py] => Reducing exemplars...(55 per classes)
+2024-10-16 21:04:00,068 [base.py] => Constructing exemplars...(55 per classes)
+2024-10-16 21:04:01,950 [bic.py] => Parameters of bias layer:
+2024-10-16 21:04:01,951 [bic.py] => 0 => 1.000, 0.000
+2024-10-16 21:04:01,951 [bic.py] => 1 => 0.438, -0.113
+2024-10-16 21:04:01,951 [bic.py] => 2 => 0.307, -0.132
+2024-10-16 21:04:01,952 [trainer.py] => All params: 3848527
+2024-10-16 21:04:02,496 [bic.py] => Exemplar size: 495
+2024-10-16 21:04:02,496 [trainer.py] => CNN: {'total': 70.87, '00-04': 80.07, '05-06': 74.5, '07-08': 44.25, 'old': 78.48, 'new': 44.25}
+2024-10-16 21:04:02,496 [trainer.py] => NME: {'total': 76.35, '00-04': 71.5, '05-06': 79.08, '07-08': 85.75, 'old': 73.67, 'new': 85.75}
+2024-10-16 21:04:02,496 [trainer.py] => CNN top1 curve: [89.93, 77.6, 70.87]
+2024-10-16 21:04:02,496 [trainer.py] => CNN top5 curve: [100.0, 99.1, 95.33]
+2024-10-16 21:04:02,496 [trainer.py] => NME top1 curve: [90.0, 81.71, 76.35]
+2024-10-16 21:04:02,496 [trainer.py] => NME top5 curve: [100.0, 99.12, 97.91]
+
+2024-10-16 21:04:02,496 [trainer.py] => Average Accuracy (CNN): 79.46666666666667
+2024-10-16 21:04:02,496 [trainer.py] => Average Accuracy (NME): 82.68666666666665
+2024-10-16 21:04:02,497 [trainer.py] => Forgetting (CNN): 4.930000000000007
