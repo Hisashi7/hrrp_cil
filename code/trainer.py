@@ -23,71 +23,27 @@ def train(args):
 
 def _train(args):
     all_seed = 1
-
     init_cls = 0 if args ["init_cls"] == args["increment"] else args["init_cls"]
-    logs_name = "logs/{}/{}/{}/{}".format(args["dataset"], args["model_name"], init_cls, args['increment'])
-    
-    if not os.path.exists(logs_name):
-        os.makedirs(logs_name)
-
-    # logfilename = "logs/{}/{}/{}/{}/beta2/{}_{}_{}_{}_{}_{}_{}_M_={}_beta1={}_beta2={}_time={}".format(
-    #     args["dataset"],
-    #     args["model_name"],
-    #     init_cls,
-    #     args["increment"],
-    #     args["prefix"],
-    #     all_seed,
-    #     args["seed"],
-    #     args["convnet_type"],
-    #     args["POD"],
-    #     args["lambda_c_base"],
-    #     args["lambda_f_base"],
-    #     # args["is_teacher_wa"],
-    #     # args["is_student_wa"],
-    #     # args["is_teacher_la"],
-    #     # args["is_student_la"],
-    #     args["memory_size"],
-    #     args["beta1"],
-    #     args["beta2"],
-    #     datetime.datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
-    # )
-
-
-    # logfilename = "logs/{}/{}/{}/{}/time_{}_{}_{}_M={}".format(
-    #     args["dataset"],
-    #     args["model_name"],
-    #     init_cls,
-    #     args["increment"],
-    #     datetime.datetime.now().strftime("%Y_%m_%d_%H_%M_%S"),
-    #     args["prefix"],
-    #     args["seed"],
-    #     # args["convnet_type"],
-    #     # args["POD"],
-    #     # args["lambda_c_base"],
-    #     # args["lambda_f_base"],
-    #     # args["is_teacher_wa"],
-    #     # args["is_student_wa"],
-    #     # args["is_teacher_la"],
-    #     # args["is_student_la"],
-    #     args["memory_size"],
-    # )
-
-    logfilename = "logs/{}/{}/{}/{}/{}_{}_Time={}_M={}".format(
+    dirName = r"logs/{}/{}/{}/{}/{}".format(
+        args["prefix"],
         args["dataset"],
-        args["model_name"],
         init_cls,
         args["increment"],
-        args["prefix"],
-        args["seed"],
-        # args["convnet_type"],
-        datetime.datetime.now().strftime("%Y_%m_%d_%H_%M_%S"),
-        args["memory_size"]
+        args["model_name"]
     )
+    baseDir = os.path.dirname(__file__)
+    dirName = os.path.join(baseDir, dirName)
+    if not os.path.exists(dirName):
+        os.makedirs(dirName)
+    logfilename = os.path.join(dirName, "Seed={}_Time={}.log".format(
+        args["seed"],
+        datetime.datetime.now().strftime("%Y_%m_%d_%H_%M")
+    ))
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s [%(filename)s] => %(message)s",
         handlers=[
-            logging.FileHandler(filename=logfilename + ".log"),
+            logging.FileHandler(filename=logfilename),
             logging.StreamHandler(sys.stdout),
         ],
     )

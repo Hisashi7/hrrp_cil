@@ -99,7 +99,8 @@ class FeTrIL(BaseLearner):
             )), momentum=0.9, lr=self.args["init_lr"], weight_decay=self.args["init_weight_decay"])
             scheduler = optim.lr_scheduler.CosineAnnealingLR(
                 optimizer=optimizer, T_max=self.args["init_epochs"])
-            self._train_function(train_loader, test_loader, optimizer, scheduler)
+            if self.args["init_train"]:
+                self._train_function(train_loader, test_loader, optimizer, scheduler)
             self._compute_means()
             self._build_feature_set()
         else:
@@ -174,7 +175,7 @@ class FeTrIL(BaseLearner):
             correct, total = 0, 0
             for i, (_, inputs, targets) in enumerate(train_loader):
                 inputs, targets = inputs.to(
-                    self._device, non_blocking=True), targets.to(self._device, non_blocking=True)
+                    self._device, non_blocking=True), targets.to(dtype=torch.int64, device=self._device, non_blocking=True)
                 if self._cur_task ==0:
                     logits = self._network(inputs)['logits']
                 else:
