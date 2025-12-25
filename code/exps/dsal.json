@@ -1,0 +1,26 @@
+{
+    "prefix": "EFCIL",
+    "dataset": "hrrp9",
+
+    "memory_size": 0,
+    "memory_per_class": 0,
+    "fixed_memory": false,
+    "shuffle": true,
+
+    "init_cls": 5,
+    "increment": 1,
+
+    "model_name": "dsal",
+    "convnet_type": "resnet18",
+    "device": ["0"],
+    "init_train": false,
+    "seed": [1993],
+    "convnet_path": "checkpoints/init_train/resnet18_42503.pth",
+    "batch_size": 128,
+    "num_workers": 8,
+
+    "expansion_size": 8192,
+    "gamma_main": 0.001,
+    "gamma_comp": 0.001,
+    "compensation_ratio": 1.0
+}

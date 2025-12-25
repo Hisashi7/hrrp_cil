@@ -31,6 +31,77 @@ class SimpleLinear(nn.Module):
     def forward(self, input):
         return {'logits': F.linear(input, self.weight, self.bias)}
 
+
+# Analytic linear layers for DSAL / ACIL style updates
+class AnalyticLinear(nn.Linear):
+    def __init__(self, in_features: int, gamma: float = 1e-1, bias: bool = False,
+                 device=None, dtype=torch.double):
+        super(nn.Linear, self).__init__()
+        factory_kwargs = {"device": device, "dtype": dtype}
+        self.gamma = gamma
+        self.bias_flag = bias
+        self.dtype = dtype
+        if bias:
+            in_features += 1
+        weight = torch.zeros((in_features, 0), **factory_kwargs)
+        self.register_buffer("weight", weight)
+
+    @torch.inference_mode()
+    def forward(self, X: torch.Tensor) -> torch.Tensor:
+        X = X.to(self.weight)
+        if self.bias_flag:
+            X = torch.cat((X, torch.ones(X.shape[0], 1).to(X)), dim=-1)
+        return X @ self.weight
+
+    @property
+    def in_features(self) -> int:  # type: ignore[override]
+        return self.weight.shape[0] - 1 if self.bias_flag else self.weight.shape[0]
+
+    @property
+    def out_features(self) -> int:  # type: ignore[override]
+        return self.weight.shape[1]
+
+    def reset_parameters(self) -> None:
+        self.weight = torch.zeros((self.weight.shape[0], 0)).to(self.weight)
+
+    def fit(self, X: torch.Tensor, Y: torch.Tensor) -> None:
+        raise NotImplementedError()
+
+    def update(self) -> None:
+        assert torch.isfinite(self.weight).all(), (
+            "Pay attention to the numerical stability! "
+            "Increase gamma or use dtype=torch.double if needed."
+        )
+
+
+class RecursiveLinear(AnalyticLinear):
+    def __init__(self, in_features: int, gamma: float = 1e-1, bias: bool = False,
+                 device=None, dtype=torch.double):
+        super().__init__(in_features, gamma, bias, device, dtype)
+        factory_kwargs = {"device": device, "dtype": dtype}
+        R = torch.eye(self.weight.shape[0], **factory_kwargs) / self.gamma
+        self.register_buffer("R", R)
+
+    @torch.no_grad()
+    def fit(self, X: torch.Tensor, Y: torch.Tensor) -> None:
+        X, Y = X.to(self.weight), Y.to(self.weight)
+        if self.bias_flag:
+            X = torch.cat((X, torch.ones(X.shape[0], 1).to(X)), dim=-1)
+
+        num_targets = Y.shape[1]
+        if num_targets > self.out_features:
+            inc = num_targets - self.out_features
+            tail = torch.zeros((self.weight.shape[0], inc)).to(self.weight)
+            self.weight = torch.cat((self.weight, tail), dim=1)
+        elif num_targets < self.out_features:
+            inc = self.out_features - num_targets
+            tail = torch.zeros((Y.shape[0], inc)).to(Y)
+            Y = torch.cat((Y, tail), dim=1)
+
+        K = torch.inverse(torch.eye(X.shape[0]).to(X) + X @ self.R @ X.T)
+        self.R -= self.R @ X.T @ K @ X @ self.R
+        self.weight += self.R @ X.T @ (Y - X @ self.weight)
+
 class TagFex_SimpleLinear(nn.Module):
     '''
     Reference:
