@@ -169,7 +169,7 @@ def _train(args):
         np_acctable = np_acctable.T
         forgetting = np.mean((np.max(np_acctable, axis=1) - np_acctable[:, task])[:task])
         logging.info('Accuracy Matrix (CNN):')
-        logging.info(np_acctable)
+        logging.info("\n{}".format(np_acctable))
         logging.info('Forgetting (CNN): {}'.format(forgetting))
     if len(nme_matrix)>0:
         np_acctable = np.zeros([task + 1, task + 1])
@@ -179,7 +179,7 @@ def _train(args):
         np_acctable = np_acctable.T
         forgetting = np.mean((np.max(np_acctable, axis=1) - np_acctable[:, task])[:task])
         logging.info('Accuracy Matrix (NME):')
-        logging.info(np_acctable)
+        logging.info("\n{}".format(np_acctable))
         logging.info('Forgetting (NME): {}'.format(forgetting))
 def _set_device(args):
     device_type = args["device"]

@@ -1,0 +1,238 @@
+2025-12-27 17:48:21,136 [trainer.py] => config: ./exps/ewc.json
+2025-12-27 17:48:21,136 [trainer.py] => prefix: EFCIL
+2025-12-27 17:48:21,137 [trainer.py] => dataset: hrrp9
+2025-12-27 17:48:21,137 [trainer.py] => pretrain: True
+2025-12-27 17:48:21,137 [trainer.py] => memory_size: 0
+2025-12-27 17:48:21,137 [trainer.py] => memory_per_class: 20
+2025-12-27 17:48:21,137 [trainer.py] => fixed_memory: False
+2025-12-27 17:48:21,137 [trainer.py] => shuffle: True
+2025-12-27 17:48:21,137 [trainer.py] => init_cls: 5
+2025-12-27 17:48:21,137 [trainer.py] => increment: 1
+2025-12-27 17:48:21,137 [trainer.py] => model_name: ewc
+2025-12-27 17:48:21,137 [trainer.py] => convnet_type: resnet18
+2025-12-27 17:48:21,138 [trainer.py] => device: [device(type='cuda', index=0)]
+2025-12-27 17:48:21,138 [trainer.py] => init_train: False
+2025-12-27 17:48:21,138 [trainer.py] => seed: 1993
+2025-12-27 17:48:21,138 [trainer.py] => convnet_path: checkpoints/init_train/resnet18_42503.pth
+2025-12-27 17:48:21,138 [trainer.py] => fc_path: checkpoints/init_train/fc_42503.pth
+2025-12-27 17:48:21,138 [trainer.py] => convnet_path2: checkpoints/init_train/resnet18_35172.pth
+2025-12-27 17:48:21,138 [trainer.py] => fc_path2: checkpoints/init_train/fc_35172.pth
+2025-12-27 17:48:21,138 [trainer.py] => seed2: [2001]
+2025-12-27 17:48:21,138 [trainer.py] => seed1: [110]
+2025-12-27 17:48:21,138 [trainer.py] => convnet_path1: checkpoints/init_train/resnet18_42871.pth
+2025-12-27 17:48:21,139 [trainer.py] => fc_path1: checkpoints/init_train/fc_42871.pth
+2025-12-27 17:48:21,139 [trainer.py] => epochs: 150
+2025-12-27 17:48:21,139 [trainer.py] => lrate: 0.1
+2025-12-27 17:48:21,139 [trainer.py] => milestones: [50, 80, 120]
+2025-12-27 17:48:21,139 [trainer.py] => lrate_decay: 0.1
+2025-12-27 17:48:21,139 [trainer.py] => batch_size: 128
+2025-12-27 17:48:21,139 [trainer.py] => momentum: 0
+2025-12-27 17:48:21,139 [trainer.py] => weight_decay: 0.0002
+2025-12-27 17:48:21,139 [trainer.py] => num_workers: 4
+2025-12-27 17:48:21,139 [trainer.py] => T: 2
+2025-12-27 17:48:21,140 [trainer.py] => lamda: 2
+2025-12-27 17:48:21,140 [trainer.py] => fishermax: 0.001
+2025-12-27 17:48:21,820 [data_manager.py] => [4, 2, 5, 0, 3, 6, 7, 8, 1]
+2025-12-27 17:48:22,207 [trainer.py] => All params: 3843904
+2025-12-27 17:48:22,208 [trainer.py] => Trainable params: 3843904
+2025-12-27 17:48:22,234 [ewc.py] => Learning on 0-5
+2025-12-27 17:48:22,380 [ewc.py] => init_train?---False
+2025-12-27 17:48:25,360 [trainer.py] => task:0 training time:3.15s
+2025-12-27 17:48:25,361 [trainer.py] => All params: 3846469
+2025-12-27 17:48:25,856 [trainer.py] => No NME accuracy.
+2025-12-27 17:48:25,856 [trainer.py] => CNN: {'total': 90.17, '00-04': 90.17, 'old': 0, 'new': 90.17}
+2025-12-27 17:48:25,856 [trainer.py] => CNN top1 curve: [90.17]
+2025-12-27 17:48:25,856 [trainer.py] => CNN top5 curve: [100.0]
+
+2025-12-27 17:48:25,856 [trainer.py] => Average Accuracy (CNN): 90.17
+2025-12-27 17:48:25,856 [trainer.py] => Average Accuracy (CNN): 90.17
+2025-12-27 17:48:25,857 [trainer.py] => All params: 3846469
+2025-12-27 17:48:25,857 [trainer.py] => Trainable params: 3846469
+2025-12-27 17:48:25,858 [ewc.py] => Learning on 5-6
+2025-12-27 17:48:30,977 [ewc.py] => Task 1, Epoch 5/150 => Loss 0.000, Train_accy 0.00, Test_accy 72.92
+2025-12-27 17:48:35,892 [ewc.py] => Task 1, Epoch 10/150 => Loss 0.000, Train_accy 0.00, Test_accy 73.06
+2025-12-27 17:48:40,731 [ewc.py] => Task 1, Epoch 15/150 => Loss 0.000, Train_accy 0.00, Test_accy 72.92
+2025-12-27 17:48:45,492 [ewc.py] => Task 1, Epoch 20/150 => Loss 0.000, Train_accy 0.00, Test_accy 73.00
+2025-12-27 17:48:50,339 [ewc.py] => Task 1, Epoch 25/150 => Loss 0.000, Train_accy 0.00, Test_accy 72.94
+2025-12-27 17:48:55,057 [ewc.py] => Task 1, Epoch 30/150 => Loss 0.000, Train_accy 0.00, Test_accy 72.97
+2025-12-27 17:48:59,880 [ewc.py] => Task 1, Epoch 35/150 => Loss 0.000, Train_accy 0.00, Test_accy 73.00
+2025-12-27 17:49:04,720 [ewc.py] => Task 1, Epoch 40/150 => Loss 0.000, Train_accy 0.00, Test_accy 72.94
+2025-12-27 17:49:09,560 [ewc.py] => Task 1, Epoch 45/150 => Loss 0.000, Train_accy 0.00, Test_accy 72.94
+2025-12-27 17:49:14,398 [ewc.py] => Task 1, Epoch 50/150 => Loss 0.000, Train_accy 0.00, Test_accy 72.92
+2025-12-27 17:49:19,112 [ewc.py] => Task 1, Epoch 55/150 => Loss 0.000, Train_accy 0.00, Test_accy 73.00
+2025-12-27 17:49:24,061 [ewc.py] => Task 1, Epoch 60/150 => Loss 0.000, Train_accy 0.00, Test_accy 72.94
+2025-12-27 17:49:28,959 [ewc.py] => Task 1, Epoch 65/150 => Loss 0.000, Train_accy 0.00, Test_accy 72.92
+2025-12-27 17:49:33,900 [ewc.py] => Task 1, Epoch 70/150 => Loss 0.000, Train_accy 0.00, Test_accy 73.00
+2025-12-27 17:49:38,914 [ewc.py] => Task 1, Epoch 75/150 => Loss 0.000, Train_accy 0.00, Test_accy 72.92
+2025-12-27 17:49:43,610 [ewc.py] => Task 1, Epoch 80/150 => Loss 0.000, Train_accy 0.00, Test_accy 73.00
+2025-12-27 17:49:48,575 [ewc.py] => Task 1, Epoch 85/150 => Loss 0.000, Train_accy 0.00, Test_accy 72.97
+2025-12-27 17:49:53,460 [ewc.py] => Task 1, Epoch 90/150 => Loss 0.000, Train_accy 0.00, Test_accy 73.11
+2025-12-27 17:49:58,296 [ewc.py] => Task 1, Epoch 95/150 => Loss 0.000, Train_accy 0.00, Test_accy 73.00
+2025-12-27 17:50:03,183 [ewc.py] => Task 1, Epoch 100/150 => Loss 0.000, Train_accy 0.00, Test_accy 72.94
+2025-12-27 17:50:08,102 [ewc.py] => Task 1, Epoch 105/150 => Loss 0.000, Train_accy 0.00, Test_accy 72.97
+2025-12-27 17:50:13,120 [ewc.py] => Task 1, Epoch 110/150 => Loss 0.000, Train_accy 0.00, Test_accy 72.97
+2025-12-27 17:50:17,966 [ewc.py] => Task 1, Epoch 115/150 => Loss 0.000, Train_accy 0.00, Test_accy 72.94
+2025-12-27 17:50:22,734 [ewc.py] => Task 1, Epoch 120/150 => Loss 0.000, Train_accy 0.00, Test_accy 73.00
+2025-12-27 17:50:27,508 [ewc.py] => Task 1, Epoch 125/150 => Loss 0.000, Train_accy 0.00, Test_accy 72.97
+2025-12-27 17:50:32,252 [ewc.py] => Task 1, Epoch 130/150 => Loss 0.000, Train_accy 0.00, Test_accy 72.94
+2025-12-27 17:50:37,245 [ewc.py] => Task 1, Epoch 135/150 => Loss 0.000, Train_accy 0.00, Test_accy 72.97
+2025-12-27 17:50:42,048 [ewc.py] => Task 1, Epoch 140/150 => Loss 0.000, Train_accy 0.00, Test_accy 73.00
+2025-12-27 17:50:46,995 [ewc.py] => Task 1, Epoch 145/150 => Loss 0.000, Train_accy 0.00, Test_accy 72.94
+2025-12-27 17:50:51,746 [ewc.py] => Task 1, Epoch 150/150 => Loss 0.000, Train_accy 0.00, Test_accy 73.03
+2025-12-27 17:50:51,747 [ewc.py] => Task 1, Epoch 150/150 => Loss 0.000, Train_accy 0.00, Test_accy 73.03
+2025-12-27 17:50:51,747 [ewc.py] => 100 epoches training time:96.81s
+2025-12-27 17:50:51,747 [ewc.py] => Average training time of single epoch:0.88s
+2025-12-27 17:50:52,545 [trainer.py] => task:1 training time:146.69s
+2025-12-27 17:50:52,546 [trainer.py] => All params: 3846982
+2025-12-27 17:50:52,931 [trainer.py] => No NME accuracy.
+2025-12-27 17:50:52,931 [trainer.py] => CNN: {'total': 72.92, '00-04': 87.5, '05-05': 0.0, 'old': 87.5, 'new': 0.0}
+2025-12-27 17:50:52,931 [trainer.py] => CNN top1 curve: [90.17, 72.92]
+2025-12-27 17:50:52,931 [trainer.py] => CNN top5 curve: [100.0, 99.25]
+
+2025-12-27 17:50:52,931 [trainer.py] => Average Accuracy (CNN): 81.545
+2025-12-27 17:50:52,931 [trainer.py] => Average Accuracy (CNN): 81.545
+2025-12-27 17:50:52,932 [trainer.py] => All params: 3846982
+2025-12-27 17:50:52,932 [trainer.py] => Trainable params: 3846982
+2025-12-27 17:50:52,933 [ewc.py] => Learning on 6-7
+2025-12-27 17:50:58,072 [ewc.py] => Task 2, Epoch 5/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.50
+2025-12-27 17:51:03,061 [ewc.py] => Task 2, Epoch 10/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.36
+2025-12-27 17:51:08,045 [ewc.py] => Task 2, Epoch 15/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.10
+2025-12-27 17:51:12,957 [ewc.py] => Task 2, Epoch 20/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.31
+2025-12-27 17:51:17,848 [ewc.py] => Task 2, Epoch 25/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.19
+2025-12-27 17:51:22,950 [ewc.py] => Task 2, Epoch 30/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.24
+2025-12-27 17:51:27,789 [ewc.py] => Task 2, Epoch 35/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.26
+2025-12-27 17:51:32,632 [ewc.py] => Task 2, Epoch 40/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.26
+2025-12-27 17:51:37,779 [ewc.py] => Task 2, Epoch 45/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.21
+2025-12-27 17:51:42,722 [ewc.py] => Task 2, Epoch 50/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.29
+2025-12-27 17:51:47,912 [ewc.py] => Task 2, Epoch 55/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.36
+2025-12-27 17:51:52,758 [ewc.py] => Task 2, Epoch 60/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.52
+2025-12-27 17:51:57,705 [ewc.py] => Task 2, Epoch 65/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.24
+2025-12-27 17:52:02,776 [ewc.py] => Task 2, Epoch 70/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.48
+2025-12-27 17:52:07,605 [ewc.py] => Task 2, Epoch 75/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.38
+2025-12-27 17:52:12,514 [ewc.py] => Task 2, Epoch 80/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.26
+2025-12-27 17:52:17,410 [ewc.py] => Task 2, Epoch 85/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.31
+2025-12-27 17:52:22,129 [ewc.py] => Task 2, Epoch 90/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.36
+2025-12-27 17:52:27,056 [ewc.py] => Task 2, Epoch 95/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.29
+2025-12-27 17:52:31,917 [ewc.py] => Task 2, Epoch 100/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.45
+2025-12-27 17:52:36,739 [ewc.py] => Task 2, Epoch 105/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.31
+2025-12-27 17:52:41,770 [ewc.py] => Task 2, Epoch 110/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.40
+2025-12-27 17:52:46,656 [ewc.py] => Task 2, Epoch 115/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.36
+2025-12-27 17:52:51,573 [ewc.py] => Task 2, Epoch 120/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.48
+2025-12-27 17:52:56,613 [ewc.py] => Task 2, Epoch 125/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.40
+2025-12-27 17:53:01,637 [ewc.py] => Task 2, Epoch 130/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.21
+2025-12-27 17:53:06,743 [ewc.py] => Task 2, Epoch 135/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.24
+2025-12-27 17:53:11,992 [ewc.py] => Task 2, Epoch 140/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.33
+2025-12-27 17:53:16,936 [ewc.py] => Task 2, Epoch 145/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.36
+2025-12-27 17:53:21,905 [ewc.py] => Task 2, Epoch 150/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.38
+2025-12-27 17:53:21,905 [ewc.py] => Task 2, Epoch 150/150 => Loss 0.000, Train_accy 0.00, Test_accy 60.38
+2025-12-27 17:53:21,905 [ewc.py] => 100 epoches training time:98.46s
+2025-12-27 17:53:21,905 [ewc.py] => Average training time of single epoch:0.89s
+2025-12-27 17:53:22,772 [trainer.py] => task:2 training time:149.84s
+2025-12-27 17:53:22,773 [trainer.py] => All params: 3847495
+2025-12-27 17:53:23,271 [trainer.py] => No NME accuracy.
+2025-12-27 17:53:23,274 [trainer.py] => CNN: {'total': 60.38, '00-04': 84.53, '05-05': 0.0, '06-06': 0.0, 'old': 70.44, 'new': 0.0}
+2025-12-27 17:53:23,275 [trainer.py] => CNN top1 curve: [90.17, 72.92, 60.38]
+2025-12-27 17:53:23,276 [trainer.py] => CNN top5 curve: [100.0, 99.25, 98.33]
+
+2025-12-27 17:53:23,277 [trainer.py] => Average Accuracy (CNN): 74.49
+2025-12-27 17:53:23,278 [trainer.py] => Average Accuracy (CNN): 74.49
+2025-12-27 17:53:23,279 [trainer.py] => All params: 3847495
+2025-12-27 17:53:23,280 [trainer.py] => Trainable params: 3847495
+2025-12-27 17:53:23,281 [ewc.py] => Learning on 7-8
+2025-12-27 17:53:28,459 [ewc.py] => Task 3, Epoch 5/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.31
+2025-12-27 17:53:33,513 [ewc.py] => Task 3, Epoch 10/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.42
+2025-12-27 17:53:38,779 [ewc.py] => Task 3, Epoch 15/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.46
+2025-12-27 17:53:44,009 [ewc.py] => Task 3, Epoch 20/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.27
+2025-12-27 17:53:49,037 [ewc.py] => Task 3, Epoch 25/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.31
+2025-12-27 17:53:54,154 [ewc.py] => Task 3, Epoch 30/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.19
+2025-12-27 17:53:59,114 [ewc.py] => Task 3, Epoch 35/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.27
+2025-12-27 17:54:04,325 [ewc.py] => Task 3, Epoch 40/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.42
+2025-12-27 17:54:09,513 [ewc.py] => Task 3, Epoch 45/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.21
+2025-12-27 17:54:14,730 [ewc.py] => Task 3, Epoch 50/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.44
+2025-12-27 17:54:19,980 [ewc.py] => Task 3, Epoch 55/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.23
+2025-12-27 17:54:25,008 [ewc.py] => Task 3, Epoch 60/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.29
+2025-12-27 17:54:30,077 [ewc.py] => Task 3, Epoch 65/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.46
+2025-12-27 17:54:35,224 [ewc.py] => Task 3, Epoch 70/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.35
+2025-12-27 17:54:40,472 [ewc.py] => Task 3, Epoch 75/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.44
+2025-12-27 17:54:45,482 [ewc.py] => Task 3, Epoch 80/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.46
+2025-12-27 17:54:50,658 [ewc.py] => Task 3, Epoch 85/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.27
+2025-12-27 17:54:55,519 [ewc.py] => Task 3, Epoch 90/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.31
+2025-12-27 17:55:00,577 [ewc.py] => Task 3, Epoch 95/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.31
+2025-12-27 17:55:05,655 [ewc.py] => Task 3, Epoch 100/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.29
+2025-12-27 17:55:10,598 [ewc.py] => Task 3, Epoch 105/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.21
+2025-12-27 17:55:15,686 [ewc.py] => Task 3, Epoch 110/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.19
+2025-12-27 17:55:20,759 [ewc.py] => Task 3, Epoch 115/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.23
+2025-12-27 17:55:25,870 [ewc.py] => Task 3, Epoch 120/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.21
+2025-12-27 17:55:30,762 [ewc.py] => Task 3, Epoch 125/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.48
+2025-12-27 17:55:35,728 [ewc.py] => Task 3, Epoch 130/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.38
+2025-12-27 17:55:40,959 [ewc.py] => Task 3, Epoch 135/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.29
+2025-12-27 17:55:46,157 [ewc.py] => Task 3, Epoch 140/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.35
+2025-12-27 17:55:51,350 [ewc.py] => Task 3, Epoch 145/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.42
+2025-12-27 17:55:56,508 [ewc.py] => Task 3, Epoch 150/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.21
+2025-12-27 17:55:56,509 [ewc.py] => Task 3, Epoch 150/150 => Loss 0.000, Train_accy 0.00, Test_accy 51.21
+2025-12-27 17:55:56,509 [ewc.py] => 100 epoches training time:101.70s
+2025-12-27 17:55:56,509 [ewc.py] => Average training time of single epoch:0.91s
+2025-12-27 17:55:57,197 [trainer.py] => task:3 training time:153.92s
+2025-12-27 17:55:57,198 [trainer.py] => All params: 3848008
+2025-12-27 17:55:57,787 [trainer.py] => No NME accuracy.
+2025-12-27 17:55:57,787 [trainer.py] => CNN: {'total': 51.38, '00-04': 82.2, '05-05': 0.0, '06-06': 0.0, '07-07': 0.0, 'old': 58.71, 'new': 0.0}
+2025-12-27 17:55:57,787 [trainer.py] => CNN top1 curve: [90.17, 72.92, 60.38, 51.38]
+2025-12-27 17:55:57,787 [trainer.py] => CNN top5 curve: [100.0, 99.25, 98.33, 92.42]
+
+2025-12-27 17:55:57,788 [trainer.py] => Average Accuracy (CNN): 68.7125
+2025-12-27 17:55:57,788 [trainer.py] => Average Accuracy (CNN): 68.7125
+2025-12-27 17:55:57,788 [trainer.py] => All params: 3848008
+2025-12-27 17:55:57,788 [trainer.py] => Trainable params: 3848008
+2025-12-27 17:55:57,790 [ewc.py] => Learning on 8-9
+2025-12-27 17:56:02,863 [ewc.py] => Task 4, Epoch 5/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.41
+2025-12-27 17:56:07,570 [ewc.py] => Task 4, Epoch 10/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.43
+2025-12-27 17:56:12,402 [ewc.py] => Task 4, Epoch 15/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.70
+2025-12-27 17:56:17,105 [ewc.py] => Task 4, Epoch 20/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.69
+2025-12-27 17:56:21,769 [ewc.py] => Task 4, Epoch 25/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.65
+2025-12-27 17:56:26,634 [ewc.py] => Task 4, Epoch 30/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.72
+2025-12-27 17:56:31,429 [ewc.py] => Task 4, Epoch 35/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.57
+2025-12-27 17:56:36,280 [ewc.py] => Task 4, Epoch 40/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.72
+2025-12-27 17:56:41,105 [ewc.py] => Task 4, Epoch 45/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.65
+2025-12-27 17:56:45,654 [ewc.py] => Task 4, Epoch 50/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.72
+2025-12-27 17:56:50,380 [ewc.py] => Task 4, Epoch 55/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.54
+2025-12-27 17:56:55,167 [ewc.py] => Task 4, Epoch 60/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.57
+2025-12-27 17:57:00,034 [ewc.py] => Task 4, Epoch 65/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.54
+2025-12-27 17:57:04,933 [ewc.py] => Task 4, Epoch 70/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.63
+2025-12-27 17:57:09,780 [ewc.py] => Task 4, Epoch 75/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.59
+2025-12-27 17:57:14,606 [ewc.py] => Task 4, Epoch 80/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.70
+2025-12-27 17:57:19,453 [ewc.py] => Task 4, Epoch 85/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.61
+2025-12-27 17:57:24,299 [ewc.py] => Task 4, Epoch 90/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.72
+2025-12-27 17:57:29,078 [ewc.py] => Task 4, Epoch 95/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.72
+2025-12-27 17:57:33,961 [ewc.py] => Task 4, Epoch 100/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.52
+2025-12-27 17:57:38,614 [ewc.py] => Task 4, Epoch 105/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.67
+2025-12-27 17:57:43,410 [ewc.py] => Task 4, Epoch 110/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.59
+2025-12-27 17:57:48,298 [ewc.py] => Task 4, Epoch 115/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.59
+2025-12-27 17:57:52,974 [ewc.py] => Task 4, Epoch 120/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.69
+2025-12-27 17:57:57,798 [ewc.py] => Task 4, Epoch 125/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.46
+2025-12-27 17:58:02,512 [ewc.py] => Task 4, Epoch 130/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.65
+2025-12-27 17:58:07,338 [ewc.py] => Task 4, Epoch 135/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.63
+2025-12-27 17:58:12,084 [ewc.py] => Task 4, Epoch 140/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.69
+2025-12-27 17:58:16,954 [ewc.py] => Task 4, Epoch 145/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.63
+2025-12-27 17:58:21,787 [ewc.py] => Task 4, Epoch 150/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.72
+2025-12-27 17:58:21,788 [ewc.py] => Task 4, Epoch 150/150 => Loss 0.000, Train_accy 0.00, Test_accy 44.72
+2025-12-27 17:58:21,788 [ewc.py] => 100 epoches training time:95.65s
+2025-12-27 17:58:21,788 [ewc.py] => Average training time of single epoch:0.86s
+2025-12-27 17:58:22,459 [trainer.py] => task:4 training time:144.67s
+2025-12-27 17:58:22,459 [trainer.py] => All params: 3848521
+2025-12-27 17:58:22,952 [trainer.py] => No NME accuracy.
+2025-12-27 17:58:22,953 [trainer.py] => CNN: {'total': 44.57, '00-04': 80.23, '05-05': 0.0, '06-06': 0.0, '07-07': 0.0, '08-08': 0.0, 'old': 50.15, 'new': 0.0}
+2025-12-27 17:58:22,953 [trainer.py] => CNN top1 curve: [90.17, 72.92, 60.38, 51.38, 44.57]
+2025-12-27 17:58:22,953 [trainer.py] => CNN top5 curve: [100.0, 99.25, 98.33, 92.42, 81.06]
+
+2025-12-27 17:58:22,953 [trainer.py] => Average Accuracy (CNN): 63.884
+2025-12-27 17:58:22,953 [trainer.py] => Average Accuracy (CNN): 63.884
+2025-12-27 17:58:22,953 [trainer.py] => Time consumed in all training process:600.75s
+2025-12-27 17:58:22,953 [trainer.py] => Average Time consumed in single task:119.65s
+2025-12-27 17:58:22,953 [trainer.py] => Accuracy Matrix (CNN):
+2025-12-27 17:58:22,954 [trainer.py] => 
+[[90.17 87.5  84.53 82.2  80.23]
+ [ 0.    0.    0.    0.    0.  ]
+ [ 0.    0.    0.    0.    0.  ]
+ [ 0.    0.    0.    0.    0.  ]
+ [ 0.    0.    0.    0.    0.  ]]
+2025-12-27 17:58:22,954 [trainer.py] => Forgetting (CNN): 2.4849999999999994

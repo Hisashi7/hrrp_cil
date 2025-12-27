@@ -1,7 +1,7 @@
 {
-    "prefix": "cil",
+    "prefix": "EFCIL",
     "dataset": "hrrp9",
-    "memory_size": 500,
+    "memory_size": 0,
     "memory_per_class": 20,
     "fixed_memory": false,
     "shuffle": true,
@@ -9,7 +9,7 @@
     "increment": 2,
     "model_name": "bic",
     "convnet_type": "resnet18",
-    "device": ["3"],
+    "device": ["0"],
     "init_train": false,
     "convnet_path": "checkpoints/init_train/resnet18_42503.pth",
     "fc_path": "checkpoints/init_train/fc_42503.pth",

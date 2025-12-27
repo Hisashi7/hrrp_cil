@@ -31,14 +31,14 @@ class iHRRP9(iData):
     class_order = np.arange(9).tolist()
 
     def download_data(self):
-        base_dir = os.path.dirname(__file__)
-        train_path = os.path.join(base_dir, "../data/hrrp/原理样机_2024.3.28/TRAIN_RESAMPLE.mat")
+        base_dir = os.environ.get("HRRP_DATA_DIR")
+        train_path = os.path.join(base_dir, "hrrp/原理样机_2024.3.28/TRAIN_RESAMPLE.mat")
         train_data_mat = loadmat(train_path)
         data_tr = train_data_mat['data_resample']
         self.train_data = np.array(data_tr[:, 1:], dtype=np.float32)
         self.train_targets = mapping(np.array(data_tr[:, 0], dtype=np.int64))
         
-        test_path = os.path.join(base_dir, "../data/hrrp/原理样机_2024.3.28/TEST_RESAMPLE.mat")
+        test_path = os.path.join(base_dir, "hrrp/原理样机_2024.3.28/TEST_RESAMPLE.mat")
         test_data_mat = loadmat(test_path)
         data_ev = test_data_mat['TEST']
         self.test_data = np.array(data_ev[:, 1:], dtype=np.float32)
