@@ -20,7 +20,7 @@
     "num_workers": 8,
 
     "expansion_size": 8192,
-    "gamma_main": 0.001,
-    "gamma_comp": 0.001,
+    "gamma_main": 0.01,
+    "gamma_comp": 0.01,
     "compensation_ratio": 1.0
 }

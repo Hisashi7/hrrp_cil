@@ -119,8 +119,8 @@ def _train(args):
             logging.info("NME top1 curve: {}".format(nme_curve["top1"]))
             logging.info("NME top5 curve: {}\n".format(nme_curve["top5"]))
 
-            print('Average Accuracy (CNN):', sum(cnn_curve["top1"])/len(cnn_curve["top1"]))
-            print('Average Accuracy (NME):', sum(nme_curve["top1"])/len(nme_curve["top1"]))
+            logging.info('Average Accuracy (CNN): {}'.format(sum(cnn_curve["top1"])/len(cnn_curve["top1"])))
+            logging.info('Average Accuracy (NME): {}'.format(sum(nme_curve["top1"])/len(nme_curve["top1"])))
 
             logging.info("Average Accuracy (CNN): {}".format(sum(cnn_curve["top1"])/len(cnn_curve["top1"])))
             logging.info("Average Accuracy (NME): {}".format(sum(nme_curve["top1"])/len(nme_curve["top1"])))
@@ -139,7 +139,7 @@ def _train(args):
             logging.info("CNN top1 curve: {}".format(cnn_curve["top1"]))
             logging.info("CNN top5 curve: {}\n".format(cnn_curve["top5"]))
 
-            print('Average Accuracy (CNN):', sum(cnn_curve["top1"])/len(cnn_curve["top1"]))
+            logging.info('Average Accuracy (CNN): {}'.format(sum(cnn_curve["top1"])/len(cnn_curve["top1"])))
             logging.info("Average Accuracy (CNN): {}".format(sum(cnn_curve["top1"])/len(cnn_curve["top1"])))
 
     # 计算整个过程训练时间——结束时间
@@ -168,9 +168,8 @@ def _train(args):
             np_acctable[idxx, :idxy] = np.array(line)
         np_acctable = np_acctable.T
         forgetting = np.mean((np.max(np_acctable, axis=1) - np_acctable[:, task])[:task])
-        print('Accuracy Matrix (CNN):')
-        print(np_acctable)
-        print('Forgetting (CNN):', forgetting)
+        logging.info('Accuracy Matrix (CNN):')
+        logging.info(np_acctable)
         logging.info('Forgetting (CNN): {}'.format(forgetting))
     if len(nme_matrix)>0:
         np_acctable = np.zeros([task + 1, task + 1])
@@ -179,12 +178,9 @@ def _train(args):
             np_acctable[idxx, :idxy] = np.array(line)
         np_acctable = np_acctable.T
         forgetting = np.mean((np.max(np_acctable, axis=1) - np_acctable[:, task])[:task])
-        print('Accuracy Matrix (NME):')
-        print(np_acctable)
-        print('Forgetting (NME):', forgetting)
-        logging.info('Forgetting (NME):', forgetting)
-
-
+        logging.info('Accuracy Matrix (NME):')
+        logging.info(np_acctable)
+        logging.info('Forgetting (NME): {}'.format(forgetting))
 def _set_device(args):
     device_type = args["device"]
     gpus = []

@@ -49,7 +49,7 @@ class AnalyticDSAL(torch.nn.Module):
 
     @torch.no_grad()
     def forward(self, X: torch.Tensor) -> torch.Tensor:
-        X = self.buffer(self.backbone(X)["features"])
+        X = self.buffer(self.backbone(X))
         X_main = self.main_stream(self.activation_main(X))
         X_comp = self.comp_stream(self.activation_comp(X))
         return X_main + self.C * X_comp
@@ -58,7 +58,7 @@ class AnalyticDSAL(torch.nn.Module):
     def fit(self, X: torch.Tensor, y: torch.Tensor, increase_size: int) -> None:
         num_classes = max(self.main_stream.out_features, int(y.max().item()) + 1)
         Y_main = torch.nn.functional.one_hot(y, num_classes=num_classes)
-        X = self.buffer(self.backbone(X)["features"])
+        X = self.buffer(self.backbone(X))
 
         X_main = self.activation_main(X)
         self.main_stream.fit(X_main, Y_main)
@@ -89,10 +89,11 @@ class DSALNet(nn.Module):
         return self.convnet.out_dim
 
     def extract_vector(self, x: torch.Tensor) -> torch.Tensor:
-        return self.convnet(x)
+        return self.convnet(x)["features"]
 
     def forward(self, x: torch.Tensor) -> dict:
-        feats = self.convnet(x)
+        feats = self.convnet(x)["features"]
+        feats = torch.nn.functional.normalize(feats, dim=1)
         logits = self.dsal(feats)
         return {"logits": logits, "features": feats}
 
@@ -122,7 +123,7 @@ class DSAL(BaseLearner):
         # Analytic head operates on backbone features directly
         dsal_module = AnalyticDSAL(
             backbone_output=backbone.out_dim,
-            backbone=backbone,
+            backbone=torch.nn.Identity(),
             expansion_size=args.get("expansion_size", 8192),
             gamma_main=args.get("gamma", args.get("gamma_main", 1e-3)),
             gamma_comp=args.get("gamma_comp", 1e-3),
